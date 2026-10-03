@@ -484,9 +484,9 @@ function renderPin(key, count){
   const m = markers[key];
   if(!m) return;
   const isSelected = key === selectedBase;
-  const baseSize = Math.min(50, 26 + count * 5);
+  const baseSize = 32; // 検知数に関わらず丸の大きさは統一
   const size = isSelected ? baseSize + 14 : baseSize; // 選択中は少し大きく
-  const fontSize = isSelected ? ".95rem" : (count === 0 ? ".7rem" : ".85rem");
+  const fontSize = isSelected ? ".95rem" : (count === 0 ? ".75rem" : ".8rem");
   const pinStyle = count === 0
     ? `width:${size}px;height:${size}px;font-size:${fontSize};`
     : `width:${size}px;height:${size}px;font-size:${fontSize};--pin-color:${label.color};--pin-halo:${hexToRgba(label.color, 0.18)};`;
