@@ -12,7 +12,10 @@ BOUNDS = {
 URL = "https://api.airplanes.live/v2/mil"
 
 def fetch():
-    req = urllib.request.Request(URL, headers={"User-Agent": "military-watch-jp/1.0"})
+    req = urllib.request.Request(URL, headers={
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+        "Accept": "application/json",
+    })
     with urllib.request.urlopen(req, timeout=30) as res:
         return json.load(res)
 
