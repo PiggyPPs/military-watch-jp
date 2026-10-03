@@ -102,11 +102,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: var(--accent);
+    background: var(--pin-color, var(--accent));
     color: #fff;
     font-family: "JetBrains Mono", monospace;
     font-weight: 700;
-    box-shadow: 0 0 0 6px rgba(74,143,209,0.18), 0 6px 16px -4px rgba(40,70,100,0.4);
+    box-shadow: 0 0 0 6px var(--pin-halo, rgba(74,143,209,0.18)), 0 6px 16px -4px rgba(40,70,100,0.4);
   }
   .base-pin.zero{
     background: #b7c3cf;
@@ -135,7 +135,13 @@
   }
   .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media screen and (max-width: 720px){
+    .grid{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media screen and (max-width: 420px){
+    .grid{ grid-template-columns: 1fr; }
   }
   .card{
     padding: 22px 22px 18px;
@@ -147,6 +153,12 @@
     background: var(--glass-strong);
   }
   .grid > .card:last-child{ border-right: none; }
+  @media screen and (max-width: 720px){
+    .grid > .card:nth-child(2n){ border-right: none; }
+  }
+  @media screen and (max-width: 420px){
+    .grid > .card{ border-right: none; }
+  }
   .card__top{
     display: flex;
     align-items: baseline;
@@ -167,7 +179,7 @@
   .card__count{
     font-size: 2.4rem;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--count-color, var(--accent));
     font-family: "JetBrains Mono", monospace;
     line-height: 1;
   }
@@ -241,11 +253,18 @@
 
 <script>
 const BASE_LABELS = {
-  kadena:  { name: "嘉手納基地", pref: "沖縄県", lat: 26.3519, lon: 127.7689 },
-  yokota:  { name: "横田基地", pref: "東京都", lat: 35.7485, lon: 139.3486 },
-  iwakuni: { name: "岩国基地", pref: "山口県", lat: 34.1436, lon: 132.2356 },
-  misawa:  { name: "三沢基地", pref: "青森県", lat: 40.7032, lon: 141.3686 },
+  kadena:  { name: "嘉手納基地", pref: "沖縄県", lat: 26.3519, lon: 127.7689, color: "#4a8fd1" },
+  yokota:  { name: "横田基地", pref: "東京都", lat: 35.7485, lon: 139.3486, color: "#3fae8f" },
+  iwakuni: { name: "岩国基地", pref: "山口県", lat: 34.1436, lon: 132.2356, color: "#d98a3d" },
+  misawa:  { name: "三沢基地", pref: "青森県", lat: 40.7032, lon: 141.3686, color: "#8b6fd9" },
 };
+
+function hexToRgba(hex, alpha){
+  const r = parseInt(hex.slice(1,3), 16);
+  const g = parseInt(hex.slice(3,5), 16);
+  const b = parseInt(hex.slice(5,7), 16);
+  return `rgba(${r},${g},${b},${alpha})`;
+}
 
 const map = L.map("map", {
   zoomControl: false,
@@ -263,7 +282,7 @@ for(const key of Object.keys(BASE_LABELS)){
   const b = BASE_LABELS[key];
   const icon = L.divIcon({
     className: "",
-    html: `<div class="base-pin zero" style="width:30px;height:30px;font-size:.75rem;">0</div>`,
+    html: `<div class="base-pin" style="width:30px;height:30px;font-size:.75rem;--pin-color:${b.color};--pin-halo:${hexToRgba(b.color, 0.18)};">0</div>`,
     iconSize: [30, 30],
   });
   const m = L.marker([b.lat, b.lon], { icon }).addTo(map);
@@ -293,11 +312,15 @@ async function load(){
       const aircraft = base ? base.aircraft : [];
       const label = BASE_LABELS[key];
 
+      // 地図上のピンも更新
       if(markers[key]){
         const size = Math.min(50, 26 + count * 5);
+        const pinStyle = count === 0
+          ? `width:${size}px;height:${size}px;font-size:.7rem;`
+          : `width:${size}px;height:${size}px;font-size:.85rem;--pin-color:${label.color};--pin-halo:${hexToRgba(label.color, 0.18)};`;
         markers[key].setIcon(L.divIcon({
           className: "",
-          html: `<div class="base-pin ${count === 0 ? "zero" : ""}" style="width:${size}px;height:${size}px;font-size:${count === 0 ? ".7rem" : ".85rem"};">${count}</div>`,
+          html: `<div class="base-pin ${count === 0 ? "zero" : ""}" style="${pinStyle}">${count}</div>`,
           iconSize: [size, size],
         }));
         markers[key].setPopupContent(`<strong>${label.name}</strong><br>${label.pref}<br>検知: ${count}機`);
@@ -321,7 +344,7 @@ async function load(){
             <span class="card__name">${label.name}</span>
             <span class="card__pref">${label.pref}</span>
           </div>
-          <span class="card__count ${count === 0 ? "zero" : ""}">${count}</span>
+          <span class="card__count ${count === 0 ? "zero" : ""}" style="${count === 0 ? "" : `--count-color:${label.color};`}">${count}</span>
         </div>
         <div class="card__label">検知機数</div>
         <div class="ac-list">${acHtml}</div>
