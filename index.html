@@ -484,7 +484,7 @@ function renderPin(key, count){
   const m = markers[key];
   if(!m) return;
   const isSelected = key === selectedBase;
-  const baseSize = 32; // 検知数に関わらず丸の大きさは統一
+  const baseSize = 26; // 検知数に関わらず丸の大きさは統一(小さい方に合わせる)
   const size = isSelected ? baseSize + 14 : baseSize; // 選択中は少し大きく
   const fontSize = isSelected ? ".95rem" : (count === 0 ? ".75rem" : ".8rem");
   const pinStyle = count === 0
