@@ -384,10 +384,30 @@
     font-family: "JetBrains Mono", monospace;
     font-size: .72rem;
     color: var(--ink-soft);
+    width: 56px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .hist-tag{
+    font-size: .68rem;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 999px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .hist-tag.civilian{
+    color: #2f8f6f;
+    background: rgba(63, 174, 143, 0.14);
+  }
+  .hist-tag.other{
+    color: #7f8fa0;
+    background: rgba(127, 143, 160, 0.14);
   }
   @media screen and (max-width: 560px){
     .hist-base{ width: 84px; font-size: .74rem; }
     .hist-time{ width: 60px; font-size: .68rem; }
+    .hist-tag{ display: none; }
   }
 </style>
 </head>
@@ -832,6 +852,7 @@ async function loadHistory(){
             baseKey: key,
             callsign: (a.callsign || a.icao24 || "----").trim() || "----",
             alt: a.on_ground ? "地上" : (a.alt != null ? Math.round(a.alt) + "m" : "-"),
+            category: a.category || null,
           });
         }
       }
@@ -847,11 +868,17 @@ async function loadHistory(){
 
     list.innerHTML = latest.map(r => {
       const label = BASE_LABELS[r.baseKey];
+      const tag = r.category === "civilian"
+        ? `<span class="hist-tag civilian">旅客便</span>`
+        : r.category === "other"
+          ? `<span class="hist-tag other">それ以外</span>`
+          : "";
       return `
         <div class="hist-row">
           <span class="hist-time">${fmtHistTime(r.time)}</span>
           <span class="hist-base"><span class="dot" style="background:${label.color}"></span>${label.name}</span>
           <span class="hist-call">${r.callsign}</span>
+          ${tag}
           <span class="hist-meta">${r.alt}</span>
         </div>
       `;
