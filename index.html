@@ -407,8 +407,9 @@ for(const key of Object.keys(BASE_LABELS)){
   });
   const m = L.marker([b.lat, b.lon], { icon }).addTo(map);
   m.bindPopup(`<strong>${b.name}</strong><br>${b.address}`);
+  m._count = 0;
   m.on("mouseover click", () => m.setZIndexOffset(1000));
-  m.on("mouseout", () => { if(!m.isPopupOpen()) m.setZIndexOffset(0); });
+  m.on("mouseout", () => { if(!m.isPopupOpen()) m.setZIndexOffset(m._count * 100); });
   markers[key] = m;
 }
 
@@ -436,6 +437,8 @@ async function load(){
 
       // 地図上のピンも更新
       if(markers[key]){
+        markers[key]._count = count;
+        markers[key].setZIndexOffset(count * 100); // 検知数がある方を手前に表示
         const size = Math.min(50, 26 + count * 5);
         const pinStyle = count === 0
           ? `width:${size}px;height:${size}px;font-size:.7rem;`
