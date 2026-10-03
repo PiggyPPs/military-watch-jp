@@ -1,54 +1,59 @@
 import json
 import os
+import time
 import urllib.request
 from datetime import datetime, timezone
 
-# 日本周辺(沖縄〜北海道)をカバーする範囲
-BOUNDS = {
-    "lat_min": 24.0, "lat_max": 46.0,
-    "lon_min": 123.0, "lon_max": 146.0,
+BASES = {
+    "kadena": {"lat": 26.3519, "lon": 127.7689},
+    "yokota": {"lat": 35.7485, "lon": 139.3486},
+    "iwakuni": {"lat": 34.1436, "lon": 132.2356},
+    "misawa": {"lat": 40.7032, "lon": 141.3686},
 }
 
-URL = "https://api.airplanes.live/v2/mil"
-
-def fetch():
-    req = urllib.request.Request(URL, headers={
+def fetch_box(lat, lon):
+    lamin, lamax = lat - PAD, lat + PAD
+    lomin, lomax = lon - PAD, lon + PAD
+    url = (
+        f"https://opensky-network.org/api/states/all"
+        f"?lamin={lamin}&lomin={lomin}&lamax={lamax}&lomax={lomax}"
+    )
+    req = urllib.request.Request(url, headers={
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
-        "Accept": "application/json",
     })
     with urllib.request.urlopen(req, timeout=30) as res:
         return json.load(res)
 
-def in_japan(ac):
-    lat = ac.get("lat")
-    lon = ac.get("lon")
-    if lat is None or lon is None:
-        return False
-    return (BOUNDS["lat_min"] <= lat <= BOUNDS["lat_max"] and
-            BOUNDS["lon_min"] <= lon <= BOUNDS["lon_max"])
-
 def main():
-    data = fetch()
-    aircraft = data.get("ac", [])
-    japan_aircraft = [ac for ac in aircraft if in_japan(ac)]
-
     now = datetime.now(timezone.utc)
-    record = {
-        "timestamp": now.isoformat(),
-        "count": len(japan_aircraft),
-        "aircraft": [
-            {
-                "hex": ac.get("hex"),
-                "flight": (ac.get("flight") or "").strip(),
-                "type": ac.get("t"),
-                "lat": ac.get("lat"),
-                "lon": ac.get("lon"),
-                "alt": ac.get("alt_baro"),
-                "speed": ac.get("gs"),
-            }
-            for ac in japan_aircraft
-        ],
-    }
+    record = {"timestamp": now.isoformat(), "bases": {}}
+
+    for name, pos in BASES.items():
+        try:
+            data = fetch_box(pos["lat"], pos["lon"])
+            states = data.get("states") or []
+            aircraft = [
+                {
+                    "icao24": s[0],
+                    "callsign": (s[1] or "").strip(),
+                    "country": s[2],
+                    "lon": s[5],
+                    "lat": s[6],
+                    "alt": s[7],
+                    "on_ground": s[8],
+                    "speed": s[9],
+                }
+                for s in states
+            ]
+        except Exception as e:
+            aircraft = []
+            print(f"{name}: error - {e}")
+
+        record["bases"][name] = {
+            "count": len(aircraft),
+            "aircraft": aircraft,
+        }
+        time.sleep(2)  # 連続アクセスを避けるための間隔
 
     date_str = now.strftime("%Y-%m-%d")
     os.makedirs("data", exist_ok=True)
