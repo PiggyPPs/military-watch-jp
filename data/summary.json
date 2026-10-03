@@ -4,72 +4,72 @@
     "bases": {
       "kadena": {
         "total": 12,
-        "samples": 8,
+        "samples": 11,
         "max": 2,
         "detected_runs": 7,
         "civilian": {
-          "total": 1,
-          "samples": 2,
-          "max": 1,
-          "detected_runs": 1
+          "total": 7,
+          "samples": 11,
+          "max": 2,
+          "detected_runs": 5
         },
         "other": {
-          "total": 2,
-          "samples": 2,
-          "max": 1,
-          "detected_runs": 2
+          "total": 5,
+          "samples": 11,
+          "max": 2,
+          "detected_runs": 4
         }
       },
       "yokota": {
         "total": 11,
-        "samples": 8,
+        "samples": 11,
         "max": 3,
         "detected_runs": 6,
         "civilian": {
-          "total": 2,
-          "samples": 2,
+          "total": 5,
+          "samples": 11,
           "max": 2,
-          "detected_runs": 1
+          "detected_runs": 3
         },
         "other": {
-          "total": 1,
-          "samples": 2,
-          "max": 1,
-          "detected_runs": 1
+          "total": 6,
+          "samples": 11,
+          "max": 2,
+          "detected_runs": 4
         }
       },
       "iwakuni": {
         "total": 2,
-        "samples": 8,
+        "samples": 11,
         "max": 1,
         "detected_runs": 2,
         "civilian": {
-          "total": 1,
-          "samples": 2,
+          "total": 2,
+          "samples": 11,
           "max": 1,
-          "detected_runs": 1
+          "detected_runs": 2
         },
         "other": {
           "total": 0,
-          "samples": 2,
+          "samples": 11,
           "max": 0,
           "detected_runs": 0
         }
       },
       "misawa": {
         "total": 5,
-        "samples": 8,
+        "samples": 11,
         "max": 1,
         "detected_runs": 5,
         "civilian": {
-          "total": 1,
-          "samples": 2,
+          "total": 5,
+          "samples": 11,
           "max": 1,
-          "detected_runs": 1
+          "detected_runs": 5
         },
         "other": {
           "total": 0,
-          "samples": 2,
+          "samples": 11,
           "max": 0,
           "detected_runs": 0
         }
