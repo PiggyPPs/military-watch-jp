@@ -6,7 +6,7 @@
 <title>Military Watch JP</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/chart.js@4/dist/chart.umd.js"></script>
@@ -30,7 +30,7 @@
     margin: 0;
     min-height: 100vh;
     color: var(--ink);
-    font-family: "Inter", "Hiragino Kaku Gothic ProN", sans-serif;
+    font-family: "Inter", "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
     background: #ffffff;
@@ -119,10 +119,39 @@
     border-radius: 12px;
   }
   .leaflet-popup-content{
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", "Noto Sans JP", sans-serif;
     font-size: .82rem;
     color: var(--ink);
     margin: 10px 14px;
+  }
+  .pop-count{
+    margin-top: 6px;
+    font-size: .78rem;
+    color: var(--ink-soft);
+  }
+  .pop-ac-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 8px;
+    max-height: 140px;
+    overflow-y: auto;
+  }
+  .pop-ac{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: .74rem;
+    padding: 6px 9px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+  }
+  .pop-ac span:first-child{ font-weight: 600; font-family: "JetBrains Mono", monospace; }
+  .pop-ac span:last-child{ color: var(--ink-soft); font-family: "JetBrains Mono", monospace; font-size: .7rem; }
+  .pop-empty{
+    margin-top: 8px;
+    font-size: .74rem;
+    color: var(--ink-soft);
   }
 
   .stats-card{
@@ -136,76 +165,70 @@
   }
   .grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
   @media screen and (max-width: 720px){
+    .grid{ grid-template-columns: repeat(3, 1fr); }
+  }
+  @media screen and (max-width: 480px){
     .grid{ grid-template-columns: repeat(2, 1fr); }
   }
-  @media screen and (max-width: 420px){
+  @media screen and (max-width: 340px){
     .grid{ grid-template-columns: 1fr; }
   }
   .card{
-    padding: 22px 22px 18px;
+    padding: 20px 14px;
     border-right: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
     transition: background .3s ease;
+    text-align: center;
   }
   .card:hover{
     background: var(--glass-strong);
   }
   .grid > .card:last-child{ border-right: none; }
   @media screen and (max-width: 720px){
+    .grid > .card:nth-child(3n){ border-right: none; }
+  }
+  @media screen and (max-width: 480px){
+    .grid > .card:nth-child(3n){ border-right: 1px solid var(--line); }
     .grid > .card:nth-child(2n){ border-right: none; }
   }
-  @media screen and (max-width: 420px){
+  @media screen and (max-width: 340px){
     .grid > .card{ border-right: none; }
   }
   .card__top{
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 2px;
+    flex-direction: column;
+    align-items: center;
   }
   .card__name{
-    font-size: .8rem;
+    font-size: .76rem;
     font-weight: 600;
     color: #3a4a5c;
   }
   .card__pref{
-    font-size: .68rem;
+    font-size: .64rem;
     color: var(--ink-soft);
     display: block;
     margin-top: 1px;
   }
   .card__count{
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--count-color, var(--accent));
     font-family: "JetBrains Mono", monospace;
     line-height: 1;
+    margin-top: 10px;
   }
   .card__count.zero{ color: #b7c3cf; }
   .card__label{
-    font-size: .68rem;
+    font-size: .6rem;
     letter-spacing: .06em;
     text-transform: uppercase;
     color: var(--ink-soft);
-    margin: 10px 0 16px;
+    margin-top: 6px;
   }
-
-  .ac-list{ display: flex; flex-direction: column; gap: 7px; }
-  .ac{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    font-size: .76rem;
-    padding: 9px 12px;
-    background: transparent;
-    border-radius: 10px;
-    border: 1px solid var(--line);
-  }
-  .ac__call{ color: var(--ink); font-weight: 600; font-family: "JetBrains Mono", monospace; }
-  .ac__meta{ color: var(--ink-soft); font-family: "JetBrains Mono", monospace; font-size: .72rem; }
 
   .empty{
     font-size: .76rem;
@@ -341,10 +364,12 @@
 
 <script>
 const BASE_LABELS = {
-  kadena:  { name: "嘉手納基地", pref: "沖縄県", lat: 26.3519, lon: 127.7689, color: "#4a8fd1" },
-  yokota:  { name: "横田基地", pref: "東京都", lat: 35.7485, lon: 139.3486, color: "#3fae8f" },
-  iwakuni: { name: "岩国基地", pref: "山口県", lat: 34.1436, lon: 132.2356, color: "#d98a3d" },
-  misawa:  { name: "三沢基地", pref: "青森県", lat: 40.7032, lon: 141.3686, color: "#8b6fd9" },
+  kadena:  { name: "嘉手納基地", pref: "沖縄県", address: "沖縄県中頭郡嘉手納町", lat: 26.3519, lon: 127.7689, color: "#4a8fd1" },
+  yokota:  { name: "横田基地", pref: "東京都", address: "東京都福生市大字福生", lat: 35.7485, lon: 139.3486, color: "#3fae8f" },
+  iwakuni: { name: "岩国基地", pref: "山口県", address: "山口県岩国市元町3丁目", lat: 34.1436, lon: 132.2356, color: "#d98a3d" },
+  misawa:  { name: "三沢基地", pref: "青森県", address: "青森県三沢市古間木", lat: 40.7032, lon: 141.3686, color: "#8b6fd9" },
+  futenma: { name: "普天間基地", pref: "沖縄県", address: "沖縄県宜野湾市野嵩", lat: 26.2706, lon: 127.7556, color: "#d1538f" },
+  atsugi:  { name: "厚木基地", pref: "神奈川県", address: "神奈川県大和市上草柳", lat: 35.4544, lon: 139.4500, color: "#c2a33e" },
 };
 
 function hexToRgba(hex, alpha){
@@ -358,12 +383,18 @@ const map = L.map("map", {
   zoomControl: false,
   attributionControl: true,
   scrollWheelZoom: false,
-}).setView([35.5, 136.0], 5);
+});
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: '&copy; OpenStreetMap contributors',
   maxZoom: 10,
 }).addTo(map);
+
+// 沖縄〜青森まで、すべての基地が最初から収まるように表示範囲を合わせる
+const baseBounds = L.latLngBounds(
+  Object.values(BASE_LABELS).map(b => [b.lat, b.lon])
+);
+map.fitBounds(baseBounds, { padding: [30, 30] });
 
 const markers = {};
 for(const key of Object.keys(BASE_LABELS)){
@@ -374,7 +405,7 @@ for(const key of Object.keys(BASE_LABELS)){
     iconSize: [30, 30],
   });
   const m = L.marker([b.lat, b.lon], { icon }).addTo(map);
-  m.bindPopup(`<strong>${b.name}</strong><br>${b.pref}`);
+  m.bindPopup(`<strong>${b.name}</strong><br>${b.address}`);
   markers[key] = m;
 }
 
@@ -411,31 +442,31 @@ async function load(){
           html: `<div class="base-pin ${count === 0 ? "zero" : ""}" style="${pinStyle}">${count}</div>`,
           iconSize: [size, size],
         }));
-        markers[key].setPopupContent(`<strong>${label.name}</strong><br>${label.pref}<br>検知: ${count}機`);
+        const acHtml = aircraft.length
+          ? aircraft.map(a => `
+              <div class="pop-ac">
+                <span>${(a.callsign || a.icao24 || "----").trim() || "----"}</span>
+                <span>${a.on_ground ? "地上" : (a.alt != null ? Math.round(a.alt) + "m" : "-")}</span>
+              </div>
+            `).join("")
+          : `<div class="pop-empty">現在、検知なし</div>`;
+
+        markers[key].setPopupContent(`
+          <strong>${label.name}</strong><br>${label.address}<br>
+          <div class="pop-count">検知: ${count}機</div>
+          <div class="pop-ac-list">${acHtml}</div>
+        `);
       }
 
       const card = document.createElement("div");
       card.className = "card";
-
-      const acHtml = aircraft.length
-        ? aircraft.map(a => `
-            <div class="ac">
-              <span class="ac__call">${(a.callsign || a.icao24 || "----").trim() || "----"}</span>
-              <span class="ac__meta">${a.on_ground ? "地上" : (a.alt != null ? Math.round(a.alt) + "m" : "-")}</span>
-            </div>
-          `).join("")
-        : `<div class="empty">現在、検知なし</div>`;
-
       card.innerHTML = `
         <div class="card__top">
-          <div>
-            <span class="card__name">${label.name}</span>
-            <span class="card__pref">${label.pref}</span>
-          </div>
+          <span class="card__name">${label.name}</span>
+          <span class="card__pref">${label.pref}</span>
           <span class="card__count ${count === 0 ? "zero" : ""}" style="${count === 0 ? "" : `--count-color:${label.color};`}">${count}</span>
+          <span class="card__label">検知機数</span>
         </div>
-        <div class="card__label">検知機数</div>
-        <div class="ac-list">${acHtml}</div>
       `;
       grid.appendChild(card);
     }
