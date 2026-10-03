@@ -418,6 +418,16 @@
     </div>
   </div>
 
+  <div class="section-head" style="margin-top: -10px;">
+    <div></div>
+    <div class="tabs" id="categoryTabs">
+      <button class="tab active" data-category="all">全体</button>
+      <button class="tab" data-category="civilian">旅客便</button>
+      <button class="tab" data-category="other">それ以外</button>
+    </div>
+  </div>
+  <div class="note" style="margin: -4px 0 14px;">「それ以外」は、旅客便と判定できなかった機体(軍用機の可能性があるものを含む、不明機全般)です。分類は完全ではありません。</div>
+
   <div class="chart-card">
     <div class="chart-wrap">
       <canvas id="trendChart"></canvas>
@@ -624,6 +634,13 @@ setInterval(load, 5 * 60 * 1000);
 let summaryData = [];
 let trendChart = null;
 let currentRange = "day";
+let currentCategory = "all";
+
+function bucketFor(baseEntry, category){
+  if(!baseEntry) return null;
+  if(category === "all") return baseEntry;
+  return baseEntry[category] || null;
+}
 
 function isoWeekKey(dateStr){
   const d = new Date(dateStr + "T00:00:00Z");
@@ -639,7 +656,7 @@ function monthKey(dateStr){
   return dateStr.slice(0, 7); // YYYY-MM
 }
 
-function groupBy(range){
+function groupBy(range, category){
   const groups = {};
   for(const day of summaryData){
     let key;
@@ -652,7 +669,8 @@ function groupBy(range){
       for(const b of Object.keys(BASE_LABELS)) groups[key][b] = { total: 0, samples: 0 };
     }
     for(const b of Object.keys(BASE_LABELS)){
-      const src = day.bases && day.bases[b];
+      const baseEntry = day.bases && day.bases[b];
+      const src = bucketFor(baseEntry, category);
       if(src){
         groups[key][b].total += src.total || 0;
         groups[key][b].samples += src.samples || 0;
@@ -663,8 +681,8 @@ function groupBy(range){
   return { keys, groups };
 }
 
-function buildTrendChart(range){
-  const { keys, groups } = groupBy(range);
+function buildTrendChart(range, category){
+  const { keys, groups } = groupBy(range, category);
   const labels = keys;
   const datasets = Object.keys(BASE_LABELS).map(key => {
     const label = BASE_LABELS[key];
@@ -712,10 +730,27 @@ function buildTrendChart(range){
 
 function setTrendRange(range){
   currentRange = range;
-  document.querySelectorAll(".tab").forEach(t => {
+  document.querySelectorAll("#tabs .tab").forEach(t => {
     t.classList.toggle("active", t.dataset.range === range);
   });
-  buildTrendChart(range);
+  buildTrendChart(currentRange, currentCategory);
+}
+
+function setTrendCategory(category){
+  currentCategory = category;
+  document.querySelectorAll("#categoryTabs .tab").forEach(t => {
+    t.classList.toggle("active", t.dataset.category === category);
+  });
+  buildTrendChart(currentRange, currentCategory);
+}
+
+const categoryTabsEl = document.getElementById("categoryTabs");
+if(categoryTabsEl){
+  categoryTabsEl.addEventListener("click", (e) => {
+    const btn = e.target.closest(".tab");
+    if(!btn) return;
+    setTrendCategory(btn.dataset.category);
+  });
 }
 
 const tabsEl = document.getElementById("tabs");
@@ -738,7 +773,7 @@ async function loadTrend(){
       return;
     }
     note.textContent = `${summaryData[0].date} 〜 ${summaryData[summaryData.length - 1].date} のデータ`;
-    buildTrendChart(currentRange);
+    buildTrendChart(currentRange, currentCategory);
   }catch(err){
     note.innerHTML = '<span class="error">データを読み込めませんでした(' + err.message + ')</span>';
   }
