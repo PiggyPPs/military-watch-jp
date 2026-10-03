@@ -1,32 +1,43 @@
 {
-  "timestamp": "2026-10-03T07:46:28.032844+00:00",
+  "timestamp": "2026-10-03T08:17:33.708616+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
-    },
-    "yokota": {
       "count": 2,
       "aircraft": [
         {
-          "icao24": "86d5a1",
-          "callsign": "APJ365",
+          "icao24": "84bacf",
+          "callsign": "APJ506",
           "country": "Japan",
-          "lon": 139.4471,
-          "lat": 35.7653,
-          "alt": 8481.06,
+          "lon": 127.6862,
+          "lat": 26.4202,
+          "alt": 3009.9,
           "on_ground": false,
-          "speed": 182.35
+          "speed": 149.6
         },
         {
-          "icao24": "86e8ac",
-          "callsign": "ANA297",
+          "icao24": "868316",
+          "callsign": "ANA475",
           "country": "Japan",
-          "lon": 139.429,
-          "lat": 35.7764,
-          "alt": 6370.32,
+          "lon": 127.8287,
+          "lat": 26.2059,
+          "alt": 1920.24,
           "on_ground": false,
-          "speed": 197.17
+          "speed": 146.19
+        }
+      ]
+    },
+    "yokota": {
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "a09aac",
+          "callsign": "N138UA",
+          "country": "United States",
+          "lon": 139.3273,
+          "lat": 35.7665,
+          "alt": 411.48,
+          "on_ground": false,
+          "speed": 50.35
         }
       ]
     },
@@ -35,19 +46,8 @@
       "aircraft": []
     },
     "misawa": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "8681ba",
-          "callsign": "SKY720",
-          "country": "Japan",
-          "lon": 141.4519,
-          "lat": 40.6184,
-          "alt": 11582.4,
-          "on_ground": false,
-          "speed": 208.8
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
