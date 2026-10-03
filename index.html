@@ -671,6 +671,88 @@ async function loadTrend(){
 }
 
 loadTrend();
+
+// ---- 最近の検知履歴 ----
+function utcDateStr(d){
+  return d.toISOString().slice(0, 10); // YYYY-MM-DD (UTC基準。収集スクリプトと合わせる)
+}
+
+async function fetchJsonl(dateStr){
+  try{
+    const res = await fetch(`data/${dateStr}.jsonl?_=${Date.now()}`);
+    if(!res.ok) return [];
+    const text = await res.text();
+    return text
+      .split("\n")
+      .map(line => line.trim())
+      .filter(Boolean)
+      .map(line => {
+        try{ return JSON.parse(line); }catch(e){ return null; }
+      })
+      .filter(Boolean);
+  }catch(e){
+    return [];
+  }
+}
+
+function fmtHistTime(iso){
+  const d = new Date(iso);
+  return d.toLocaleString("ja-JP", { timeZone: "Asia/Tokyo", hour12: false, month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+}
+
+async function loadHistory(){
+  const list = document.getElementById("historyList");
+  try{
+    const now = new Date();
+    const yesterday = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+    const [todayRecords, yesterdayRecords] = await Promise.all([
+      fetchJsonl(utcDateStr(now)),
+      fetchJsonl(utcDateStr(yesterday)),
+    ]);
+    const records = [...yesterdayRecords, ...todayRecords];
+
+    const rows = [];
+    for(const rec of records){
+      for(const key of Object.keys(BASE_LABELS)){
+        const base = rec.bases && rec.bases[key];
+        if(!base || !base.aircraft) continue;
+        for(const a of base.aircraft){
+          rows.push({
+            time: rec.timestamp,
+            baseKey: key,
+            callsign: (a.callsign || a.icao24 || "----").trim() || "----",
+            alt: a.on_ground ? "地上" : (a.alt != null ? Math.round(a.alt) + "m" : "-"),
+          });
+        }
+      }
+    }
+
+    rows.sort((a, b) => new Date(b.time) - new Date(a.time));
+    const latest = rows.slice(0, 30);
+
+    if(!latest.length){
+      list.innerHTML = `<div class="hist-row">まだ検知履歴がありません。</div>`;
+      return;
+    }
+
+    list.innerHTML = latest.map(r => {
+      const label = BASE_LABELS[r.baseKey];
+      return `
+        <div class="hist-row">
+          <span class="hist-time">${fmtHistTime(r.time)}</span>
+          <span class="hist-base"><span class="dot" style="background:${label.color}"></span>${label.name}</span>
+          <span class="hist-call">${r.callsign}</span>
+          <span class="hist-meta">${r.alt}</span>
+        </div>
+      `;
+    }).join("");
+  }catch(err){
+    list.innerHTML = `<div class="hist-row"><span class="error">履歴を読み込めませんでした(${err.message})</span></div>`;
+  }
+}
+
+loadHistory();
+setInterval(loadHistory, 5 * 60 * 1000);
 </script>
 
 </body>
