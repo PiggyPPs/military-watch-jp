@@ -575,11 +575,14 @@ async function load(){
       const aircraft = base ? base.aircraft : [];
       const label = BASE_LABELS[key];
 
-      // 地図上のピンも更新
+      const todayBase = todaySummary && todaySummary.bases ? todaySummary.bases[key] : null;
+      const todayCount = todayBase ? todayBase.detected_runs : 0;
+
+      // 地図上のピンも更新(本日の検知回数で表示)
       if(markers[key]){
-        markers[key]._count = count;
-        markers[key].setZIndexOffset(count * 100 + (key === selectedBase ? 2000 : 0)); // 検知数がある方・選択中を手前に表示
-        renderPin(key, count);
+        markers[key]._count = todayCount;
+        markers[key].setZIndexOffset(todayCount * 100 + (key === selectedBase ? 2000 : 0)); // 検知数がある方・選択中を手前に表示
+        renderPin(key, todayCount);
         const acHtml = aircraft.length
           ? aircraft.map(a => `
               <div class="pop-ac">
@@ -591,13 +594,10 @@ async function load(){
 
         markers[key].setPopupContent(`
           <strong>${label.name}</strong><br>${label.address}<br>
-          <div class="pop-count">検知: ${count}機</div>
+          <div class="pop-count">本日: ${todayCount}回検知</div>
           <div class="pop-ac-list">${acHtml}</div>
         `);
       }
-
-      const todayBase = todaySummary && todaySummary.bases ? todaySummary.bases[key] : null;
-      const todayCount = todayBase ? todayBase.detected_runs : 0;
 
       const card = document.createElement("div");
       card.className = "card" + (key === selectedBase ? " card--selected" : "");
