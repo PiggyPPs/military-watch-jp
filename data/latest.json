@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-03T14:47:42.600697+00:00",
+  "timestamp": "2026-10-03T18:55:00.540348+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -10,20 +10,8 @@
       "aircraft": []
     },
     "iwakuni": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "86dc60",
-          "callsign": "SJO425",
-          "country": "Japan",
-          "lon": 132.1002,
-          "lat": 34.0704,
-          "alt": 5189.22,
-          "on_ground": false,
-          "speed": 180.19,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "misawa": {
       "count": 0,
