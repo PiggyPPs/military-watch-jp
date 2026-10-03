@@ -10,6 +10,10 @@ BASES = {
     "iwakuni": {"lat": 34.1436, "lon": 132.2356},
     "misawa": {"lat": 40.7032, "lon": 141.3686},
 }
+PAD = 0.15
+
+SUMMARY_PATH = "data/summary.json"
+
 
 def fetch_box(lat, lon):
     lamin, lamax = lat - PAD, lat + PAD
@@ -24,9 +28,47 @@ def fetch_box(lat, lon):
     with urllib.request.urlopen(req, timeout=30) as res:
         return json.load(res)
 
+
+def load_summary():
+    if os.path.exists(SUMMARY_PATH):
+        with open(SUMMARY_PATH, "r", encoding="utf-8") as f:
+            try:
+                return json.load(f)
+            except Exception:
+                return []
+    return []
+
+
+def update_summary(summary, date_str, base_counts):
+    # summary: list of {"date": "...", "bases": {name: {total, samples, max, detected_runs}}}
+    day = None
+    for entry in summary:
+        if entry["date"] == date_str:
+            day = entry
+            break
+    if day is None:
+        day = {"date": date_str, "bases": {}}
+        summary.append(day)
+
+    for name, count in base_counts.items():
+        b = day["bases"].setdefault(
+            name, {"total": 0, "samples": 0, "max": 0, "detected_runs": 0}
+        )
+        b["total"] += count
+        b["samples"] += 1
+        b["max"] = max(b["max"], count)
+        if count > 0:
+            b["detected_runs"] += 1
+
+    # 古くなりすぎたデータは軽くするため、直近400日分だけ保持
+    summary.sort(key=lambda e: e["date"])
+    return summary[-400:]
+
+
 def main():
     now = datetime.now(timezone.utc)
     record = {"timestamp": now.isoformat(), "bases": {}}
+    base_counts = {}
 
     for name, pos in BASES.items():
         try:
@@ -53,7 +95,8 @@ def main():
             "count": len(aircraft),
             "aircraft": aircraft,
         }
-        time.sleep(2)  # 連続アクセスを避けるための間隔
+        base_counts[name] = len(aircraft)
+        time.sleep(2)
 
     date_str = now.strftime("%Y-%m-%d")
     os.makedirs("data", exist_ok=True)
@@ -63,6 +106,12 @@ def main():
 
     with open("data/latest.json", "w", encoding="utf-8") as f:
         json.dump(record, f, ensure_ascii=False, indent=2)
+
+    summary = load_summary()
+    summary = update_summary(summary, date_str, base_counts)
+    with open(SUMMARY_PATH, "w", encoding="utf-8") as f:
+        json.dump(summary, f, ensure_ascii=False, indent=2)
+
 
 if __name__ == "__main__":
     main()
