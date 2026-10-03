@@ -539,11 +539,30 @@ function fmtTime(iso){
   return d.toLocaleString("ja-JP", { timeZone: "Asia/Tokyo", hour12: false }) + " (JST)";
 }
 
+function utcDateStrNow(){
+  return new Date().toISOString().slice(0, 10);
+}
+
+async function fetchTodaySummary(){
+  try{
+    const res = await fetch("data/summary.json?_=" + Date.now());
+    if(!res.ok) return null;
+    const summary = await res.json();
+    const todayStr = utcDateStrNow();
+    return summary.find(e => e.date === todayStr) || null;
+  }catch(e){
+    return null;
+  }
+}
+
 async function load(){
   const grid = document.getElementById("grid");
   const updated = document.getElementById("updated");
   try{
-    const res = await fetch("data/latest.json?_=" + Date.now());
+    const [res, todaySummary] = await Promise.all([
+      fetch("data/latest.json?_=" + Date.now()),
+      fetchTodaySummary(),
+    ]);
     if(!res.ok) throw new Error("data not found");
     const data = await res.json();
 
@@ -577,6 +596,9 @@ async function load(){
         `);
       }
 
+      const todayBase = todaySummary && todaySummary.bases ? todaySummary.bases[key] : null;
+      const todayCount = todayBase ? todayBase.detected_runs : 0;
+
       const card = document.createElement("div");
       card.className = "card" + (key === selectedBase ? " card--selected" : "");
       card.dataset.key = key;
@@ -584,8 +606,8 @@ async function load(){
         <div class="card__top">
           <span class="card__name">${label.name}</span>
           <span class="card__pref">${label.pref}</span>
-          <span class="card__count ${count === 0 ? "zero" : ""}" style="${count === 0 ? "" : `--count-color:${label.color};`}">${count}</span>
-          <span class="card__label">検知機数</span>
+          <span class="card__count ${todayCount === 0 ? "zero" : ""}" style="${todayCount === 0 ? "" : `--count-color:${label.color};`}">${todayCount}</span>
+          <span class="card__label">本日の検知回数</span>
         </div>
       `;
       grid.appendChild(card);
