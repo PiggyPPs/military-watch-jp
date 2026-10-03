@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/chart.js@4/dist/chart.umd.js"></script>
 <style>
   :root{
     --sky-1: #eaf3fb;
@@ -224,6 +225,76 @@
   footer a:hover{ text-decoration: underline; }
 
   .error{ color: #c47a4f; font-size: .8rem; }
+
+  .section-head{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 36px 0 14px;
+  }
+  .section-head h2{
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #243040;
+    margin: 0;
+  }
+  .tabs{
+    display: inline-flex;
+    gap: 4px;
+    background: var(--accent-soft);
+    padding: 4px;
+    border-radius: 999px;
+  }
+  .tab{
+    border: none;
+    background: transparent;
+    padding: 7px 16px;
+    font-size: .78rem;
+    font-weight: 600;
+    color: var(--accent);
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .tab.active{
+    background: var(--accent);
+    color: #fff;
+  }
+  .chart-card{
+    background: var(--glass);
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 22px;
+    box-shadow: var(--shadow);
+  }
+  .chart-wrap{ position: relative; height: 300px; }
+  .legend{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 14px;
+    font-size: .76rem;
+    color: var(--ink-soft);
+  }
+  .legend span{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .legend .dot{
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .note{
+    font-size: .76rem;
+    color: var(--ink-soft);
+    margin-top: 6px;
+  }
 </style>
 </head>
 <body>
@@ -242,6 +313,23 @@
 
   <div class="stats-card">
     <div class="grid" id="grid"></div>
+  </div>
+
+  <div class="section-head">
+    <h2>検知数の推移</h2>
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-range="day">日</button>
+      <button class="tab" data-range="week">週</button>
+      <button class="tab" data-range="month">月</button>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-wrap">
+      <canvas id="trendChart"></canvas>
+    </div>
+    <div class="legend" id="legend"></div>
+    <div class="note" id="trendNote">読み込み中...</div>
   </div>
 
   <footer>
@@ -358,6 +446,132 @@ async function load(){
 
 load();
 setInterval(load, 5 * 60 * 1000);
+
+// ---- 検知数の推移グラフ ----
+let summaryData = [];
+let trendChart = null;
+let currentRange = "day";
+
+function isoWeekKey(dateStr){
+  const d = new Date(dateStr + "T00:00:00Z");
+  const target = new Date(d.valueOf());
+  const dayNr = (d.getUTCDay() + 6) % 7;
+  target.setUTCDate(target.getUTCDate() - dayNr + 3);
+  const firstThursday = new Date(Date.UTC(target.getUTCFullYear(), 0, 4));
+  const week = 1 + Math.round(((target - firstThursday) / 86400000 - 3 + ((firstThursday.getUTCDay() + 6) % 7)) / 7);
+  return `${target.getUTCFullYear()}-W${String(week).padStart(2, "0")}`;
+}
+
+function monthKey(dateStr){
+  return dateStr.slice(0, 7); // YYYY-MM
+}
+
+function groupBy(range){
+  const groups = {};
+  for(const day of summaryData){
+    let key;
+    if(range === "day") key = day.date;
+    else if(range === "week") key = isoWeekKey(day.date);
+    else key = monthKey(day.date);
+
+    if(!groups[key]){
+      groups[key] = {};
+      for(const b of Object.keys(BASE_LABELS)) groups[key][b] = { total: 0, samples: 0 };
+    }
+    for(const b of Object.keys(BASE_LABELS)){
+      const src = day.bases && day.bases[b];
+      if(src){
+        groups[key][b].total += src.total || 0;
+        groups[key][b].samples += src.samples || 0;
+      }
+    }
+  }
+  const keys = Object.keys(groups).sort();
+  return { keys, groups };
+}
+
+function buildTrendChart(range){
+  const { keys, groups } = groupBy(range);
+  const labels = keys;
+  const datasets = Object.keys(BASE_LABELS).map(key => {
+    const label = BASE_LABELS[key];
+    const data = keys.map(k => {
+      const g = groups[k][key];
+      return g.samples > 0 ? Math.round((g.total / g.samples) * 100) / 100 : 0;
+    });
+    return {
+      label: label.name,
+      data,
+      borderColor: label.color,
+      backgroundColor: label.color + "33",
+      tension: 0.3,
+      pointRadius: 3,
+      borderWidth: 2,
+    };
+  });
+
+  const canvas = document.getElementById("trendChart");
+  if(!canvas) return;
+  if(trendChart) trendChart.destroy();
+  const ctx = canvas.getContext("2d");
+  trendChart = new Chart(ctx, {
+    type: "line",
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { display: false }, ticks: { color: "#7f8fa0", font: { size: 11 } } },
+        y: { beginAtZero: true, grid: { color: "rgba(60,90,120,0.08)" }, ticks: { color: "#7f8fa0", font: { size: 11 } } },
+      },
+    },
+  });
+
+  const legend = document.getElementById("legend");
+  if(legend){
+    legend.innerHTML = Object.values(BASE_LABELS).map(l =>
+      `<span><span class="dot" style="background:${l.color}"></span>${l.name}</span>`
+    ).join("");
+  }
+}
+
+function setTrendRange(range){
+  currentRange = range;
+  document.querySelectorAll(".tab").forEach(t => {
+    t.classList.toggle("active", t.dataset.range === range);
+  });
+  buildTrendChart(range);
+}
+
+const tabsEl = document.getElementById("tabs");
+if(tabsEl){
+  tabsEl.addEventListener("click", (e) => {
+    const btn = e.target.closest(".tab");
+    if(!btn) return;
+    setTrendRange(btn.dataset.range);
+  });
+}
+
+async function loadTrend(){
+  const note = document.getElementById("trendNote");
+  try{
+    const res = await fetch("data/summary.json?_=" + Date.now());
+    if(!res.ok) throw new Error("summary.json が見つかりません");
+    summaryData = await res.json();
+    if(!summaryData.length){
+      note.textContent = "まだデータが十分にありません。しばらくしてから見てください。";
+      return;
+    }
+    note.textContent = `${summaryData[0].date} 〜 ${summaryData[summaryData.length - 1].date} のデータ`;
+    buildTrendChart(currentRange);
+  }catch(err){
+    note.innerHTML = '<span class="error">データを読み込めませんでした(' + err.message + ')</span>';
+  }
+}
+
+loadTrend();
 </script>
 
 </body>
