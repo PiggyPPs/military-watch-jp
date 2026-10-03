@@ -247,8 +247,8 @@ const map = L.map("map", {
   scrollWheelZoom: false,
 }).setView([35.5, 136.0], 5);
 
-L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-  attribution: '&copy; OpenStreetMap, &copy; CARTO',
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: '&copy; OpenStreetMap contributors',
   maxZoom: 10,
 }).addTo(map);
 
