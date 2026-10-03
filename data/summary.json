@@ -3,28 +3,28 @@
     "date": "2026-10-03",
     "bases": {
       "kadena": {
-        "total": 1,
-        "samples": 1,
-        "max": 1,
-        "detected_runs": 1
+        "total": 3,
+        "samples": 2,
+        "max": 2,
+        "detected_runs": 2
       },
       "yokota": {
         "total": 0,
-        "samples": 1,
+        "samples": 2,
         "max": 0,
         "detected_runs": 0
       },
       "iwakuni": {
         "total": 0,
-        "samples": 1,
+        "samples": 2,
         "max": 0,
         "detected_runs": 0
       },
       "misawa": {
-        "total": 1,
-        "samples": 1,
+        "total": 2,
+        "samples": 2,
         "max": 1,
-        "detected_runs": 1
+        "detected_runs": 2
       }
     }
   }
