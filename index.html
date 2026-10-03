@@ -1,1 +1,335 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Military Watch JP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  :root{
+    --sky-1: #eaf3fb;
+    --sky-2: #dce9f6;
+    --sky-3: #cfe3f3;
+    --ink: #2b3744;
+    --ink-soft: #7f8fa0;
+    --glass: rgba(255,255,255,0);
+    --glass-strong: rgba(255,255,255,0.08);
+    --line: rgba(60, 90, 120, 0.14);
+    --accent: #4a8fd1;
+    --accent-soft: rgba(74, 143, 209, 0.14);
+    --shadow: 0 20px 50px -28px rgba(40, 70, 100, 0.35);
+  }
+  *{ box-sizing: border-box; }
+  html, body{ height: 100%; }
+  body{
+    margin: 0;
+    min-height: 100vh;
+    color: var(--ink);
+    font-family: "Inter", "Hiragino Kaku Gothic ProN", sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    background: #ffffff;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .wrap{ position: relative; z-index: 1; }
+  .mono{ font-family: "JetBrains Mono", monospace; }
 
+  .wrap{ max-width: 880px; margin: 0 auto; padding: 64px 22px 90px; }
+
+  header{ margin-bottom: 44px; }
+  .eyebrow{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: .72rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  .eyebrow .dot{
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%, 100% { opacity: 1; }
+    50% { opacity: .3; }
+  }
+  h1{
+    font-size: clamp(1.7rem, 4vw, 2.3rem);
+    font-weight: 700;
+    letter-spacing: -.01em;
+    margin: 0 0 10px;
+    color: #243040;
+  }
+  .subtitle{ color: var(--ink-soft); font-size: .92rem; max-width: 520px; }
+  .updated{
+    margin-top: 18px;
+    font-size: .76rem;
+    color: var(--ink-soft);
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  .map-card{
+    background: var(--glass);
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 18px;
+  }
+  #map{
+    width: 100%;
+    height: 340px;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .leaflet-container{ background: transparent; font-family: inherit; }
+  .base-pin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
+    box-shadow: 0 0 0 6px rgba(74,143,209,0.18), 0 6px 16px -4px rgba(40,70,100,0.4);
+  }
+  .base-pin.zero{
+    background: #b7c3cf;
+    box-shadow: 0 0 0 6px rgba(183,195,207,0.18), 0 6px 16px -4px rgba(40,70,100,0.25);
+  }
+  .leaflet-popup-content-wrapper{
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+  }
+  .leaflet-popup-content{
+    font-family: "Inter", sans-serif;
+    font-size: .82rem;
+    color: var(--ink);
+    margin: 10px 14px;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+  }
+  .card{
+    background: var(--glass);
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 24px 24px 20px;
+    box-shadow: var(--shadow);
+    transition: transform .3s ease, background .3s ease;
+  }
+  .card:hover{
+    transform: translateY(-3px);
+    background: var(--glass-strong);
+  }
+  .card__top{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 2px;
+  }
+  .card__name{
+    font-size: .8rem;
+    font-weight: 600;
+    color: #3a4a5c;
+  }
+  .card__pref{
+    font-size: .68rem;
+    color: var(--ink-soft);
+    display: block;
+    margin-top: 1px;
+  }
+  .card__count{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--accent);
+    font-family: "JetBrains Mono", monospace;
+    line-height: 1;
+  }
+  .card__count.zero{ color: #b7c3cf; }
+  .card__label{
+    font-size: .68rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 10px 0 16px;
+  }
+
+  .ac-list{ display: flex; flex-direction: column; gap: 7px; }
+  .ac{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: .76rem;
+    padding: 9px 12px;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+  }
+  .ac__call{ color: var(--ink); font-weight: 600; font-family: "JetBrains Mono", monospace; }
+  .ac__meta{ color: var(--ink-soft); font-family: "JetBrains Mono", monospace; font-size: .72rem; }
+
+  .empty{
+    font-size: .76rem;
+    color: var(--ink-soft);
+    padding: 4px 0 2px;
+  }
+
+  footer{
+    margin-top: 56px;
+    font-size: .74rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 22px;
+    line-height: 2;
+  }
+  footer a{ color: var(--accent); text-decoration: none; }
+  footer a:hover{ text-decoration: underline; }
+
+  .error{ color: #c47a4f; font-size: .8rem; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow"><span class="dot"></span>Live Watch</div>
+    <h1>Military Watch JP</h1>
+    <div class="subtitle">在日米軍基地周辺の航空機の動きを、公開されているADS-Bデータから静かに定点観測しています。</div>
+    <div class="updated" id="updated">読み込み中...</div>
+  </header>
+
+  <div class="map-card">
+    <div id="map"></div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <footer>
+    データ元: OpenSky Network(公開ADS-B情報) / 30分おきに自動更新<br>
+    表示される機体は民間機を含む場合があります。軍用機の識別を保証するものではありません。<br>
+    <a href="https://piggy.pink" target="_blank" rel="noopener">piggy.pink へ戻る</a>
+  </footer>
+</div>
+
+<script>
+const BASE_LABELS = {
+  kadena:  { name: "嘉手納基地", pref: "沖縄県", lat: 26.3519, lon: 127.7689 },
+  yokota:  { name: "横田基地", pref: "東京都", lat: 35.7485, lon: 139.3486 },
+  iwakuni: { name: "岩国基地", pref: "山口県", lat: 34.1436, lon: 132.2356 },
+  misawa:  { name: "三沢基地", pref: "青森県", lat: 40.7032, lon: 141.3686 },
+};
+
+const map = L.map("map", {
+  zoomControl: false,
+  attributionControl: true,
+  scrollWheelZoom: false,
+}).setView([35.5, 136.0], 5);
+
+L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+  attribution: '&copy; OpenStreetMap, &copy; CARTO',
+  maxZoom: 10,
+}).addTo(map);
+
+const markers = {};
+for(const key of Object.keys(BASE_LABELS)){
+  const b = BASE_LABELS[key];
+  const icon = L.divIcon({
+    className: "",
+    html: `<div class="base-pin zero" style="width:30px;height:30px;font-size:.75rem;">0</div>`,
+    iconSize: [30, 30],
+  });
+  const m = L.marker([b.lat, b.lon], { icon }).addTo(map);
+  m.bindPopup(`<strong>${b.name}</strong><br>${b.pref}`);
+  markers[key] = m;
+}
+
+function fmtTime(iso){
+  const d = new Date(iso);
+  return d.toLocaleString("ja-JP", { timeZone: "Asia/Tokyo", hour12: false }) + " (JST)";
+}
+
+async function load(){
+  const grid = document.getElementById("grid");
+  const updated = document.getElementById("updated");
+  try{
+    const res = await fetch("data/latest.json?_=" + Date.now());
+    if(!res.ok) throw new Error("data not found");
+    const data = await res.json();
+
+    updated.textContent = "最終更新: " + fmtTime(data.timestamp);
+
+    grid.innerHTML = "";
+    for(const key of Object.keys(BASE_LABELS)){
+      const base = data.bases && data.bases[key];
+      const count = base ? base.count : 0;
+      const aircraft = base ? base.aircraft : [];
+      const label = BASE_LABELS[key];
+
+      if(markers[key]){
+        const size = Math.min(50, 26 + count * 5);
+        markers[key].setIcon(L.divIcon({
+          className: "",
+          html: `<div class="base-pin ${count === 0 ? "zero" : ""}" style="width:${size}px;height:${size}px;font-size:${count === 0 ? ".7rem" : ".85rem"};">${count}</div>`,
+          iconSize: [size, size],
+        }));
+        markers[key].setPopupContent(`<strong>${label.name}</strong><br>${label.pref}<br>検知: ${count}機`);
+      }
+
+      const card = document.createElement("div");
+      card.className = "card";
+
+      const acHtml = aircraft.length
+        ? aircraft.map(a => `
+            <div class="ac">
+              <span class="ac__call">${(a.callsign || a.icao24 || "----").trim() || "----"}</span>
+              <span class="ac__meta">${a.on_ground ? "地上" : (a.alt != null ? Math.round(a.alt) + "m" : "-")}</span>
+            </div>
+          `).join("")
+        : `<div class="empty">現在、検知なし</div>`;
+
+      card.innerHTML = `
+        <div class="card__top">
+          <div>
+            <span class="card__name">${label.name}</span>
+            <span class="card__pref">${label.pref}</span>
+          </div>
+          <span class="card__count ${count === 0 ? "zero" : ""}">${count}</span>
+        </div>
+        <div class="card__label">検知機数</div>
+        <div class="ac-list">${acHtml}</div>
+      `;
+      grid.appendChild(card);
+    }
+  }catch(err){
+    updated.innerHTML = '<span class="error">データを読み込めませんでした(' + err.message + ')</span>';
+  }
+}
+
+load();
+setInterval(load, 5 * 60 * 1000);
+</script>
+
+</body>
+</html>
