@@ -328,6 +328,11 @@
     box-shadow: var(--shadow);
     overflow: hidden;
   }
+  .hist-loading{
+    padding: 16px 20px;
+    font-size: .8rem;
+    color: var(--ink-soft);
+  }
   .hist-row{
     display: flex;
     align-items: center;
@@ -414,7 +419,7 @@
   </div>
 
   <div class="history-card">
-    <div id="historyList" class="hist-row">読み込み中...</div>
+    <div id="historyList" class="hist-loading">読み込み中...</div>
   </div>
 
   <footer>
