@@ -380,10 +380,11 @@ function hexToRgba(hex, alpha){
 }
 
 const map = L.map("map", {
-  zoomControl: false,
+  zoomControl: true,
   attributionControl: true,
   scrollWheelZoom: false,
 });
+map.zoomControl.setPosition("bottomright");
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: '&copy; OpenStreetMap contributors',
