@@ -318,6 +318,60 @@
     color: var(--ink-soft);
     margin-top: 6px;
   }
+
+  .history-card{
+    background: var(--glass);
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .hist-row{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 20px;
+    border-bottom: 1px solid var(--line);
+    font-size: .8rem;
+  }
+  .hist-row:last-child{ border-bottom: none; }
+  .hist-time{
+    font-family: "JetBrains Mono", monospace;
+    font-size: .74rem;
+    color: var(--ink-soft);
+    width: 86px;
+    flex-shrink: 0;
+  }
+  .hist-base{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    width: 110px;
+    flex-shrink: 0;
+    font-weight: 600;
+    color: #3a4a5c;
+  }
+  .hist-base .dot{
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .hist-call{
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    flex: 1;
+  }
+  .hist-meta{
+    font-family: "JetBrains Mono", monospace;
+    font-size: .72rem;
+    color: var(--ink-soft);
+  }
+  @media screen and (max-width: 560px){
+    .hist-base{ width: 84px; font-size: .74rem; }
+    .hist-time{ width: 60px; font-size: .68rem; }
+  }
 </style>
 </head>
 <body>
@@ -353,6 +407,14 @@
     </div>
     <div class="legend" id="legend"></div>
     <div class="note" id="trendNote">読み込み中...</div>
+  </div>
+
+  <div class="section-head">
+    <h2>最近の検知履歴</h2>
+  </div>
+
+  <div class="history-card">
+    <div id="historyList" class="hist-row">読み込み中...</div>
   </div>
 
   <footer>
