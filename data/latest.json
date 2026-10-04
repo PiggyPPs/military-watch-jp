@@ -1,9 +1,21 @@
 {
-  "timestamp": "2026-10-04T18:04:29.656345+00:00",
+  "timestamp": "2026-10-04T21:19:28.785359+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "8681b1",
+          "callsign": "SKY590",
+          "country": "Japan",
+          "lon": 127.6593,
+          "lat": 26.49,
+          "alt": 3017.52,
+          "on_ground": false,
+          "speed": 150.06,
+          "category": "civilian"
+        }
+      ]
     },
     "yokota": {
       "count": 0,
