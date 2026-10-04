@@ -1,84 +1,25 @@
 {
-  "timestamp": "2026-10-04T11:07:23.712452+00:00",
+  "timestamp": "2026-10-04T18:04:29.656345+00:00",
   "bases": {
     "kadena": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "86789e",
-          "callsign": "ANA1096",
-          "country": "Japan",
-          "lon": 127.6589,
-          "lat": 26.4663,
-          "alt": 3230.88,
-          "on_ground": false,
-          "speed": 154.16,
-          "category": "civilian"
-        },
-        {
-          "icao24": "868089",
-          "callsign": "SKY597",
-          "country": "Japan",
-          "lon": 127.8256,
-          "lat": 26.2252,
-          "alt": 1615.44,
-          "on_ground": false,
-          "speed": 143.02,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "8678c0",
-          "callsign": "ANA273",
-          "country": "Japan",
-          "lon": 139.2555,
-          "lat": 35.6127,
-          "alt": 5844.54,
-          "on_ground": false,
-          "speed": 182.12,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "846538",
-          "callsign": "",
-          "country": "Japan",
-          "lon": 132.3318,
-          "lat": 34.119,
-          "alt": 1554.48,
-          "on_ground": false,
-          "speed": 113.39,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "misawa": {
       "count": 0,
       "aircraft": []
     },
     "futenma": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "868089",
-          "callsign": "SKY597",
-          "country": "Japan",
-          "lon": 127.8256,
-          "lat": 26.2252,
-          "alt": 1615.44,
-          "on_ground": false,
-          "speed": 143.02,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "atsugi": {
       "count": 0,
