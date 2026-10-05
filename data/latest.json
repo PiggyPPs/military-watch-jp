@@ -1,50 +1,49 @@
 {
-  "timestamp": "2026-10-05T03:18:25.534568+00:00",
+  "timestamp": "2026-10-05T03:49:24.644791+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "a709dc",
-          "callsign": "N55246",
-          "country": "United States",
-          "lon": 127.7832,
-          "lat": 26.3916,
-          "alt": 556.26,
+          "icao24": "84715c",
+          "callsign": "JJP352",
+          "country": "Japan",
+          "lon": 127.6292,
+          "lat": 26.4614,
+          "alt": 2324.1,
           "on_ground": false,
-          "speed": 37.84,
+          "speed": 137.03,
+          "category": "civilian"
+        },
+        {
+          "icao24": "ae06dd",
+          "callsign": "CNV7693",
+          "country": "United States",
+          "lon": 127.7733,
+          "lat": 26.3574,
+          "alt": null,
+          "on_ground": true,
+          "speed": 15.95,
           "category": "other"
         }
       ]
     },
     "yokota": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "06a021",
-          "callsign": "QAF3",
-          "country": "Qatar",
-          "lon": 139.2695,
-          "lat": 35.8317,
-          "alt": 6111.24,
-          "on_ground": false,
-          "speed": 204.26,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "71c305",
-          "callsign": "JJA1772",
-          "country": "Republic of Korea",
-          "lon": 132.2501,
-          "lat": 34.0134,
-          "alt": 3840.48,
+          "icao24": "7892a0",
+          "callsign": "CRK690",
+          "country": "China",
+          "lon": 132.2767,
+          "lat": 34.0329,
+          "alt": 10660.38,
           "on_ground": false,
-          "speed": 171.95,
+          "speed": 257.18,
           "category": "other"
         }
       ]
@@ -57,32 +56,66 @@
       "count": 2,
       "aircraft": [
         {
-          "icao24": "86eb50",
-          "callsign": "ANA869",
-          "country": "Japan",
-          "lon": 127.7789,
-          "lat": 26.1212,
-          "alt": 12192,
-          "on_ground": false,
-          "speed": 233.31,
-          "category": "civilian"
+          "icao24": "ae06dd",
+          "callsign": "CNV7693",
+          "country": "United States",
+          "lon": 127.7733,
+          "lat": 26.3574,
+          "alt": null,
+          "on_ground": true,
+          "speed": 15.95,
+          "category": "other"
         },
         {
-          "icao24": "a709dc",
-          "callsign": "N55246",
-          "country": "United States",
-          "lon": 127.7822,
-          "lat": 26.3993,
-          "alt": 647.7,
+          "icao24": "c00b35",
+          "callsign": "ACA8",
+          "country": "Canada",
+          "lon": 127.8339,
+          "lat": 26.1964,
+          "alt": 10668,
           "on_ground": false,
-          "speed": 32.51,
+          "speed": 259.93,
           "category": "other"
         }
       ]
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 3,
+      "aircraft": [
+        {
+          "icao24": "ae06dc",
+          "callsign": "BLCAT54",
+          "country": "United States",
+          "lon": 139.4501,
+          "lat": 35.4672,
+          "alt": 190.5,
+          "on_ground": false,
+          "speed": 69.97,
+          "category": "other"
+        },
+        {
+          "icao24": "ae06e0",
+          "callsign": "BLCAT62",
+          "country": "United States",
+          "lon": 139.417,
+          "lat": 35.4403,
+          "alt": 381,
+          "on_ground": false,
+          "speed": 78.82,
+          "category": "other"
+        },
+        {
+          "icao24": "851bdc",
+          "callsign": "JAL665",
+          "country": "Japan",
+          "lon": 139.5366,
+          "lat": 35.4826,
+          "alt": 4640.58,
+          "on_ground": false,
+          "speed": 191.84,
+          "category": "civilian"
+        }
+      ]
     }
   }
 }
