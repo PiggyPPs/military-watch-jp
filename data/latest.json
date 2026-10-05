@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-05T05:49:34.138749+00:00",
+  "timestamp": "2026-10-05T06:25:51.410461+00:00",
   "bases": {
     "kadena": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "7821fc",
-          "callsign": "CES2086",
-          "country": "China",
-          "lon": 127.6464,
-          "lat": 26.3185,
-          "alt": 1440.18,
+          "icao24": "84bbdf",
+          "callsign": "APJ273",
+          "country": "Japan",
+          "lon": 127.8125,
+          "lat": 26.2163,
+          "alt": 1645.92,
           "on_ground": false,
-          "speed": 135.14,
-          "category": "other"
+          "speed": 146.45,
+          "category": "civilian"
         }
       ]
     },
@@ -33,44 +33,21 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "7821fc",
-          "callsign": "CES2086",
-          "country": "China",
-          "lon": 127.6475,
-          "lat": 26.3315,
-          "alt": 1638.3,
+          "icao24": "84bbdf",
+          "callsign": "APJ273",
+          "country": "Japan",
+          "lon": 127.8125,
+          "lat": 26.2163,
+          "alt": 1645.92,
           "on_ground": false,
-          "speed": 135.1,
-          "category": "other"
+          "speed": 146.45,
+          "category": "civilian"
         }
       ]
     },
     "atsugi": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "ae1460",
-          "callsign": "RCH407",
-          "country": "United States",
-          "lon": 139.4199,
-          "lat": 35.5088,
-          "alt": 1242.06,
-          "on_ground": false,
-          "speed": 115.07,
-          "category": "other"
-        },
-        {
-          "icao24": "781336",
-          "callsign": "CES538",
-          "country": "China",
-          "lon": 139.5459,
-          "lat": 35.4732,
-          "alt": 4183.38,
-          "on_ground": false,
-          "speed": 156.52,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
