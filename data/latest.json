@@ -1,77 +1,53 @@
 {
-  "timestamp": "2026-10-05T12:22:20.171765+00:00",
+  "timestamp": "2026-10-05T12:53:41.137254+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "868094",
-          "callsign": "ANA1217",
-          "country": "Japan",
-          "lon": 127.8218,
-          "lat": 26.2226,
-          "alt": 1623.06,
-          "on_ground": false,
-          "speed": 141.77,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
+      "count": 0,
+      "aircraft": []
+    },
+    "iwakuni": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "ae6042",
-          "callsign": "",
+          "icao24": "a9c52e",
+          "callsign": "NCR606",
           "country": "United States",
-          "lon": 139.2822,
-          "lat": 35.6636,
-          "alt": 3314.7,
+          "lon": 132.2408,
+          "lat": 34.0739,
+          "alt": 12192,
           "on_ground": false,
-          "speed": 121.69,
+          "speed": 203.59,
           "category": "other"
         }
       ]
     },
-    "iwakuni": {
-      "count": 0,
-      "aircraft": []
-    },
     "misawa": {
-      "count": 0,
-      "aircraft": []
-    },
-    "futenma": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "868094",
-          "callsign": "ANA1217",
+          "icao24": "8682f4",
+          "callsign": "ANA84",
           "country": "Japan",
-          "lon": 127.8218,
-          "lat": 26.2226,
-          "alt": 1623.06,
+          "lon": 141.4254,
+          "lat": 40.7831,
+          "alt": 11574.78,
           "on_ground": false,
-          "speed": 141.77,
+          "speed": 197.55,
           "category": "civilian"
         }
       ]
     },
+    "futenma": {
+      "count": 0,
+      "aircraft": []
+    },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "ae4f71",
-          "callsign": "FFAB123",
-          "country": "United States",
-          "lon": 139.4487,
-          "lat": 35.4533,
-          "alt": 99.06,
-          "on_ground": false,
-          "speed": 19.98,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
