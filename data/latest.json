@@ -1,19 +1,30 @@
 {
-  "timestamp": "2026-10-05T04:19:01.079144+00:00",
+  "timestamp": "2026-10-05T05:07:20.378487+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "846bb6",
-          "callsign": "ANA1621",
+          "icao24": "841b22",
+          "callsign": "JL3867",
           "country": "Japan",
-          "lon": 127.9082,
-          "lat": 26.297,
-          "alt": 2857.5,
+          "lon": 127.7229,
+          "lat": 26.4566,
+          "alt": 2956.56,
           "on_ground": false,
-          "speed": 155.46,
-          "category": "civilian"
+          "speed": 89.63,
+          "category": "other"
+        },
+        {
+          "icao24": "ae4b45",
+          "callsign": "BYAKKO01",
+          "country": "United States",
+          "lon": 127.8989,
+          "lat": 26.346,
+          "alt": 274.32,
+          "on_ground": false,
+          "speed": 63.36,
+          "category": "other"
         }
       ]
     },
@@ -21,14 +32,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "ae08f1",
-          "callsign": "MOJO66",
+          "icao24": "ae06e0",
+          "callsign": "BLCAT62",
           "country": "United States",
-          "lon": 139.3468,
-          "lat": 35.7422,
-          "alt": null,
-          "on_ground": true,
-          "speed": 5.66,
+          "lon": 139.2308,
+          "lat": 35.7019,
+          "alt": 3352.8,
+          "on_ground": false,
+          "speed": 90.84,
           "category": "other"
         }
       ]
@@ -37,15 +48,15 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "80073a",
-          "callsign": "AIC357",
-          "country": "India",
-          "lon": 132.1686,
-          "lat": 34.0865,
-          "alt": 11582.4,
+          "icao24": "84bbdf",
+          "callsign": "APJ273",
+          "country": "Japan",
+          "lon": 132.2435,
+          "lat": 34.0769,
+          "alt": 11590.02,
           "on_ground": false,
-          "speed": 204.69,
-          "category": "other"
+          "speed": 201.36,
+          "category": "civilian"
         }
       ]
     },
@@ -53,14 +64,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "868043",
-          "callsign": "SKY712",
+          "icao24": "861e92",
+          "callsign": "ADO24",
           "country": "Japan",
-          "lon": 141.4189,
-          "lat": 40.5891,
-          "alt": 11582.4,
+          "lon": 141.4507,
+          "lat": 40.7158,
+          "alt": 11590.02,
           "on_ground": false,
-          "speed": 195.84,
+          "speed": 207.44,
           "category": "civilian"
         }
       ]
@@ -69,15 +80,15 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "846bb6",
-          "callsign": "ANA1621",
-          "country": "Japan",
-          "lon": 127.9042,
-          "lat": 26.291,
-          "alt": 2804.16,
+          "icao24": "ae4b45",
+          "callsign": "BYAKKO01",
+          "country": "United States",
+          "lon": 127.9032,
+          "lat": 26.3503,
+          "alt": 281.94,
           "on_ground": false,
-          "speed": 154.75,
-          "category": "civilian"
+          "speed": 64.09,
+          "category": "other"
         }
       ]
     },
@@ -85,14 +96,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "84c7d2",
-          "callsign": "SFJ13",
+          "icao24": "86804e",
+          "callsign": "SKY015",
           "country": "Japan",
-          "lon": 139.5767,
-          "lat": 35.4793,
-          "alt": 4404.36,
+          "lon": 139.461,
+          "lat": 35.5457,
+          "alt": 4899.66,
           "on_ground": false,
-          "speed": 179.74,
+          "speed": 182.09,
           "category": "civilian"
         }
       ]
