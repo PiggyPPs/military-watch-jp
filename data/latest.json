@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-05T10:19:09.622934+00:00",
+  "timestamp": "2026-10-05T10:48:15.223950+00:00",
   "bases": {
     "kadena": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "76cc77",
-          "callsign": "SIA634",
-          "country": "Singapore",
-          "lon": 127.8526,
-          "lat": 26.2066,
-          "alt": 11879.58,
+          "icao24": "8681b0",
+          "callsign": "SKY508",
+          "country": "Japan",
+          "lon": 127.6492,
+          "lat": 26.3272,
+          "alt": 1729.74,
           "on_ground": false,
-          "speed": 260.98,
-          "category": "other"
+          "speed": 123.11,
+          "category": "civilian"
         }
       ]
     },
@@ -26,22 +26,34 @@
       "aircraft": []
     },
     "misawa": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "841c60",
+          "callsign": "JAL524",
+          "country": "Japan",
+          "lon": 141.4664,
+          "lat": 40.7777,
+          "alt": 11445.24,
+          "on_ground": false,
+          "speed": 200.68,
+          "category": "civilian"
+        }
+      ]
     },
     "futenma": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "76cc77",
-          "callsign": "SIA634",
-          "country": "Singapore",
-          "lon": 127.8577,
-          "lat": 26.2109,
-          "alt": 11879.58,
+          "icao24": "8681b0",
+          "callsign": "SKY508",
+          "country": "Japan",
+          "lon": 127.6499,
+          "lat": 26.3389,
+          "alt": 1851.66,
           "on_ground": false,
-          "speed": 260.98,
-          "category": "other"
+          "speed": 126.76,
+          "category": "civilian"
         }
       ]
     },
@@ -49,15 +61,15 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "ae0d26",
-          "callsign": "NINJA00",
-          "country": "United States",
-          "lon": 139.3842,
-          "lat": 35.5333,
-          "alt": 426.72,
+          "icao24": "851492",
+          "callsign": "JAL3087",
+          "country": "Japan",
+          "lon": 139.3873,
+          "lat": 35.3333,
+          "alt": 7071.36,
           "on_ground": false,
-          "speed": 52.05,
-          "category": "other"
+          "speed": 214.61,
+          "category": "civilian"
         }
       ]
     }
