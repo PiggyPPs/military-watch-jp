@@ -1,9 +1,21 @@
 {
-  "timestamp": "2026-10-05T02:17:07.722605+00:00",
+  "timestamp": "2026-10-05T02:47:34.354592+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "71c558",
+          "callsign": "KAL2147",
+          "country": "Republic of Korea",
+          "lon": 127.8494,
+          "lat": 26.21,
+          "alt": 1455.42,
+          "on_ground": false,
+          "speed": 136.69,
+          "category": "other"
+        }
+      ]
     },
     "yokota": {
       "count": 1,
@@ -12,11 +24,11 @@
           "icao24": "87cde4",
           "callsign": "JF204",
           "country": "Japan",
-          "lon": 139.4387,
-          "lat": 35.7692,
-          "alt": 487.68,
+          "lon": 139.4185,
+          "lat": 35.8247,
+          "alt": 144.78,
           "on_ground": false,
-          "speed": 56.54,
+          "speed": 58.77,
           "category": "other"
         }
       ]
@@ -26,37 +38,48 @@
       "aircraft": []
     },
     "misawa": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "861b64",
-          "callsign": "ADO16",
-          "country": "Japan",
-          "lon": 141.4156,
-          "lat": 40.576,
-          "alt": 11582.4,
-          "on_ground": false,
-          "speed": 209.56,
-          "category": "civilian"
-        }
-      ]
-    },
-    "futenma": {
       "count": 0,
       "aircraft": []
     },
-    "atsugi": {
+    "futenma": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "86ec40",
-          "callsign": "ANA793",
-          "country": "Japan",
-          "lon": 139.3844,
-          "lat": 35.4886,
-          "alt": 6103.62,
+          "icao24": "71c558",
+          "callsign": "KAL2147",
+          "country": "Republic of Korea",
+          "lon": 127.8494,
+          "lat": 26.21,
+          "alt": 1455.42,
           "on_ground": false,
-          "speed": 191.65,
+          "speed": 136.69,
+          "category": "other"
+        }
+      ]
+    },
+    "atsugi": {
+      "count": 2,
+      "aircraft": [
+        {
+          "icao24": "86ced2",
+          "callsign": "ANA965",
+          "country": "Japan",
+          "lon": 139.3139,
+          "lat": 35.4728,
+          "alt": 5044.44,
+          "on_ground": false,
+          "speed": 189.23,
+          "category": "civilian"
+        },
+        {
+          "icao24": "85dee8",
+          "callsign": "ANA635",
+          "country": "Japan",
+          "lon": 139.5454,
+          "lat": 35.4731,
+          "alt": 5433.06,
+          "on_ground": false,
+          "speed": 159.61,
           "category": "civilian"
         }
       ]
