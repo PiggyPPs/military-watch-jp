@@ -1,41 +1,77 @@
 {
-  "timestamp": "2026-10-05T22:44:00.636977+00:00",
+  "timestamp": "2026-10-05T23:14:13.119850+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
-    },
-    "yokota": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "851cec",
-          "callsign": "JAL253",
+          "icao24": "84648e",
+          "callsign": "JA130A",
           "country": "Japan",
-          "lon": 139.3828,
-          "lat": 35.6932,
-          "alt": 5684.52,
+          "lon": 127.8805,
+          "lat": 26.3254,
+          "alt": 365.76,
           "on_ground": false,
-          "speed": 197.4,
-          "category": "civilian"
+          "speed": 48.11,
+          "category": "other"
         }
       ]
     },
-    "iwakuni": {
+    "yokota": {
       "count": 0,
       "aircraft": []
+    },
+    "iwakuni": {
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "71be23",
+          "callsign": "KAL9214",
+          "country": "Republic of Korea",
+          "lon": 132.2079,
+          "lat": 34.0989,
+          "alt": 5356.86,
+          "on_ground": false,
+          "speed": 166.43,
+          "category": "other"
+        }
+      ]
     },
     "misawa": {
       "count": 0,
       "aircraft": []
     },
     "futenma": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "84648e",
+          "callsign": "JA130A",
+          "country": "Japan",
+          "lon": 127.8784,
+          "lat": 26.3233,
+          "alt": 365.76,
+          "on_ground": false,
+          "speed": 47.04,
+          "category": "other"
+        }
+      ]
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "ae06dc",
+          "callsign": "BLCAT54",
+          "country": "United States",
+          "lon": 139.4499,
+          "lat": 35.4646,
+          "alt": 167.64,
+          "on_ground": false,
+          "speed": 71,
+          "category": "other"
+        }
+      ]
     }
   }
 }
