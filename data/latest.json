@@ -1,41 +1,77 @@
 {
-  "timestamp": "2026-10-06T22:16:10.686532+00:00",
+  "timestamp": "2026-10-06T22:44:35.582107+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "ae5858",
+          "callsign": "TIGER01",
+          "country": "United States",
+          "lon": 127.9099,
+          "lat": 26.2832,
+          "alt": 426.72,
+          "on_ground": false,
+          "speed": 128.39,
+          "category": "other"
+        }
+      ]
     },
     "yokota": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "851848",
+          "callsign": "JAL253",
+          "country": "Japan",
+          "lon": 139.3442,
+          "lat": 35.6932,
+          "alt": 6454.14,
+          "on_ground": false,
+          "speed": 179.82,
+          "category": "civilian"
+        }
+      ]
     },
     "iwakuni": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "857d6e",
+          "callsign": "ORC46",
+          "country": "Japan",
+          "lon": 132.1315,
+          "lat": 34.1269,
+          "alt": 5181.6,
+          "on_ground": false,
+          "speed": 202.21,
+          "category": "civilian"
+        }
+      ]
     },
     "misawa": {
       "count": 0,
       "aircraft": []
     },
     "futenma": {
+      "count": 0,
+      "aircraft": []
+    },
+    "atsugi": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "ae0f92",
-          "callsign": "MAGIC56",
-          "country": "United States",
-          "lon": 127.8599,
-          "lat": 26.134,
-          "alt": 2598.42,
+          "icao24": "86ddf0",
+          "callsign": "ANA451",
+          "country": "Japan",
+          "lon": 139.3964,
+          "lat": 35.4868,
+          "alt": 6164.58,
           "on_ground": false,
-          "speed": 95.34,
-          "category": "other"
+          "speed": 188.11,
+          "category": "civilian"
         }
       ]
-    },
-    "atsugi": {
-      "count": 0,
-      "aircraft": []
     }
   }
 }
