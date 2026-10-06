@@ -1,21 +1,9 @@
 {
-  "timestamp": "2026-10-06T11:46:32.935845+00:00",
+  "timestamp": "2026-10-06T12:20:42.082067+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "ae4e5f",
-          "callsign": "TIGER22",
-          "country": "United States",
-          "lon": 127.9178,
-          "lat": 26.3661,
-          "alt": 297.18,
-          "on_ground": false,
-          "speed": 110.99,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 0,
@@ -34,31 +22,8 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "84b40d",
-          "callsign": "APJ312",
-          "country": "Japan",
-          "lon": 139.4714,
-          "lat": 35.3357,
-          "alt": 8534.4,
-          "on_ground": false,
-          "speed": 200.69,
-          "category": "civilian"
-        },
-        {
-          "icao24": "850e58",
-          "callsign": "JAL671",
-          "country": "Japan",
-          "lon": 139.4367,
-          "lat": 35.4873,
-          "alt": 5844.54,
-          "on_ground": false,
-          "speed": 176.67,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
