@@ -1,21 +1,9 @@
 {
-  "timestamp": "2026-10-06T14:47:46.460061+00:00",
+  "timestamp": "2026-10-06T15:17:50.285848+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "ae596a",
-          "callsign": "",
-          "country": "United States",
-          "lon": 127.7622,
-          "lat": 26.3567,
-          "alt": null,
-          "on_ground": true,
-          "speed": 10.29,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 0,
@@ -30,20 +18,8 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "ae596a",
-          "callsign": "",
-          "country": "United States",
-          "lon": 127.7622,
-          "lat": 26.3567,
-          "alt": null,
-          "on_ground": true,
-          "speed": 10.29,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "atsugi": {
       "count": 0,
