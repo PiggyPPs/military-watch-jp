@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-06T20:16:18.540739+00:00",
+  "timestamp": "2026-10-06T20:46:38.094500+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -18,8 +18,20 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "8880f6",
+          "callsign": "HVN306",
+          "country": "Viet Nam",
+          "lon": 127.7671,
+          "lat": 26.1311,
+          "alt": 12489.18,
+          "on_ground": false,
+          "speed": 271.38,
+          "category": "other"
+        }
+      ]
     },
     "atsugi": {
       "count": 0,
