@@ -1,32 +1,9 @@
 {
-  "timestamp": "2026-10-06T12:50:56.578688+00:00",
+  "timestamp": "2026-10-06T13:18:48.846926+00:00",
   "bases": {
     "kadena": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "ae06df",
-          "callsign": "HABU11",
-          "country": "United States",
-          "lon": 127.6691,
-          "lat": 26.2863,
-          "alt": 541.02,
-          "on_ground": false,
-          "speed": 59.38,
-          "category": "other"
-        },
-        {
-          "icao24": "ae596a",
-          "callsign": "",
-          "country": "United States",
-          "lon": 127.7666,
-          "lat": 26.3759,
-          "alt": 365.76,
-          "on_ground": false,
-          "speed": 88.13,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 0,
@@ -37,63 +14,16 @@
       "aircraft": []
     },
     "misawa": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "846d0c",
-          "callsign": "ADO44",
-          "country": "Japan",
-          "lon": 141.3649,
-          "lat": 40.8188,
-          "alt": 9136.38,
-          "on_ground": false,
-          "speed": 198.78,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "futenma": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "ae06df",
-          "callsign": "HABU11",
-          "country": "United States",
-          "lon": 127.6691,
-          "lat": 26.2863,
-          "alt": 541.02,
-          "on_ground": false,
-          "speed": 59.38,
-          "category": "other"
-        },
-        {
-          "icao24": "ae596a",
-          "callsign": "",
-          "country": "United States",
-          "lon": 127.7666,
-          "lat": 26.3759,
-          "alt": 365.76,
-          "on_ground": false,
-          "speed": 88.13,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "76bd47",
-          "callsign": "TGW875",
-          "country": "Singapore",
-          "lon": 139.4136,
-          "lat": 35.3091,
-          "alt": 7863.84,
-          "on_ground": false,
-          "speed": 197.09,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
