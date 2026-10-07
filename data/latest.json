@@ -1,21 +1,9 @@
 {
-  "timestamp": "2026-10-07T18:51:43.485986+00:00",
+  "timestamp": "2026-10-07T19:17:42.010537+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "899097",
-          "callsign": "EVA023",
-          "country": "Taiwan",
-          "lon": 127.7019,
-          "lat": 26.2158,
-          "alt": 11582.4,
-          "on_ground": false,
-          "speed": 238.44,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 0,
@@ -30,20 +18,8 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "899097",
-          "callsign": "EVA023",
-          "country": "Taiwan",
-          "lon": 127.6759,
-          "lat": 26.2072,
-          "alt": 11582.4,
-          "on_ground": false,
-          "speed": 238.44,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "atsugi": {
       "count": 0,
