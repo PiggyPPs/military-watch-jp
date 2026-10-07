@@ -1,22 +1,45 @@
 {
-  "timestamp": "2026-10-07T04:49:36.746284+00:00",
+  "timestamp": "2026-10-07T05:17:39.031998+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
-    },
-    "yokota": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "a444d6",
-          "callsign": "N374YJ",
+          "icao24": "ac9451",
+          "callsign": "FLC91",
           "country": "United States",
-          "lon": 139.3454,
-          "lat": 35.7696,
-          "alt": 388.62,
+          "lon": 127.7324,
+          "lat": 26.4763,
+          "alt": 480.06,
           "on_ground": false,
-          "speed": 41.07,
+          "speed": 114.89,
+          "category": "other"
+        }
+      ]
+    },
+    "yokota": {
+      "count": 2,
+      "aircraft": [
+        {
+          "icao24": "846b07",
+          "callsign": "",
+          "country": "Japan",
+          "lon": 139.4042,
+          "lat": 35.6983,
+          "alt": 320.04,
+          "on_ground": false,
+          "speed": 27.78,
+          "category": "other"
+        },
+        {
+          "icao24": "ae4a7d",
+          "callsign": "TORII11",
+          "country": "United States",
+          "lon": 139.3491,
+          "lat": 35.7454,
+          "alt": null,
+          "on_ground": true,
+          "speed": 19.03,
           "category": "other"
         }
       ]
@@ -29,14 +52,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "8681b0",
-          "callsign": "SKY714",
+          "icao24": "86222e",
+          "callsign": "JAL554",
           "country": "Japan",
-          "lon": 141.2913,
-          "lat": 40.8232,
-          "alt": 11582.4,
+          "lon": 141.3356,
+          "lat": 40.5953,
+          "alt": 11574.78,
           "on_ground": false,
-          "speed": 192.99,
+          "speed": 192.9,
           "category": "civilian"
         }
       ]
@@ -49,14 +72,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "781437",
-          "callsign": "DKH1380",
-          "country": "China",
-          "lon": 139.4852,
-          "lat": 35.3511,
-          "alt": 7757.16,
+          "icao24": "ae0d25",
+          "callsign": "",
+          "country": "United States",
+          "lon": 139.3942,
+          "lat": 35.5151,
+          "alt": 91.44,
           "on_ground": false,
-          "speed": 196.73,
+          "speed": 0,
           "category": "other"
         }
       ]
