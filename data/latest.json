@@ -1,21 +1,9 @@
 {
-  "timestamp": "2026-10-07T11:46:46.696698+00:00",
+  "timestamp": "2026-10-07T12:22:58.114773+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "86d68f",
-          "callsign": "APJ224",
-          "country": "Japan",
-          "lon": 127.6456,
-          "lat": 26.2831,
-          "alt": 1021.08,
-          "on_ground": false,
-          "speed": 116.3,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 0,
@@ -30,44 +18,21 @@
       "aircraft": []
     },
     "futenma": {
+      "count": 0,
+      "aircraft": []
+    },
+    "atsugi": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "86d68f",
-          "callsign": "APJ224",
-          "country": "Japan",
-          "lon": 127.6461,
-          "lat": 26.2885,
-          "alt": 1059.18,
+          "icao24": "8990d1",
+          "callsign": "SJX805",
+          "country": "Taiwan",
+          "lon": 139.3799,
+          "lat": 35.3382,
+          "alt": 8717.28,
           "on_ground": false,
-          "speed": 124.03,
-          "category": "civilian"
-        }
-      ]
-    },
-    "atsugi": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "8518ae",
-          "callsign": "JAL487",
-          "country": "Japan",
-          "lon": 139.5968,
-          "lat": 35.4936,
-          "alt": 3825.24,
-          "on_ground": false,
-          "speed": 178.02,
-          "category": "civilian"
-        },
-        {
-          "icao24": "7820bd",
-          "callsign": "CSZ652",
-          "country": "China",
-          "lon": 139.5383,
-          "lat": 35.4044,
-          "alt": 8138.16,
-          "on_ground": false,
-          "speed": 172.62,
+          "speed": 175.81,
           "category": "other"
         }
       ]
