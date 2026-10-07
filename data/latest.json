@@ -1,29 +1,29 @@
 {
-  "timestamp": "2026-10-07T08:48:35.914834+00:00",
+  "timestamp": "2026-10-07T09:18:14.515301+00:00",
   "bases": {
     "kadena": {
       "count": 2,
       "aircraft": [
         {
-          "icao24": "874518",
-          "callsign": "",
+          "icao24": "8638b0",
+          "callsign": "ANA1213",
           "country": "Japan",
-          "lon": 127.6433,
-          "lat": 26.2546,
-          "alt": 891.54,
+          "lon": 127.9014,
+          "lat": 26.4643,
+          "alt": 2933.7,
           "on_ground": false,
-          "speed": 87.49,
-          "category": "other"
+          "speed": 149.02,
+          "category": "civilian"
         },
         {
-          "icao24": "8409ed",
-          "callsign": "JTA8",
+          "icao24": "86808a",
+          "callsign": "SKY519",
           "country": "Japan",
-          "lon": 127.6573,
-          "lat": 26.4332,
-          "alt": 2659.38,
+          "lon": 127.8125,
+          "lat": 26.2093,
+          "alt": 1912.62,
           "on_ground": false,
-          "speed": 141.23,
+          "speed": 149.93,
           "category": "civilian"
         }
       ]
@@ -32,15 +32,15 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "84715c",
-          "callsign": "JJP519",
-          "country": "Japan",
-          "lon": 139.3993,
-          "lat": 35.7627,
-          "alt": 8801.1,
-          "on_ground": false,
-          "speed": 188.11,
-          "category": "civilian"
+          "icao24": "ae0d33",
+          "callsign": "NINJA00",
+          "country": "United States",
+          "lon": 139.3489,
+          "lat": 35.737,
+          "alt": null,
+          "on_ground": true,
+          "speed": 2.83,
+          "category": "other"
         }
       ]
     },
@@ -49,22 +49,34 @@
       "aircraft": []
     },
     "misawa": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "850d8c",
+          "callsign": "JAL520",
+          "country": "Japan",
+          "lon": 141.4441,
+          "lat": 40.6896,
+          "alt": 10972.8,
+          "on_ground": false,
+          "speed": 190.69,
+          "category": "civilian"
+        }
+      ]
     },
     "futenma": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "874518",
-          "callsign": "",
+          "icao24": "86808a",
+          "callsign": "SKY519",
           "country": "Japan",
-          "lon": 127.6436,
-          "lat": 26.2643,
-          "alt": 1036.32,
+          "lon": 127.8125,
+          "lat": 26.2093,
+          "alt": 1912.62,
           "on_ground": false,
-          "speed": 90.24,
-          "category": "other"
+          "speed": 149.93,
+          "category": "civilian"
         }
       ]
     },
