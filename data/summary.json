@@ -450,5 +450,118 @@
         }
       }
     }
+  },
+  {
+    "date": "2026-10-07",
+    "bases": {
+      "kadena": {
+        "total": 0,
+        "samples": 1,
+        "max": 0,
+        "detected_runs": 0,
+        "civilian": {
+          "total": 0,
+          "samples": 1,
+          "max": 0,
+          "detected_runs": 0
+        },
+        "other": {
+          "total": 0,
+          "samples": 1,
+          "max": 0,
+          "detected_runs": 0
+        }
+      },
+      "yokota": {
+        "total": 1,
+        "samples": 1,
+        "max": 1,
+        "detected_runs": 1,
+        "civilian": {
+          "total": 1,
+          "samples": 1,
+          "max": 1,
+          "detected_runs": 1
+        },
+        "other": {
+          "total": 0,
+          "samples": 1,
+          "max": 0,
+          "detected_runs": 0
+        }
+      },
+      "iwakuni": {
+        "total": 1,
+        "samples": 1,
+        "max": 1,
+        "detected_runs": 1,
+        "civilian": {
+          "total": 1,
+          "samples": 1,
+          "max": 1,
+          "detected_runs": 1
+        },
+        "other": {
+          "total": 0,
+          "samples": 1,
+          "max": 0,
+          "detected_runs": 0
+        }
+      },
+      "misawa": {
+        "total": 1,
+        "samples": 1,
+        "max": 1,
+        "detected_runs": 1,
+        "civilian": {
+          "total": 1,
+          "samples": 1,
+          "max": 1,
+          "detected_runs": 1
+        },
+        "other": {
+          "total": 0,
+          "samples": 1,
+          "max": 0,
+          "detected_runs": 0
+        }
+      },
+      "futenma": {
+        "total": 1,
+        "samples": 1,
+        "max": 1,
+        "detected_runs": 1,
+        "civilian": {
+          "total": 1,
+          "samples": 1,
+          "max": 1,
+          "detected_runs": 1
+        },
+        "other": {
+          "total": 0,
+          "samples": 1,
+          "max": 0,
+          "detected_runs": 0
+        }
+      },
+      "atsugi": {
+        "total": 3,
+        "samples": 1,
+        "max": 3,
+        "detected_runs": 1,
+        "civilian": {
+          "total": 1,
+          "samples": 1,
+          "max": 1,
+          "detected_runs": 1
+        },
+        "other": {
+          "total": 2,
+          "samples": 1,
+          "max": 2,
+          "detected_runs": 1
+        }
+      }
+    }
   }
 ]
