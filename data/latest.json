@@ -1,61 +1,130 @@
 {
-  "timestamp": "2026-10-07T01:47:01.641716+00:00",
+  "timestamp": "2026-10-07T02:16:47.831072+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
-    },
-    "yokota": {
-      "count": 0,
-      "aircraft": []
-    },
-    "iwakuni": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "880856",
-          "callsign": "AIQ242",
-          "country": "Thailand",
-          "lon": 132.2845,
-          "lat": 34.2096,
-          "alt": 10066.02,
+          "icao24": "ae4a7d",
+          "callsign": "TORII11",
+          "country": "United States",
+          "lon": 127.8873,
+          "lat": 26.3032,
+          "alt": 1478.28,
           "on_ground": false,
-          "speed": 278.9,
+          "speed": 95.84,
           "category": "other"
         }
       ]
     },
-    "misawa": {
-      "count": 0,
-      "aircraft": []
-    },
-    "futenma": {
-      "count": 0,
-      "aircraft": []
-    },
-    "atsugi": {
-      "count": 2,
+    "yokota": {
+      "count": 5,
       "aircraft": [
         {
-          "icao24": "8990f0",
-          "callsign": "CAL107",
-          "country": "Taiwan",
-          "lon": 139.3837,
-          "lat": 35.3087,
-          "alt": 8481.06,
+          "icao24": "861f3c",
+          "callsign": "ANA663",
+          "country": "Japan",
+          "lon": 139.4807,
+          "lat": 35.719,
+          "alt": 5554.98,
           "on_ground": false,
-          "speed": 195.77,
+          "speed": 172.02,
+          "category": "civilian"
+        },
+        {
+          "icao24": "a69a4b",
+          "callsign": "N5241F",
+          "country": "United States",
+          "lon": 139.3598,
+          "lat": 35.7413,
+          "alt": null,
+          "on_ground": true,
+          "speed": 4.89,
           "category": "other"
         },
         {
-          "icao24": "85c19c",
-          "callsign": "JA505A",
-          "country": "Japan",
-          "lon": 139.3602,
-          "lat": 35.5291,
-          "alt": 853.44,
+          "icao24": "a9f67d",
+          "callsign": "CKS9741",
+          "country": "United States",
+          "lon": 139.3608,
+          "lat": 35.69,
+          "alt": 350.52,
           "on_ground": false,
-          "speed": 55.01,
+          "speed": 66.81,
+          "category": "other"
+        },
+        {
+          "icao24": "84b98d",
+          "callsign": "JA21MP",
+          "country": "Japan",
+          "lon": 139.4047,
+          "lat": 35.6882,
+          "alt": 457.2,
+          "on_ground": false,
+          "speed": 27.86,
+          "category": "other"
+        },
+        {
+          "icao24": "86d624",
+          "callsign": "TZP43",
+          "country": "Japan",
+          "lon": 139.3139,
+          "lat": 35.8238,
+          "alt": 9715.5,
+          "on_ground": false,
+          "speed": 216.8,
+          "category": "other"
+        }
+      ]
+    },
+    "iwakuni": {
+      "count": 0,
+      "aircraft": []
+    },
+    "misawa": {
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "868043",
+          "callsign": "SKY710",
+          "country": "Japan",
+          "lon": 141.3715,
+          "lat": 40.7521,
+          "alt": 11582.4,
+          "on_ground": false,
+          "speed": 183.94,
+          "category": "civilian"
+        }
+      ]
+    },
+    "futenma": {
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "ae4a7d",
+          "callsign": "TORII11",
+          "country": "United States",
+          "lon": 127.8887,
+          "lat": 26.3039,
+          "alt": 1478.28,
+          "on_ground": false,
+          "speed": 98.39,
+          "category": "other"
+        }
+      ]
+    },
+    "atsugi": {
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "ae4f6d",
+          "callsign": "FFAB123",
+          "country": "United States",
+          "lon": 139.3931,
+          "lat": 35.5102,
+          "alt": 137.16,
+          "on_ground": false,
+          "speed": 17.1,
           "category": "other"
         }
       ]
