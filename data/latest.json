@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-08T14:20:13.982975+00:00",
+  "timestamp": "2026-10-08T14:49:57.083415+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -10,24 +10,24 @@
       "aircraft": []
     },
     "iwakuni": {
-      "count": 0,
-      "aircraft": []
-    },
-    "misawa": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "06a1de",
-          "callsign": "QQE764",
-          "country": "Qatar",
-          "lon": 141.2751,
-          "lat": 40.7542,
-          "alt": 14325.6,
+          "icao24": "86dc60",
+          "callsign": "SJO425",
+          "country": "Japan",
+          "lon": 132.1406,
+          "lat": 34.0786,
+          "alt": 4747.26,
           "on_ground": false,
-          "speed": 241.59,
+          "speed": 181.97,
           "category": "other"
         }
       ]
+    },
+    "misawa": {
+      "count": 0,
+      "aircraft": []
     },
     "futenma": {
       "count": 0,
