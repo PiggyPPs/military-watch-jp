@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-09T15:49:14.097969+00:00",
+  "timestamp": "2026-10-09T16:17:18.295663+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -14,8 +14,20 @@
       "aircraft": []
     },
     "misawa": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "86d8cc",
+          "callsign": "SJO410",
+          "country": "Japan",
+          "lon": 141.4949,
+          "lat": 40.8492,
+          "alt": 10363.2,
+          "on_ground": false,
+          "speed": 220.35,
+          "category": "other"
+        }
+      ]
     },
     "futenma": {
       "count": 0,
