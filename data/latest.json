@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-09T12:53:06.617001+00:00",
+  "timestamp": "2026-10-09T13:20:36.749325+00:00",
   "bases": {
     "kadena": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "a5d87a",
-          "callsign": "GTI8719",
-          "country": "United States",
-          "lon": 127.7331,
-          "lat": 26.3329,
-          "alt": 137.16,
+          "icao24": "841f65",
+          "callsign": "JTA9",
+          "country": "Japan",
+          "lon": 127.8184,
+          "lat": 26.2078,
+          "alt": 1844.04,
           "on_ground": false,
-          "speed": 78.26,
-          "category": "other"
+          "speed": 136.45,
+          "category": "civilian"
         }
       ]
     },
@@ -26,34 +26,22 @@
       "aircraft": []
     },
     "misawa": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "862250",
-          "callsign": "JAL530",
-          "country": "Japan",
-          "lon": 141.494,
-          "lat": 40.8159,
-          "alt": 11582.4,
-          "on_ground": false,
-          "speed": 226.7,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "futenma": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "a5d87a",
-          "callsign": "GTI8719",
-          "country": "United States",
-          "lon": 127.7331,
-          "lat": 26.3329,
-          "alt": 137.16,
+          "icao24": "841f65",
+          "callsign": "JTA9",
+          "country": "Japan",
+          "lon": 127.8184,
+          "lat": 26.2078,
+          "alt": 1844.04,
           "on_ground": false,
-          "speed": 78.26,
-          "category": "other"
+          "speed": 136.45,
+          "category": "civilian"
         }
       ]
     },
