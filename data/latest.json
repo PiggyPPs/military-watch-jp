@@ -1,34 +1,35 @@
 {
-  "timestamp": "2026-10-09T21:46:58.435077+00:00",
+  "timestamp": "2026-10-09T22:16:13.515056+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
-    },
-    "yokota": {
-      "count": 2,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "8675d8",
-          "callsign": "ANA239",
-          "country": "Japan",
-          "lon": 139.2046,
-          "lat": 35.6993,
-          "alt": 7376.16,
+          "icao24": "a709dc",
+          "callsign": "N55246",
+          "country": "United States",
+          "lon": 127.733,
+          "lat": 26.3444,
+          "alt": 137.16,
           "on_ground": false,
-          "speed": 216.37,
-          "category": "civilian"
-        },
+          "speed": 39.74,
+          "category": "other"
+        }
+      ]
+    },
+    "yokota": {
+      "count": 1,
+      "aircraft": [
         {
-          "icao24": "868042",
-          "callsign": "SKY001",
-          "country": "Japan",
-          "lon": 139.4572,
-          "lat": 35.6595,
-          "alt": 6065.52,
+          "icao24": "a444d6",
+          "callsign": "N374YJ",
+          "country": "United States",
+          "lon": 139.2979,
+          "lat": 35.6649,
+          "alt": 1028.7,
           "on_ground": false,
-          "speed": 206.71,
-          "category": "civilian"
+          "speed": 62.83,
+          "category": "other"
         }
       ]
     },
@@ -41,8 +42,20 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "a709dc",
+          "callsign": "N55246",
+          "country": "United States",
+          "lon": 127.733,
+          "lat": 26.3444,
+          "alt": 137.16,
+          "on_ground": false,
+          "speed": 39.74,
+          "category": "other"
+        }
+      ]
     },
     "atsugi": {
       "count": 0,
