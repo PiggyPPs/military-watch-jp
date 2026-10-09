@@ -1,9 +1,21 @@
 {
-  "timestamp": "2026-10-09T02:46:48.610237+00:00",
+  "timestamp": "2026-10-09T03:17:20.836162+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "c080dd",
+          "callsign": "ACA18",
+          "country": "Canada",
+          "lon": 127.9008,
+          "lat": 26.2677,
+          "alt": 10668,
+          "on_ground": false,
+          "speed": 262.94,
+          "category": "other"
+        }
+      ]
     },
     "yokota": {
       "count": 0,
@@ -13,15 +25,15 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "782002",
-          "callsign": "CSN3086",
-          "country": "China",
-          "lon": 132.1696,
-          "lat": 34.1736,
-          "alt": 7924.8,
+          "icao24": "846bb6",
+          "callsign": "ANA1621",
+          "country": "Japan",
+          "lon": 132.2675,
+          "lat": 34.1129,
+          "alt": 8991.6,
           "on_ground": false,
-          "speed": 236.87,
-          "category": "other"
+          "speed": 218.61,
+          "category": "civilian"
         }
       ]
     },
@@ -34,20 +46,8 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "850edc",
-          "callsign": "",
-          "country": "Japan",
-          "lon": 139.5568,
-          "lat": 35.4547,
-          "alt": 746.76,
-          "on_ground": false,
-          "speed": 97.44,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
