@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-09T13:20:36.749325+00:00",
+  "timestamp": "2026-10-09T13:48:54.289516+00:00",
   "bases": {
     "kadena": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "841f65",
-          "callsign": "JTA9",
-          "country": "Japan",
-          "lon": 127.8184,
-          "lat": 26.2078,
-          "alt": 1844.04,
-          "on_ground": false,
-          "speed": 136.45,
-          "category": "civilian"
+          "icao24": "aa0559",
+          "callsign": "",
+          "country": "United States",
+          "lon": 127.7635,
+          "lat": 26.3475,
+          "alt": null,
+          "on_ground": true,
+          "speed": 9.77,
+          "category": "other"
         }
       ]
     },
@@ -33,15 +33,15 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "841f65",
-          "callsign": "JTA9",
-          "country": "Japan",
-          "lon": 127.8184,
-          "lat": 26.2078,
-          "alt": 1844.04,
-          "on_ground": false,
-          "speed": 136.45,
-          "category": "civilian"
+          "icao24": "aa0559",
+          "callsign": "",
+          "country": "United States",
+          "lon": 127.7635,
+          "lat": 26.3475,
+          "alt": null,
+          "on_ground": true,
+          "speed": 9.77,
+          "category": "other"
         }
       ]
     },
