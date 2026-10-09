@@ -1,110 +1,41 @@
 {
-  "timestamp": "2026-10-09T10:48:27.114461+00:00",
+  "timestamp": "2026-10-09T11:16:51.595711+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "aa0559",
-          "callsign": "CKS416",
-          "country": "United States",
-          "lon": 127.7674,
-          "lat": 26.3531,
-          "alt": null,
-          "on_ground": true,
-          "speed": 9.26,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "78063a",
-          "callsign": "CCA168",
-          "country": "China",
-          "lon": 139.2063,
-          "lat": 35.6868,
-          "alt": 6347.46,
-          "on_ground": false,
-          "speed": 204.8,
-          "category": "other"
-        },
-        {
-          "icao24": "71c754",
-          "callsign": "TWB246",
-          "country": "Republic of Korea",
-          "lon": 139.2399,
-          "lat": 35.8795,
-          "alt": 9646.92,
-          "on_ground": false,
-          "speed": 186.33,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "899028",
-          "callsign": "TTW229",
-          "country": "Taiwan",
-          "lon": 132.1971,
-          "lat": 34.0233,
-          "alt": 9098.28,
-          "on_ground": false,
-          "speed": 230.55,
-          "category": "other"
-        },
-        {
-          "icao24": "85186a",
-          "callsign": "JAL377",
-          "country": "Japan",
-          "lon": 132.3177,
-          "lat": 34.134,
-          "alt": 6271.26,
-          "on_ground": false,
-          "speed": 205.8,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "misawa": {
       "count": 0,
       "aircraft": []
     },
     "futenma": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "aa0559",
-          "callsign": "CKS416",
-          "country": "United States",
-          "lon": 127.7674,
-          "lat": 26.3531,
-          "alt": null,
-          "on_ground": true,
-          "speed": 9.26,
-          "category": "other"
-        },
-        {
-          "icao24": "86cf38",
-          "callsign": "ANA886",
-          "country": "Japan",
-          "lon": 127.8026,
-          "lat": 26.1647,
-          "alt": 11879.58,
-          "on_ground": false,
-          "speed": 260.69,
-          "category": "civilian"
-        }
-      ]
-    },
-    "atsugi": {
       "count": 0,
       "aircraft": []
+    },
+    "atsugi": {
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "78108c",
+          "callsign": "CES540",
+          "country": "China",
+          "lon": 139.5789,
+          "lat": 35.4869,
+          "alt": 3230.88,
+          "on_ground": false,
+          "speed": 140.01,
+          "category": "other"
+        }
+      ]
     }
   }
 }
