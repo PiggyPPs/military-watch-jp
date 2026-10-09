@@ -1,98 +1,64 @@
 {
-  "timestamp": "2026-10-08T23:45:31.686214+00:00",
+  "timestamp": "2026-10-09T00:28:03.416108+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
-    },
-    "yokota": {
       "count": 2,
       "aircraft": [
         {
-          "icao24": "86eb51",
-          "callsign": "JA883B",
+          "icao24": "846021",
+          "callsign": "JTA43",
           "country": "Japan",
-          "lon": 139.4269,
-          "lat": 35.6291,
-          "alt": 655.32,
+          "lon": 127.8702,
+          "lat": 26.262,
+          "alt": 2141.22,
           "on_ground": false,
-          "speed": 59.78,
-          "category": "other"
+          "speed": 130.24,
+          "category": "civilian"
         },
         {
-          "icao24": "84b4d9",
-          "callsign": "APJ351",
-          "country": "Japan",
-          "lon": 139.375,
-          "lat": 35.8217,
-          "alt": 8298.18,
+          "icao24": "71c225",
+          "callsign": "JNA371",
+          "country": "Republic of Korea",
+          "lon": 127.9139,
+          "lat": 26.4447,
+          "alt": 2567.94,
           "on_ground": false,
-          "speed": 231.08,
-          "category": "civilian"
+          "speed": 145.3,
+          "category": "other"
         }
       ]
+    },
+    "yokota": {
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
       "count": 0,
       "aircraft": []
     },
     "misawa": {
+      "count": 0,
+      "aircraft": []
+    },
+    "futenma": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "8681be",
-          "callsign": "SKY706",
+          "icao24": "846021",
+          "callsign": "JTA43",
           "country": "Japan",
-          "lon": 141.4448,
-          "lat": 40.6918,
-          "alt": 11513.82,
+          "lon": 127.8657,
+          "lat": 26.2512,
+          "alt": 2080.26,
           "on_ground": false,
-          "speed": 214.2,
+          "speed": 130.06,
           "category": "civilian"
         }
       ]
     },
-    "futenma": {
+    "atsugi": {
       "count": 0,
       "aircraft": []
-    },
-    "atsugi": {
-      "count": 3,
-      "aircraft": [
-        {
-          "icao24": "ae0d1f",
-          "callsign": "NINJA06",
-          "country": "United States",
-          "lon": 139.4416,
-          "lat": 35.3201,
-          "alt": null,
-          "on_ground": false,
-          "speed": 55.11,
-          "category": "other"
-        },
-        {
-          "icao24": "ae0d1d",
-          "callsign": "NINJA06",
-          "country": "United States",
-          "lon": 139.4382,
-          "lat": 35.3205,
-          "alt": 335.28,
-          "on_ground": false,
-          "speed": 50.44,
-          "category": "other"
-        },
-        {
-          "icao24": "87cd04",
-          "callsign": "PLUTO32",
-          "country": "Japan",
-          "lon": 139.594,
-          "lat": 35.4479,
-          "alt": 655.32,
-          "on_ground": false,
-          "speed": 121.98,
-          "category": "other"
-        }
-      ]
     }
   }
 }
