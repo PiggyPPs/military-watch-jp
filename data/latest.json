@@ -1,9 +1,21 @@
 {
-  "timestamp": "2026-10-09T16:48:50.759086+00:00",
+  "timestamp": "2026-10-09T17:15:24.151043+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "86eee4",
+          "callsign": "ANA849",
+          "country": "Japan",
+          "lon": 127.8119,
+          "lat": 26.4465,
+          "alt": 12192,
+          "on_ground": false,
+          "speed": 245.33,
+          "category": "civilian"
+        }
+      ]
     },
     "yokota": {
       "count": 0,
