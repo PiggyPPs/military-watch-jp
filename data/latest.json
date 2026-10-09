@@ -1,32 +1,9 @@
 {
-  "timestamp": "2026-10-09T11:46:40.016573+00:00",
+  "timestamp": "2026-10-09T12:20:34.370694+00:00",
   "bases": {
     "kadena": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "868043",
-          "callsign": "SKY523",
-          "country": "Japan",
-          "lon": 127.8264,
-          "lat": 26.2175,
-          "alt": 1828.8,
-          "on_ground": false,
-          "speed": 137.8,
-          "category": "civilian"
-        },
-        {
-          "icao24": "8681ad",
-          "callsign": "SKY598",
-          "country": "Japan",
-          "lon": 127.6527,
-          "lat": 26.3613,
-          "alt": 1828.8,
-          "on_ground": false,
-          "speed": 145.85,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 0,
@@ -41,35 +18,36 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 2,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "868043",
-          "callsign": "SKY523",
+          "icao24": "8638b0",
+          "callsign": "ANA1217",
           "country": "Japan",
-          "lon": 127.8208,
-          "lat": 26.2056,
-          "alt": 1744.98,
+          "lon": 127.7752,
+          "lat": 26.1309,
+          "alt": 1257.3,
           "on_ground": false,
-          "speed": 137.4,
-          "category": "civilian"
-        },
-        {
-          "icao24": "8681ad",
-          "callsign": "SKY598",
-          "country": "Japan",
-          "lon": 127.6539,
-          "lat": 26.3783,
-          "alt": 1996.44,
-          "on_ground": false,
-          "speed": 147.9,
+          "speed": 138.13,
           "category": "civilian"
         }
       ]
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "84b5ee",
+          "callsign": "SFJ91",
+          "country": "Japan",
+          "lon": 139.4821,
+          "lat": 35.4798,
+          "alt": 4907.28,
+          "on_ground": false,
+          "speed": 168,
+          "category": "civilian"
+        }
+      ]
     }
   }
 }
