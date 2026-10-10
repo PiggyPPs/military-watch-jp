@@ -1,52 +1,30 @@
 {
-  "timestamp": "2026-10-10T07:16:16.246730+00:00",
+  "timestamp": "2026-10-10T07:45:32.611517+00:00",
   "bases": {
     "kadena": {
-      "count": 4,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "86cf2b",
-          "callsign": "SNJ127",
-          "country": "Japan",
-          "lon": 127.8135,
-          "lat": 26.2221,
-          "alt": 1562.1,
+          "icao24": "71c510",
+          "callsign": "AAR172",
+          "country": "Republic of Korea",
+          "lon": 127.8269,
+          "lat": 26.2899,
+          "alt": 1767.84,
           "on_ground": false,
-          "speed": 133.75,
+          "speed": 138.66,
           "category": "other"
         },
         {
-          "icao24": "8422f9",
-          "callsign": "JTA5",
+          "icao24": "86eb72",
+          "callsign": "ANA842",
           "country": "Japan",
-          "lon": 127.8805,
-          "lat": 26.411,
-          "alt": 2941.32,
+          "lon": 127.9144,
+          "lat": 26.2828,
+          "alt": 12489.18,
           "on_ground": false,
-          "speed": 143.17,
+          "speed": 251.22,
           "category": "civilian"
-        },
-        {
-          "icao24": "8681b3",
-          "callsign": "SKY554",
-          "country": "Japan",
-          "lon": 127.6536,
-          "lat": 26.3754,
-          "alt": 1684.02,
-          "on_ground": false,
-          "speed": 145.88,
-          "category": "civilian"
-        },
-        {
-          "icao24": "ac9451",
-          "callsign": "FLC91",
-          "country": "United States",
-          "lon": 127.7706,
-          "lat": 26.3601,
-          "alt": null,
-          "on_ground": true,
-          "speed": 15.95,
-          "category": "other"
         }
       ]
     },
@@ -55,77 +33,44 @@
       "aircraft": []
     },
     "iwakuni": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "84b5ee",
+          "callsign": "SFJ83",
+          "country": "Japan",
+          "lon": 132.1161,
+          "lat": 34.0731,
+          "alt": 4876.8,
+          "on_ground": false,
+          "speed": 148.65,
+          "category": "civilian"
+        }
+      ]
     },
     "misawa": {
       "count": 0,
       "aircraft": []
     },
     "futenma": {
-      "count": 3,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "8422f9",
-          "callsign": "JTA5",
-          "country": "Japan",
-          "lon": 127.8737,
-          "lat": 26.3881,
-          "alt": 2819.4,
+          "icao24": "71c510",
+          "callsign": "AAR172",
+          "country": "Republic of Korea",
+          "lon": 127.8225,
+          "lat": 26.2769,
+          "alt": 1684.02,
           "on_ground": false,
-          "speed": 141.77,
-          "category": "civilian"
-        },
-        {
-          "icao24": "8681b3",
-          "callsign": "SKY554",
-          "country": "Japan",
-          "lon": 127.6553,
-          "lat": 26.4001,
-          "alt": 1905,
-          "on_ground": false,
-          "speed": 148.42,
-          "category": "civilian"
-        },
-        {
-          "icao24": "ac9451",
-          "callsign": "FLC91",
-          "country": "United States",
-          "lon": 127.7725,
-          "lat": 26.3615,
-          "alt": null,
-          "on_ground": true,
-          "speed": 11.32,
+          "speed": 138.32,
           "category": "other"
         }
       ]
     },
     "atsugi": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "846bd8",
-          "callsign": "ANA697",
-          "country": "Japan",
-          "lon": 139.5658,
-          "lat": 35.4778,
-          "alt": 4244.34,
-          "on_ground": false,
-          "speed": 198.21,
-          "category": "civilian"
-        },
-        {
-          "icao24": "86d2ee",
-          "callsign": "ANA261",
-          "country": "Japan",
-          "lon": 139.4576,
-          "lat": 35.6025,
-          "alt": 4861.56,
-          "on_ground": false,
-          "speed": 193.18,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
