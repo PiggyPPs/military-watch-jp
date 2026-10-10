@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-10T03:16:16.298447+00:00",
+  "timestamp": "2026-10-10T03:47:39.021847+00:00",
   "bases": {
     "kadena": {
       "count": 1,
@@ -8,11 +8,11 @@
           "icao24": "ac9451",
           "callsign": "FLC91",
           "country": "United States",
-          "lon": 127.6554,
-          "lat": 26.2466,
-          "alt": 906.78,
+          "lon": 127.7825,
+          "lat": 26.2834,
+          "alt": 495.3,
           "on_ground": false,
-          "speed": 106.73,
+          "speed": 106.18,
           "category": "other"
         }
       ]
@@ -36,18 +36,41 @@
           "icao24": "ac9451",
           "callsign": "FLC91",
           "country": "United States",
-          "lon": 127.6338,
-          "lat": 26.2453,
-          "alt": 906.78,
+          "lon": 127.7825,
+          "lat": 26.2834,
+          "alt": 495.3,
           "on_ground": false,
-          "speed": 107.28,
+          "speed": 106.18,
           "category": "other"
         }
       ]
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 2,
+      "aircraft": [
+        {
+          "icao24": "863b52",
+          "callsign": "6938",
+          "country": "Japan",
+          "lon": 139.3075,
+          "lat": 35.3952,
+          "alt": 160.02,
+          "on_ground": false,
+          "speed": 49.87,
+          "category": "other"
+        },
+        {
+          "icao24": "86cf6f",
+          "callsign": "SNJ15",
+          "country": "Japan",
+          "lon": 139.4747,
+          "lat": 35.4413,
+          "alt": 5875.02,
+          "on_ground": false,
+          "speed": 206.81,
+          "category": "other"
+        }
+      ]
     }
   }
 }
