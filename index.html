@@ -671,11 +671,11 @@ function weekStartKey(dateStr){
   return d.toISOString().slice(0, 10);
 }
 
-// グラフの横軸に出す文字（週は「10/5〜」の形）
+// グラフの横軸に出す文字（日は「10/3」、週は「10/5〜」の形）
 function rangeLabel(range, key){
-  if(range === "week"){
+  if(range === "week" || range === "day"){
     const [, m, d] = key.split("-");
-    return `${Number(m)}/${Number(d)}〜`;
+    return `${Number(m)}/${Number(d)}` + (range === "week" ? "〜" : "");
   }
   return key;
 }
@@ -709,8 +709,13 @@ function groupBy(range, category){
   return { keys, groups };
 }
 
+const DAY_LIMIT = 14; // 「日」の表示は直近14日分だけ
+
 function buildTrendChart(range, category){
-  const { keys, groups } = groupBy(range, category);
+  const grouped = groupBy(range, category);
+  const groups = grouped.groups;
+  const keys = range === "day" ? grouped.keys.slice(-DAY_LIMIT) : grouped.keys;
+  updateTrendNote(range, keys);
   const labels = keys.map(k => rangeLabel(range, k));
   const datasets = Object.keys(BASE_LABELS).map(key => {
     const label = BASE_LABELS[key];
@@ -790,6 +795,17 @@ if(tabsEl){
   });
 }
 
+function updateTrendNote(range, keys){
+  const note = document.getElementById("trendNote");
+  if(!note || !summaryData.length) return;
+  const last = summaryData[summaryData.length - 1].date;
+  if(range === "day"){
+    note.textContent = `直近${DAY_LIMIT}日分を表示しています(${keys[0]} 〜 ${last} のデータ)`;
+  }else{
+    note.textContent = `${summaryData[0].date} 〜 ${last} のデータ`;
+  }
+}
+
 async function loadTrend(){
   const note = document.getElementById("trendNote");
   try{
@@ -800,7 +816,6 @@ async function loadTrend(){
       note.textContent = "まだデータが十分にありません。しばらくしてから見てください。";
       return;
     }
-    note.textContent = `${summaryData[0].date} 〜 ${summaryData[summaryData.length - 1].date} のデータ`;
     buildTrendChart(currentRange, currentCategory);
   }catch(err){
     note.innerHTML = '<span class="error">データを読み込めませんでした(' + err.message + ')</span>';
