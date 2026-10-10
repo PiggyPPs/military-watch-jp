@@ -663,14 +663,21 @@ function bucketFor(baseEntry, category){
   return baseEntry[category] || null;
 }
 
-function isoWeekKey(dateStr){
+// その週の月曜日の日付（YYYY-MM-DD）を返す。並べ替えにも使う
+function weekStartKey(dateStr){
   const d = new Date(dateStr + "T00:00:00Z");
-  const target = new Date(d.valueOf());
-  const dayNr = (d.getUTCDay() + 6) % 7;
-  target.setUTCDate(target.getUTCDate() - dayNr + 3);
-  const firstThursday = new Date(Date.UTC(target.getUTCFullYear(), 0, 4));
-  const week = 1 + Math.round(((target - firstThursday) / 86400000 - 3 + ((firstThursday.getUTCDay() + 6) % 7)) / 7);
-  return `${target.getUTCFullYear()}-W${String(week).padStart(2, "0")}`;
+  const dayNr = (d.getUTCDay() + 6) % 7; // 月曜=0
+  d.setUTCDate(d.getUTCDate() - dayNr);
+  return d.toISOString().slice(0, 10);
+}
+
+// グラフの横軸に出す文字（週は「10/5〜」の形）
+function rangeLabel(range, key){
+  if(range === "week"){
+    const [, m, d] = key.split("-");
+    return `${Number(m)}/${Number(d)}〜`;
+  }
+  return key;
 }
 
 function monthKey(dateStr){
@@ -682,7 +689,7 @@ function groupBy(range, category){
   for(const day of summaryData){
     let key;
     if(range === "day") key = day.date;
-    else if(range === "week") key = isoWeekKey(day.date);
+    else if(range === "week") key = weekStartKey(day.date);
     else key = monthKey(day.date);
 
     if(!groups[key]){
@@ -704,7 +711,7 @@ function groupBy(range, category){
 
 function buildTrendChart(range, category){
   const { keys, groups } = groupBy(range, category);
-  const labels = keys;
+  const labels = keys.map(k => rangeLabel(range, k));
   const datasets = Object.keys(BASE_LABELS).map(key => {
     const label = BASE_LABELS[key];
     const data = keys.map(k => {
