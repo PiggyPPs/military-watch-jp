@@ -1,9 +1,32 @@
 {
-  "timestamp": "2026-10-11T20:14:59.300676+00:00",
+  "timestamp": "2026-10-11T20:46:20.317035+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
+      "count": 2,
+      "aircraft": [
+        {
+          "icao24": "8990de",
+          "callsign": "EVA015",
+          "country": "Taiwan",
+          "lon": 127.7755,
+          "lat": 26.2772,
+          "alt": 10363.2,
+          "on_ground": false,
+          "speed": 243.78,
+          "category": "other"
+        },
+        {
+          "icao24": "8990c1",
+          "callsign": "SJX001",
+          "country": "Taiwan",
+          "lon": 127.8249,
+          "lat": 26.2565,
+          "alt": 11582.4,
+          "on_ground": false,
+          "speed": 249.16,
+          "category": "other"
+        }
+      ]
     },
     "yokota": {
       "count": 0,
@@ -18,8 +41,31 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 0,
-      "aircraft": []
+      "count": 2,
+      "aircraft": [
+        {
+          "icao24": "8990de",
+          "callsign": "EVA015",
+          "country": "Taiwan",
+          "lon": 127.7279,
+          "lat": 26.2735,
+          "alt": 10363.2,
+          "on_ground": false,
+          "speed": 243.69,
+          "category": "other"
+        },
+        {
+          "icao24": "8990c1",
+          "callsign": "SJX001",
+          "country": "Taiwan",
+          "lon": 127.7851,
+          "lat": 26.2434,
+          "alt": 11582.4,
+          "on_ground": false,
+          "speed": 249.82,
+          "category": "other"
+        }
+      ]
     },
     "atsugi": {
       "count": 0,
