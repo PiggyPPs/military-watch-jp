@@ -1,99 +1,41 @@
 {
-  "timestamp": "2026-10-11T11:45:30.533229+00:00",
+  "timestamp": "2026-10-11T12:20:05.811358+00:00",
   "bases": {
     "kadena": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "851f4e",
-          "callsign": "JTA49",
-          "country": "Japan",
-          "lon": 127.8036,
-          "lat": 26.2243,
-          "alt": 1851.66,
-          "on_ground": false,
-          "speed": 133.78,
-          "category": "civilian"
-        },
-        {
-          "icao24": "8681ba",
-          "callsign": "SKY523",
-          "country": "Japan",
-          "lon": 127.8177,
-          "lat": 26.3307,
-          "alt": 2537.46,
-          "on_ground": false,
-          "speed": 132.53,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 0,
       "aircraft": []
     },
     "iwakuni": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "861fa4",
-          "callsign": "ANA799",
-          "country": "Japan",
-          "lon": 132.1555,
-          "lat": 34.079,
-          "alt": 4396.74,
-          "on_ground": false,
-          "speed": 203.57,
-          "category": "civilian"
-        },
-        {
-          "icao24": "851c42",
-          "callsign": "JAL615V",
-          "country": "Japan",
-          "lon": 132.1121,
-          "lat": 34.2843,
-          "alt": 10965.18,
-          "on_ground": false,
-          "speed": 209.54,
-          "category": "civilian"
-        }
-      ]
-    },
-    "misawa": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "841538",
-          "callsign": "JAL526",
-          "country": "Japan",
-          "lon": 141.4619,
-          "lat": 40.6402,
-          "alt": 11338.56,
-          "on_ground": false,
-          "speed": 234.75,
-          "category": "civilian"
-        }
-      ]
-    },
-    "futenma": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "8681ba",
-          "callsign": "SKY523",
-          "country": "Japan",
-          "lon": 127.8139,
-          "lat": 26.3156,
-          "alt": 2453.64,
-          "on_ground": false,
-          "speed": 131.41,
-          "category": "civilian"
-        }
-      ]
-    },
-    "atsugi": {
       "count": 0,
       "aircraft": []
+    },
+    "misawa": {
+      "count": 0,
+      "aircraft": []
+    },
+    "futenma": {
+      "count": 0,
+      "aircraft": []
+    },
+    "atsugi": {
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "84c43e",
+          "callsign": "SFJ91",
+          "country": "Japan",
+          "lon": 139.4161,
+          "lat": 35.4805,
+          "alt": 5120.64,
+          "on_ground": false,
+          "speed": 176.66,
+          "category": "civilian"
+        }
+      ]
     }
   }
 }
