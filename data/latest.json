@@ -1,13 +1,48 @@
 {
-  "timestamp": "2026-10-11T09:46:50.517135+00:00",
+  "timestamp": "2026-10-11T10:15:49.850546+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
+      "count": 2,
+      "aircraft": [
+        {
+          "icao24": "84640c",
+          "callsign": "JTA16",
+          "country": "Japan",
+          "lon": 127.6308,
+          "lat": 26.3789,
+          "alt": 1638.3,
+          "on_ground": false,
+          "speed": 137.4,
+          "category": "civilian"
+        },
+        {
+          "icao24": "ae145a",
+          "callsign": "RCH440",
+          "country": "United States",
+          "lon": 127.7654,
+          "lat": 26.3564,
+          "alt": null,
+          "on_ground": true,
+          "speed": 19.03,
+          "category": "other"
+        }
+      ]
     },
     "yokota": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "86cec5",
+          "callsign": "SNJ37",
+          "country": "Japan",
+          "lon": 139.3657,
+          "lat": 35.6715,
+          "alt": 6240.78,
+          "on_ground": false,
+          "speed": 200.87,
+          "category": "other"
+        }
+      ]
     },
     "iwakuni": {
       "count": 0,
@@ -18,24 +53,35 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 0,
-      "aircraft": []
-    },
-    "atsugi": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "861bb0",
-          "callsign": "JAL751",
+          "icao24": "84640c",
+          "callsign": "JTA16",
           "country": "Japan",
-          "lon": 139.357,
-          "lat": 35.3402,
-          "alt": 10355.58,
+          "lon": 127.6295,
+          "lat": 26.3914,
+          "alt": 1760.22,
           "on_ground": false,
-          "speed": 223.77,
+          "speed": 138.47,
           "category": "civilian"
+        },
+        {
+          "icao24": "ae145a",
+          "callsign": "RCH440",
+          "country": "United States",
+          "lon": 127.7582,
+          "lat": 26.3512,
+          "alt": null,
+          "on_ground": true,
+          "speed": 18.01,
+          "category": "other"
         }
       ]
+    },
+    "atsugi": {
+      "count": 0,
+      "aircraft": []
     }
   }
 }
