@@ -1,9 +1,20 @@
 {
-  "timestamp": "2026-10-11T05:46:07.466231+00:00",
+  "timestamp": "2026-10-11T06:20:56.732406+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
+        {
+          "icao24": "71c762",
+          "callsign": "ESR632",
+          "country": "Republic of Korea",
+          "lon": 127.6353,
+          "lat": 26.2731,
+          "alt": 990.6,
+          "on_ground": false,
+          "speed": 92.99,
+          "category": "other"
+        },
         {
           "icao24": "ae145a",
           "callsign": "RCH440",
@@ -21,29 +32,64 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "87cde5",
-          "callsign": "COSMO12",
+          "icao24": "87cde4",
+          "callsign": "COSMO06",
           "country": "Japan",
-          "lon": 139.4185,
-          "lat": 35.8245,
-          "alt": 121.92,
+          "lon": 139.4188,
+          "lat": 35.8239,
+          "alt": 114.3,
           "on_ground": false,
-          "speed": 65.07,
+          "speed": 62.98,
           "category": "other"
         }
       ]
     },
     "iwakuni": {
-      "count": 0,
-      "aircraft": []
-    },
-    "misawa": {
-      "count": 0,
-      "aircraft": []
-    },
-    "futenma": {
       "count": 1,
       "aircraft": [
+        {
+          "icao24": "85134a",
+          "callsign": "SFJ81",
+          "country": "Japan",
+          "lon": 132.2034,
+          "lat": 34.0971,
+          "alt": 5387.34,
+          "on_ground": false,
+          "speed": 186.12,
+          "category": "civilian"
+        }
+      ]
+    },
+    "misawa": {
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "87457e",
+          "callsign": "ANA66",
+          "country": "Japan",
+          "lon": 141.4388,
+          "lat": 40.7622,
+          "alt": 11711.94,
+          "on_ground": false,
+          "speed": 229.74,
+          "category": "civilian"
+        }
+      ]
+    },
+    "futenma": {
+      "count": 2,
+      "aircraft": [
+        {
+          "icao24": "71c762",
+          "callsign": "ESR632",
+          "country": "Republic of Korea",
+          "lon": 127.6233,
+          "lat": 26.2913,
+          "alt": 1120.14,
+          "on_ground": false,
+          "speed": 106.76,
+          "category": "other"
+        },
         {
           "icao24": "ae145a",
           "callsign": "RCH440",
@@ -58,8 +104,42 @@
       ]
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 3,
+      "aircraft": [
+        {
+          "icao24": "782264",
+          "callsign": "CSN8102",
+          "country": "China",
+          "lon": 139.3513,
+          "lat": 35.3402,
+          "alt": 9029.7,
+          "on_ground": false,
+          "speed": 205.6,
+          "category": "other"
+        },
+        {
+          "icao24": "846516",
+          "callsign": "ANA645",
+          "country": "Japan",
+          "lon": 139.5719,
+          "lat": 35.4738,
+          "alt": 3855.72,
+          "on_ground": false,
+          "speed": 194.05,
+          "category": "civilian"
+        },
+        {
+          "icao24": "851d2c",
+          "callsign": "",
+          "country": "Japan",
+          "lon": 139.5265,
+          "lat": 35.3168,
+          "alt": 1325.88,
+          "on_ground": false,
+          "speed": 105.43,
+          "category": "other"
+        }
+      ]
     }
   }
 }
