@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-10-11T13:17:00.137306+00:00",
+  "timestamp": "2026-10-11T13:46:00.489732+00:00",
   "bases": {
     "kadena": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "846021",
-          "callsign": "JTA65",
+          "icao24": "868316",
+          "callsign": "ANA479",
           "country": "Japan",
-          "lon": 127.6345,
-          "lat": 26.3611,
-          "alt": 396.24,
+          "lon": 127.64,
+          "lat": 26.3166,
+          "alt": 342.9,
           "on_ground": false,
-          "speed": 104.71,
+          "speed": 82.37,
           "category": "civilian"
         }
       ]
@@ -26,52 +26,28 @@
       "aircraft": []
     },
     "misawa": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "845d88",
-          "callsign": "ANA988",
-          "country": "Japan",
-          "lon": 141.4251,
-          "lat": 40.8008,
-          "alt": 10363.2,
-          "on_ground": false,
-          "speed": 214.19,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "futenma": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "846021",
-          "callsign": "JTA65",
+          "icao24": "868316",
+          "callsign": "ANA479",
           "country": "Japan",
-          "lon": 127.6312,
-          "lat": 26.3535,
-          "alt": 365.76,
+          "lon": 127.6403,
+          "lat": 26.3107,
+          "alt": 350.52,
           "on_ground": false,
-          "speed": 104.71,
+          "speed": 80.87,
           "category": "civilian"
         }
       ]
     },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "84bd16",
-          "callsign": "SFJ95",
-          "country": "Japan",
-          "lon": 139.3616,
-          "lat": 35.4636,
-          "alt": 5753.1,
-          "on_ground": false,
-          "speed": 174.54,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
