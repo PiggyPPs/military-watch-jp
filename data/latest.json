@@ -1,41 +1,17 @@
 {
-  "timestamp": "2026-10-11T08:16:49.743753+00:00",
+  "timestamp": "2026-10-11T08:47:16.273300+00:00",
   "bases": {
     "kadena": {
       "count": 0,
       "aircraft": []
     },
     "yokota": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "861bca",
-          "callsign": "ANA667",
-          "country": "Japan",
-          "lon": 139.3398,
-          "lat": 35.6961,
-          "alt": 6431.28,
-          "on_ground": false,
-          "speed": 205.31,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "71c257",
-          "callsign": "ABL134",
-          "country": "Republic of Korea",
-          "lon": 132.2501,
-          "lat": 34.0096,
-          "alt": 2087.88,
-          "on_ground": false,
-          "speed": 124.44,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "misawa": {
       "count": 0,
@@ -46,17 +22,28 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "88815e",
-          "callsign": "VJC935",
-          "country": "Viet Nam",
-          "lon": 139.4863,
-          "lat": 35.3513,
-          "alt": 7193.28,
+          "icao24": "781d9c",
+          "callsign": "CES522",
+          "country": "China",
+          "lon": 139.3616,
+          "lat": 35.4106,
+          "alt": 7871.46,
           "on_ground": false,
-          "speed": 211.24,
+          "speed": 219.85,
+          "category": "other"
+        },
+        {
+          "icao24": "a07bb3",
+          "callsign": "FDX5157",
+          "country": "United States",
+          "lon": 139.5736,
+          "lat": 35.3781,
+          "alt": 7795.26,
+          "on_ground": false,
+          "speed": 228.33,
           "category": "other"
         }
       ]
