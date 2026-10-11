@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-10-11T13:46:00.489732+00:00",
+  "timestamp": "2026-10-11T14:15:10.506607+00:00",
   "bases": {
     "kadena": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "868316",
-          "callsign": "ANA479",
+          "icao24": "86803a",
+          "callsign": "SKY599",
           "country": "Japan",
-          "lon": 127.64,
-          "lat": 26.3166,
-          "alt": 342.9,
+          "lon": 127.7033,
+          "lat": 26.5017,
+          "alt": 777.24,
           "on_ground": false,
-          "speed": 82.37,
+          "speed": 129.3,
           "category": "civilian"
         }
       ]
@@ -33,15 +33,15 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "868316",
-          "callsign": "ANA479",
-          "country": "Japan",
-          "lon": 127.6403,
-          "lat": 26.3107,
-          "alt": 350.52,
+          "icao24": "76bd45",
+          "callsign": "TGW882",
+          "country": "Singapore",
+          "lon": 127.8605,
+          "lat": 26.2035,
+          "alt": 11879.58,
           "on_ground": false,
-          "speed": 80.87,
-          "category": "civilian"
+          "speed": 251.53,
+          "category": "other"
         }
       ]
     },
