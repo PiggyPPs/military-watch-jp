@@ -1,41 +1,76 @@
 {
-  "timestamp": "2026-10-11T12:20:05.811358+00:00",
+  "timestamp": "2026-10-11T12:51:58.852907+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "8411a4",
+          "callsign": "JAL2087",
+          "country": "Japan",
+          "lon": 127.7955,
+          "lat": 26.2436,
+          "alt": 1935.48,
+          "on_ground": false,
+          "speed": 138.27,
+          "category": "civilian"
+        }
+      ]
     },
     "yokota": {
       "count": 0,
       "aircraft": []
     },
     "iwakuni": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "850fb6",
+          "callsign": "SFJ89",
+          "country": "Japan",
+          "lon": 132.1163,
+          "lat": 34.1024,
+          "alt": 4884.42,
+          "on_ground": false,
+          "speed": 172.28,
+          "category": "civilian"
+        }
+      ]
     },
     "misawa": {
       "count": 0,
       "aircraft": []
     },
     "futenma": {
-      "count": 0,
-      "aircraft": []
-    },
-    "atsugi": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "84c43e",
-          "callsign": "SFJ91",
+          "icao24": "8411a4",
+          "callsign": "JAL2087",
           "country": "Japan",
-          "lon": 139.4161,
-          "lat": 35.4805,
-          "alt": 5120.64,
+          "lon": 127.7946,
+          "lat": 26.2402,
+          "alt": 1905,
           "on_ground": false,
-          "speed": 176.66,
+          "speed": 137.77,
           "category": "civilian"
+        },
+        {
+          "icao24": "86d237",
+          "callsign": "SNJ25",
+          "country": "Japan",
+          "lon": 127.7739,
+          "lat": 26.1493,
+          "alt": 990.6,
+          "on_ground": false,
+          "speed": 131.76,
+          "category": "other"
         }
       ]
+    },
+    "atsugi": {
+      "count": 0,
+      "aircraft": []
     }
   }
 }
