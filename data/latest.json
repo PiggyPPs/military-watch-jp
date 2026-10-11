@@ -1,65 +1,65 @@
 {
-  "timestamp": "2026-10-11T07:46:20.426833+00:00",
+  "timestamp": "2026-10-11T08:16:49.743753+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "ae145a",
-          "callsign": "RCH440",
-          "country": "United States",
-          "lon": 127.7735,
-          "lat": 26.3544,
-          "alt": null,
-          "on_ground": true,
-          "speed": 2.83,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "a444d6",
-          "callsign": "N374YJ",
-          "country": "United States",
-          "lon": 139.3484,
-          "lat": 35.7487,
-          "alt": 99.06,
+          "icao24": "861bca",
+          "callsign": "ANA667",
+          "country": "Japan",
+          "lon": 139.3398,
+          "lat": 35.6961,
+          "alt": 6431.28,
           "on_ground": false,
-          "speed": 21.4,
-          "category": "other"
+          "speed": 205.31,
+          "category": "civilian"
         }
       ]
     },
     "iwakuni": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "71c257",
+          "callsign": "ABL134",
+          "country": "Republic of Korea",
+          "lon": 132.2501,
+          "lat": 34.0096,
+          "alt": 2087.88,
+          "on_ground": false,
+          "speed": 124.44,
+          "category": "other"
+        }
+      ]
     },
     "misawa": {
       "count": 0,
       "aircraft": []
     },
     "futenma": {
+      "count": 0,
+      "aircraft": []
+    },
+    "atsugi": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "ae145a",
-          "callsign": "RCH440",
-          "country": "United States",
-          "lon": 127.7735,
-          "lat": 26.3544,
-          "alt": null,
-          "on_ground": true,
-          "speed": 2.83,
+          "icao24": "88815e",
+          "callsign": "VJC935",
+          "country": "Viet Nam",
+          "lon": 139.4863,
+          "lat": 35.3513,
+          "alt": 7193.28,
+          "on_ground": false,
+          "speed": 211.24,
           "category": "other"
         }
       ]
-    },
-    "atsugi": {
-      "count": 0,
-      "aircraft": []
     }
   }
 }
