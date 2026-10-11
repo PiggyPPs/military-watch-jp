@@ -1,21 +1,9 @@
 {
-  "timestamp": "2026-10-11T18:50:12.864931+00:00",
+  "timestamp": "2026-10-11T19:14:58.425950+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "868034",
-          "callsign": "JAL34",
-          "country": "Japan",
-          "lon": 127.7122,
-          "lat": 26.4749,
-          "alt": 11277.6,
-          "on_ground": false,
-          "speed": 254.28,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 0,
