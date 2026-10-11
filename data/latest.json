@@ -1,119 +1,97 @@
 {
-  "timestamp": "2026-10-10T23:43:35.679051+00:00",
+  "timestamp": "2026-10-11T00:25:12.627119+00:00",
   "bases": {
     "kadena": {
       "count": 2,
       "aircraft": [
         {
-          "icao24": "71c743",
-          "callsign": "EOK394",
-          "country": "Republic of Korea",
-          "lon": 127.8486,
-          "lat": 26.3352,
-          "alt": 2804.16,
+          "icao24": "845c8d",
+          "callsign": "JTA43",
+          "country": "Japan",
+          "lon": 127.8197,
+          "lat": 26.2896,
+          "alt": 2179.32,
           "on_ground": false,
-          "speed": 142.53,
-          "category": "other"
+          "speed": 136.04,
+          "category": "civilian"
         },
         {
-          "icao24": "863c44",
-          "callsign": "ANA461",
+          "icao24": "8681ab",
+          "callsign": "SKY591",
           "country": "Japan",
-          "lon": 127.7993,
-          "lat": 26.2423,
-          "alt": 1508.76,
+          "lon": 127.8023,
+          "lat": 26.2184,
+          "alt": 1958.34,
           "on_ground": false,
-          "speed": 132.8,
+          "speed": 135.56,
           "category": "civilian"
         }
       ]
     },
     "yokota": {
+      "count": 0,
+      "aircraft": []
+    },
+    "iwakuni": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "86dca2",
-          "callsign": "JAL91",
+          "icao24": "8469ec",
+          "callsign": "FDA531",
           "country": "Japan",
-          "lon": 139.2819,
-          "lat": 35.8314,
-          "alt": 6362.7,
+          "lon": 132.2745,
+          "lat": 34.2762,
+          "alt": 10447.02,
           "on_ground": false,
-          "speed": 209.92,
+          "speed": 230.62,
           "category": "civilian"
         }
       ]
-    },
-    "iwakuni": {
-      "count": 0,
-      "aircraft": []
     },
     "misawa": {
       "count": 0,
       "aircraft": []
     },
     "futenma": {
-      "count": 3,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "846021",
-          "callsign": "JTA51",
+          "icao24": "845c8d",
+          "callsign": "JTA43",
           "country": "Japan",
-          "lon": 127.7707,
-          "lat": 26.1238,
-          "alt": 1303.02,
+          "lon": 127.8159,
+          "lat": 26.2774,
+          "alt": 2110.74,
           "on_ground": false,
-          "speed": 138.51,
+          "speed": 135.82,
           "category": "civilian"
         },
         {
-          "icao24": "71c743",
-          "callsign": "EOK394",
-          "country": "Republic of Korea",
-          "lon": 127.8418,
-          "lat": 26.3136,
-          "alt": 2628.9,
-          "on_ground": false,
-          "speed": 139.42,
-          "category": "other"
-        },
-        {
-          "icao24": "863c44",
-          "callsign": "ANA461",
+          "icao24": "8681ab",
+          "callsign": "SKY591",
           "country": "Japan",
-          "lon": 127.7993,
-          "lat": 26.2423,
-          "alt": 1508.76,
+          "lon": 127.8023,
+          "lat": 26.2184,
+          "alt": 1958.34,
           "on_ground": false,
-          "speed": 132.8,
+          "speed": 135.56,
           "category": "civilian"
         }
       ]
     },
     "atsugi": {
-      "count": 2,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "851cec",
-          "callsign": "JAL231",
+          "icao24": "851120",
+          "callsign": "JAL309",
           "country": "Japan",
-          "lon": 139.3968,
-          "lat": 35.4733,
-          "alt": 5600.7,
+          "lon": 139.576,
+          "lat": 35.5419,
+          "alt": 4145.28,
           "on_ground": false,
-          "speed": 200.12,
+          "speed": 190.5,
           "category": "civilian"
-        },
-        {
-          "icao24": "850edc",
-          "callsign": "",
-          "country": "Japan",
-          "lon": 139.5314,
-          "lat": 35.5503,
-          "alt": 1082.04,
-          "on_ground": false,
-          "speed": 95.89,
-          "category": "other"
         }
       ]
     }
