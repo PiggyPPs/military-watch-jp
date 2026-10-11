@@ -1,89 +1,41 @@
 {
-  "timestamp": "2026-10-11T03:48:39.485878+00:00",
+  "timestamp": "2026-10-11T04:16:43.455613+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "846866",
-          "callsign": "ANA1861",
-          "country": "Japan",
-          "lon": 127.8425,
-          "lat": 26.4863,
-          "alt": 3817.62,
-          "on_ground": false,
-          "speed": 179.58,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "850edc",
-          "callsign": "",
-          "country": "Japan",
-          "lon": 139.4916,
-          "lat": 35.6257,
-          "alt": 411.48,
+          "icao24": "71c073",
+          "callsign": "ASV702",
+          "country": "Republic of Korea",
+          "lon": 139.3252,
+          "lat": 35.8868,
+          "alt": 7216.14,
           "on_ground": false,
-          "speed": 59.15,
+          "speed": 216.72,
           "category": "other"
         }
       ]
     },
     "iwakuni": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "8422f9",
-          "callsign": "JTA36",
-          "country": "Japan",
-          "lon": 132.2316,
-          "lat": 34.168,
-          "alt": 11887.2,
-          "on_ground": false,
-          "speed": 246.2,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "misawa": {
       "count": 0,
       "aircraft": []
     },
     "futenma": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "86d594",
-          "callsign": "ANA469",
-          "country": "Japan",
-          "lon": 127.8968,
-          "lat": 26.1504,
-          "alt": 1432.56,
-          "on_ground": false,
-          "speed": 137.87,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "85c86f",
-          "callsign": "JA522T",
-          "country": "Japan",
-          "lon": 139.5923,
-          "lat": 35.5334,
-          "alt": 548.64,
-          "on_ground": false,
-          "speed": 55.91,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
