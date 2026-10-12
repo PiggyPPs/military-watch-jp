@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-12T12:31:01.154592+00:00",
+  "timestamp": "2026-10-12T13:34:04.258732+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -14,28 +14,28 @@
       "aircraft": []
     },
     "misawa": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "8681b3",
-          "callsign": "SKY730",
-          "country": "Japan",
-          "lon": 141.362,
-          "lat": 40.6444,
-          "alt": 10942.32,
-          "on_ground": false,
-          "speed": 231.85,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "futenma": {
       "count": 0,
       "aircraft": []
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "a97639",
+          "callsign": "CKS204",
+          "country": "United States",
+          "lon": 139.533,
+          "lat": 35.4762,
+          "alt": 9494.52,
+          "on_ground": false,
+          "speed": 245.42,
+          "category": "other"
+        }
+      ]
     }
   }
 }
