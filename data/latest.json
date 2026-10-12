@@ -1,40 +1,18 @@
 {
-  "timestamp": "2026-10-12T04:19:05.594077+00:00",
+  "timestamp": "2026-10-12T04:51:47.801696+00:00",
   "bases": {
     "kadena": {
-      "count": 3,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "85d42c",
-          "callsign": "ANA1267",
+          "icao24": "868089",
+          "callsign": "SKY531",
           "country": "Japan",
-          "lon": 127.6255,
-          "lat": 26.3132,
-          "alt": 350.52,
-          "on_ground": false,
-          "speed": 90.24,
-          "category": "civilian"
-        },
-        {
-          "icao24": "71c589",
-          "callsign": "KAL2148",
-          "country": "Republic of Korea",
-          "lon": 127.7675,
-          "lat": 26.2228,
-          "alt": 3634.74,
-          "on_ground": false,
-          "speed": 164.43,
-          "category": "other"
-        },
-        {
-          "icao24": "862db6",
-          "callsign": "JAL913",
-          "country": "Japan",
-          "lon": 127.6255,
-          "lat": 26.3124,
+          "lon": 127.6277,
+          "lat": 26.3822,
           "alt": 358.14,
           "on_ground": false,
-          "speed": 86.77,
+          "speed": 99.26,
           "category": "civilian"
         }
       ]
@@ -44,59 +22,37 @@
       "aircraft": []
     },
     "iwakuni": {
-      "count": 0,
-      "aircraft": []
-    },
-    "misawa": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "841e00",
-          "callsign": "ADO106",
+          "icao24": "851826",
+          "callsign": "JAL609",
           "country": "Japan",
-          "lon": 141.4447,
-          "lat": 40.5788,
-          "alt": 7315.2,
+          "lon": 132.1047,
+          "lat": 34.291,
+          "alt": 11582.4,
           "on_ground": false,
-          "speed": 201.13,
+          "speed": 209.55,
           "category": "civilian"
         }
       ]
     },
+    "misawa": {
+      "count": 0,
+      "aircraft": []
+    },
     "futenma": {
-      "count": 3,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "85d42c",
-          "callsign": "ANA1267",
+          "icao24": "868089",
+          "callsign": "SKY531",
           "country": "Japan",
-          "lon": 127.6255,
-          "lat": 26.3132,
-          "alt": 350.52,
-          "on_ground": false,
-          "speed": 90.24,
-          "category": "civilian"
-        },
-        {
-          "icao24": "71c589",
-          "callsign": "KAL2148",
-          "country": "Republic of Korea",
-          "lon": 127.765,
-          "lat": 26.2534,
-          "alt": 3970.02,
-          "on_ground": false,
-          "speed": 162.14,
-          "category": "other"
-        },
-        {
-          "icao24": "862db6",
-          "callsign": "JAL913",
-          "country": "Japan",
-          "lon": 127.6255,
-          "lat": 26.3124,
+          "lon": 127.6261,
+          "lat": 26.3669,
           "alt": 358.14,
           "on_ground": false,
-          "speed": 86.77,
+          "speed": 91.43,
           "category": "civilian"
         }
       ]
