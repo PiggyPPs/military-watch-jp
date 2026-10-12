@@ -1,22 +1,33 @@
 {
-  "timestamp": "2026-10-12T01:24:03.530724+00:00",
+  "timestamp": "2026-10-12T01:50:17.457539+00:00",
   "bases": {
     "kadena": {
       "count": 0,
       "aircraft": []
     },
     "yokota": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
           "icao24": "852539",
           "callsign": "",
           "country": "Japan",
-          "lon": 139.4049,
-          "lat": 35.7087,
-          "alt": 22.86,
+          "lon": 139.3907,
+          "lat": 35.5987,
+          "alt": 381,
           "on_ground": false,
-          "speed": 5.17,
+          "speed": 42.92,
+          "category": "other"
+        },
+        {
+          "icao24": "a0b34f",
+          "callsign": "N144UA",
+          "country": "United States",
+          "lon": 139.3318,
+          "lat": 35.8502,
+          "alt": 944.88,
+          "on_ground": false,
+          "speed": 41.97,
           "category": "other"
         }
       ]
@@ -34,18 +45,62 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 1,
+      "count": 5,
       "aircraft": [
         {
-          "icao24": "872720",
-          "callsign": "ANA969",
+          "icao24": "841f65",
+          "callsign": "JAL233",
           "country": "Japan",
-          "lon": 139.5187,
-          "lat": 35.4748,
-          "alt": 4023.36,
+          "lon": 139.5911,
+          "lat": 35.4676,
+          "alt": 3581.4,
           "on_ground": false,
-          "speed": 188.96,
+          "speed": 189.05,
           "category": "civilian"
+        },
+        {
+          "icao24": "852539",
+          "callsign": "",
+          "country": "Japan",
+          "lon": 139.3855,
+          "lat": 35.5998,
+          "alt": 388.62,
+          "on_ground": false,
+          "speed": 42.68,
+          "category": "other"
+        },
+        {
+          "icao24": "781054",
+          "callsign": "CSS364",
+          "country": "China",
+          "lon": 139.4493,
+          "lat": 35.3462,
+          "alt": 9144,
+          "on_ground": false,
+          "speed": 226.83,
+          "category": "other"
+        },
+        {
+          "icao24": "a444d6",
+          "callsign": "N374YJ",
+          "country": "United States",
+          "lon": 139.3146,
+          "lat": 35.34,
+          "alt": 990.6,
+          "on_ground": false,
+          "speed": 65.56,
+          "category": "other"
+        },
+        {
+          "icao24": "851d2c",
+          "callsign": "",
+          "country": "Japan",
+          "lon": 139.5455,
+          "lat": 35.3788,
+          "alt": 1295.4,
+          "on_ground": false,
+          "speed": 104.02,
+          "category": "other"
         }
       ]
     }
