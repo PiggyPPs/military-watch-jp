@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-12T14:53:59.217878+00:00",
+  "timestamp": "2026-10-12T15:20:17.315125+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -13,14 +13,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "a846fa",
-          "callsign": "UPS94",
+          "icao24": "a983b7",
+          "callsign": "CKS866",
           "country": "United States",
-          "lon": 132.1388,
-          "lat": 34.0787,
+          "lon": 132.2749,
+          "lat": 34.0954,
           "alt": 12192,
           "on_ground": false,
-          "speed": 230.21,
+          "speed": 231.95,
           "category": "other"
         }
       ]
