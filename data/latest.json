@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-12T22:15:39.080041+00:00",
+  "timestamp": "2026-10-12T22:47:34.820991+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -9,14 +9,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "846866",
-          "callsign": "ANA381",
+          "icao24": "851580",
+          "callsign": "JAL253",
           "country": "Japan",
-          "lon": 139.2641,
-          "lat": 35.8098,
-          "alt": 5494.02,
+          "lon": 139.4655,
+          "lat": 35.7088,
+          "alt": 5387.34,
           "on_ground": false,
-          "speed": 205.96,
+          "speed": 197.82,
           "category": "civilian"
         }
       ]
