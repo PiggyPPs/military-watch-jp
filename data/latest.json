@@ -1,44 +1,33 @@
 {
-  "timestamp": "2026-10-12T00:58:51.401718+00:00",
+  "timestamp": "2026-10-12T01:24:03.530724+00:00",
   "bases": {
     "kadena": {
       "count": 0,
       "aircraft": []
     },
     "yokota": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "852539",
+          "callsign": "",
+          "country": "Japan",
+          "lon": 139.4049,
+          "lat": 35.7087,
+          "alt": 22.86,
+          "on_ground": false,
+          "speed": 5.17,
+          "category": "other"
+        }
+      ]
     },
     "iwakuni": {
       "count": 0,
       "aircraft": []
     },
     "misawa": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "8745c2",
-          "callsign": "ANA54",
-          "country": "Japan",
-          "lon": 141.487,
-          "lat": 40.7974,
-          "alt": 11582.4,
-          "on_ground": false,
-          "speed": 226.7,
-          "category": "civilian"
-        },
-        {
-          "icao24": "846978",
-          "callsign": "ADO82",
-          "country": "Japan",
-          "lon": 141.4475,
-          "lat": 40.8126,
-          "alt": 12192,
-          "on_ground": false,
-          "speed": 201.18,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "futenma": {
       "count": 0,
@@ -48,15 +37,15 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "888187",
-          "callsign": "HVN311",
-          "country": "Viet Nam",
-          "lon": 139.3002,
-          "lat": 35.3376,
-          "alt": 7612.38,
+          "icao24": "872720",
+          "callsign": "ANA969",
+          "country": "Japan",
+          "lon": 139.5187,
+          "lat": 35.4748,
+          "alt": 4023.36,
           "on_ground": false,
-          "speed": 208.2,
-          "category": "other"
+          "speed": 188.96,
+          "category": "civilian"
         }
       ]
     }
