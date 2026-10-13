@@ -1,19 +1,30 @@
 {
-  "timestamp": "2026-10-13T08:21:05.085238+00:00",
+  "timestamp": "2026-10-13T08:51:31.333087+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "8414a9",
-          "callsign": "JTA44",
+          "icao24": "841f65",
+          "callsign": "JTA8",
           "country": "Japan",
-          "lon": 127.6245,
-          "lat": 26.3229,
-          "alt": 1005.84,
+          "lon": 127.687,
+          "lat": 26.3976,
+          "alt": 2529.84,
           "on_ground": false,
-          "speed": 135.85,
+          "speed": 149.19,
           "category": "civilian"
+        },
+        {
+          "icao24": "76cce7",
+          "callsign": "SIA24",
+          "country": "Singapore",
+          "lon": 127.703,
+          "lat": 26.2577,
+          "alt": 11277.6,
+          "on_ground": false,
+          "speed": 260.86,
+          "category": "other"
         }
       ]
     },
@@ -30,24 +41,47 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "8414a9",
-          "callsign": "JTA44",
+          "icao24": "841f65",
+          "callsign": "JTA8",
           "country": "Japan",
-          "lon": 127.6278,
-          "lat": 26.3461,
-          "alt": 1318.26,
+          "lon": 127.6907,
+          "lat": 26.409,
+          "alt": 2667,
           "on_ground": false,
-          "speed": 138.98,
+          "speed": 149.35,
           "category": "civilian"
+        },
+        {
+          "icao24": "76cce7",
+          "callsign": "SIA24",
+          "country": "Singapore",
+          "lon": 127.7254,
+          "lat": 26.2757,
+          "alt": 11277.6,
+          "on_ground": false,
+          "speed": 261.17,
+          "category": "other"
         }
       ]
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "86d310",
+          "callsign": "ANA595",
+          "country": "Japan",
+          "lon": 139.5997,
+          "lat": 35.4776,
+          "alt": 3878.58,
+          "on_ground": false,
+          "speed": 175.73,
+          "category": "civilian"
+        }
+      ]
     }
   }
 }
