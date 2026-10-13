@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-13T13:29:49.650182+00:00",
+  "timestamp": "2026-10-13T13:58:56.826994+00:00",
   "bases": {
     "kadena": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "840659",
-          "callsign": "JTA65",
+          "icao24": "85d7c0",
+          "callsign": "AKX5557",
           "country": "Japan",
-          "lon": 127.8105,
-          "lat": 26.2316,
-          "alt": 1844.04,
+          "lon": 127.8319,
+          "lat": 26.2355,
+          "alt": 1348.74,
           "on_ground": false,
-          "speed": 139.43,
-          "category": "civilian"
+          "speed": 138.35,
+          "category": "other"
         }
       ]
     },
@@ -33,21 +33,33 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "840659",
-          "callsign": "JTA65",
+          "icao24": "85d7c0",
+          "callsign": "AKX5557",
           "country": "Japan",
-          "lon": 127.8105,
-          "lat": 26.2316,
-          "alt": 1844.04,
+          "lon": 127.8319,
+          "lat": 26.2355,
+          "alt": 1348.74,
           "on_ground": false,
-          "speed": 139.43,
-          "category": "civilian"
+          "speed": 138.35,
+          "category": "other"
         }
       ]
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "89655c",
+          "callsign": "UAE319",
+          "country": "United Arab Emirates",
+          "lon": 139.5182,
+          "lat": 35.3617,
+          "alt": 7048.5,
+          "on_ground": false,
+          "speed": 221.49,
+          "category": "other"
+        }
+      ]
     }
   }
 }
