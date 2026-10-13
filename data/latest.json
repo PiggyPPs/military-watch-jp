@@ -1,25 +1,25 @@
 {
-  "timestamp": "2026-10-13T12:58:41.105440+00:00",
+  "timestamp": "2026-10-13T13:29:49.650182+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
-    },
-    "yokota": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "4ba949",
-          "callsign": "THY199",
-          "country": "Turkey",
-          "lon": 139.2583,
-          "lat": 35.8198,
-          "alt": 5516.88,
+          "icao24": "840659",
+          "callsign": "JTA65",
+          "country": "Japan",
+          "lon": 127.8105,
+          "lat": 26.2316,
+          "alt": 1844.04,
           "on_ground": false,
-          "speed": 209.18,
-          "category": "other"
+          "speed": 139.43,
+          "category": "civilian"
         }
       ]
+    },
+    "yokota": {
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
       "count": 0,
@@ -33,33 +33,21 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "8414a9",
-          "callsign": "JTA49",
+          "icao24": "840659",
+          "callsign": "JTA65",
           "country": "Japan",
-          "lon": 127.8166,
-          "lat": 26.1947,
-          "alt": 1813.56,
+          "lon": 127.8105,
+          "lat": 26.2316,
+          "alt": 1844.04,
           "on_ground": false,
-          "speed": 139.63,
+          "speed": 139.43,
           "category": "civilian"
         }
       ]
     },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "ae4fb6",
-          "callsign": "FFAB123",
-          "country": "United States",
-          "lon": 139.4514,
-          "lat": 35.4599,
-          "alt": 76.2,
-          "on_ground": false,
-          "speed": 6.71,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
