@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-13T09:49:58.785171+00:00",
+  "timestamp": "2026-10-13T10:19:40.910701+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -10,16 +10,63 @@
       "aircraft": []
     },
     "iwakuni": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "851230",
+          "callsign": "JAL613",
+          "country": "Japan",
+          "lon": 132.2224,
+          "lat": 34.2718,
+          "alt": 9753.6,
+          "on_ground": false,
+          "speed": 205.8,
+          "category": "civilian"
+        }
+      ]
     },
     "misawa": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "84b86d",
+          "callsign": "APJ582",
+          "country": "Japan",
+          "lon": 141.2928,
+          "lat": 40.7699,
+          "alt": 11582.4,
+          "on_ground": false,
+          "speed": 218.73,
+          "category": "civilian"
+        }
+      ]
     },
     "futenma": {
-      "count": 0,
-      "aircraft": []
+      "count": 2,
+      "aircraft": [
+        {
+          "icao24": "8733bc",
+          "callsign": "ANA1097",
+          "country": "Japan",
+          "lon": 127.8772,
+          "lat": 26.1773,
+          "alt": 2049.78,
+          "on_ground": false,
+          "speed": 132.42,
+          "category": "civilian"
+        },
+        {
+          "icao24": "86ce81",
+          "callsign": "SNJ129",
+          "country": "Japan",
+          "lon": 127.8828,
+          "lat": 26.1813,
+          "alt": 1897.38,
+          "on_ground": false,
+          "speed": 137.27,
+          "category": "other"
+        }
+      ]
     },
     "atsugi": {
       "count": 0,
