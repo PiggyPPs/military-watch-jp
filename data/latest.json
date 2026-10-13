@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-13T17:17:54.181501+00:00",
+  "timestamp": "2026-10-13T17:48:51.132812+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -10,8 +10,20 @@
       "aircraft": []
     },
     "iwakuni": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "780aec",
+          "callsign": "CSG2536",
+          "country": "China",
+          "lon": 132.1816,
+          "lat": 34.0904,
+          "alt": 11582.4,
+          "on_ground": false,
+          "speed": 199.49,
+          "category": "other"
+        }
+      ]
     },
     "misawa": {
       "count": 0,
