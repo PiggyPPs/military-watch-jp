@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-13T14:54:37.565594+00:00",
+  "timestamp": "2026-10-13T15:20:35.884012+00:00",
   "bases": {
     "kadena": {
       "count": 1,
@@ -8,11 +8,11 @@
           "icao24": "ae6bb4",
           "callsign": "RUDY32",
           "country": "United States",
-          "lon": 127.7835,
-          "lat": 26.3614,
+          "lon": 127.7775,
+          "lat": 26.3556,
           "alt": null,
           "on_ground": true,
-          "speed": 4.12,
+          "speed": 0.45,
           "category": "other"
         }
       ]
@@ -36,11 +36,11 @@
           "icao24": "ae6bb4",
           "callsign": "RUDY32",
           "country": "United States",
-          "lon": 127.7835,
-          "lat": 26.3614,
+          "lon": 127.7775,
+          "lat": 26.3556,
           "alt": null,
           "on_ground": true,
-          "speed": 4.12,
+          "speed": 0.45,
           "category": "other"
         }
       ]
