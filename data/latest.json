@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-13T10:19:40.910701+00:00",
+  "timestamp": "2026-10-13T10:51:26.001890+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -10,67 +10,43 @@
       "aircraft": []
     },
     "iwakuni": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "851230",
-          "callsign": "JAL613",
-          "country": "Japan",
-          "lon": 132.2224,
-          "lat": 34.2718,
-          "alt": 9753.6,
-          "on_ground": false,
-          "speed": 205.8,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "misawa": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "84b86d",
-          "callsign": "APJ582",
-          "country": "Japan",
-          "lon": 141.2928,
-          "lat": 40.7699,
-          "alt": 11582.4,
-          "on_ground": false,
-          "speed": 218.73,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "futenma": {
+      "count": 0,
+      "aircraft": []
+    },
+    "atsugi": {
       "count": 2,
       "aircraft": [
         {
-          "icao24": "8733bc",
-          "callsign": "ANA1097",
-          "country": "Japan",
-          "lon": 127.8772,
-          "lat": 26.1773,
-          "alt": 2049.78,
+          "icao24": "ae0134",
+          "callsign": "NINJA85",
+          "country": "United States",
+          "lon": 139.4503,
+          "lat": 35.4428,
+          "alt": 91.44,
           "on_ground": false,
-          "speed": 132.42,
-          "category": "civilian"
+          "speed": 62.77,
+          "category": "other"
         },
         {
-          "icao24": "86ce81",
-          "callsign": "SNJ129",
+          "icao24": "8464f4",
+          "callsign": "ANA457",
           "country": "Japan",
-          "lon": 127.8828,
-          "lat": 26.1813,
-          "alt": 1897.38,
+          "lon": 139.5934,
+          "lat": 35.4604,
+          "alt": 4015.74,
           "on_ground": false,
-          "speed": 137.27,
-          "category": "other"
+          "speed": 171.07,
+          "category": "civilian"
         }
       ]
-    },
-    "atsugi": {
-      "count": 0,
-      "aircraft": []
     }
   }
 }
