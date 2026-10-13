@@ -1,21 +1,9 @@
 {
-  "timestamp": "2026-10-13T09:19:37.394301+00:00",
+  "timestamp": "2026-10-13T09:49:58.785171+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "ae5f49",
-          "callsign": "",
-          "country": "United States",
-          "lon": 127.7773,
-          "lat": 26.3577,
-          "alt": null,
-          "on_ground": true,
-          "speed": 0,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 0,
@@ -26,52 +14,16 @@
       "aircraft": []
     },
     "misawa": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "845ebc",
-          "callsign": "ADO110",
-          "country": "Japan",
-          "lon": 141.24,
-          "lat": 40.5772,
-          "alt": 9745.98,
-          "on_ground": false,
-          "speed": 217.61,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "futenma": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "ae5f49",
-          "callsign": "",
-          "country": "United States",
-          "lon": 127.7773,
-          "lat": 26.3577,
-          "alt": null,
-          "on_ground": true,
-          "speed": 0,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "846bfa",
-          "callsign": "ANA537",
-          "country": "Japan",
-          "lon": 139.3809,
-          "lat": 35.4949,
-          "alt": 5494.02,
-          "on_ground": false,
-          "speed": 176.49,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
