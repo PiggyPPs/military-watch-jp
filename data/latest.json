@@ -1,18 +1,40 @@
 {
-  "timestamp": "2026-10-13T01:50:34.017734+00:00",
+  "timestamp": "2026-10-13T02:17:54.834141+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
+      "count": 3,
       "aircraft": [
         {
-          "icao24": "868710",
-          "callsign": "ANA467",
+          "icao24": "8418cc",
+          "callsign": "JAL907",
           "country": "Japan",
-          "lon": 127.6242,
-          "lat": 26.3673,
+          "lon": 127.6253,
+          "lat": 26.3164,
           "alt": 358.14,
           "on_ground": false,
-          "speed": 85.41,
+          "speed": 67.49,
+          "category": "civilian"
+        },
+        {
+          "icao24": "ae6a12",
+          "callsign": "HRCLS81",
+          "country": "United States",
+          "lon": 127.7737,
+          "lat": 26.3576,
+          "alt": null,
+          "on_ground": true,
+          "speed": 8.75,
+          "category": "other"
+        },
+        {
+          "icao24": "86d57f",
+          "callsign": "APJ213",
+          "country": "Japan",
+          "lon": 127.662,
+          "lat": 26.4661,
+          "alt": 586.74,
+          "on_ground": false,
+          "speed": 120.84,
           "category": "civilian"
         }
       ]
@@ -24,22 +46,22 @@
           "icao24": "ae08f1",
           "callsign": "MOJO15",
           "country": "United States",
-          "lon": 139.3289,
-          "lat": 35.7058,
-          "alt": 510.54,
+          "lon": 139.3324,
+          "lat": 35.702,
+          "alt": 472.44,
           "on_ground": false,
-          "speed": 72.66,
+          "speed": 79.67,
           "category": "other"
         },
         {
-          "icao24": "850edc",
-          "callsign": "",
-          "country": "Japan",
-          "lon": 139.492,
-          "lat": 35.606,
-          "alt": 701.04,
-          "on_ground": false,
-          "speed": 85.4,
+          "icao24": "ae0582",
+          "callsign": "RCH5061",
+          "country": "United States",
+          "lon": 139.3452,
+          "lat": 35.7529,
+          "alt": null,
+          "on_ground": true,
+          "speed": 3.86,
           "category": "other"
         }
       ]
@@ -48,14 +70,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "ae06dd",
-          "callsign": "",
-          "country": "United States",
-          "lon": 132.3316,
-          "lat": 34.0915,
-          "alt": 1775.46,
+          "icao24": "86cf2b",
+          "callsign": "SNJ93",
+          "country": "Japan",
+          "lon": 132.2247,
+          "lat": 34.0504,
+          "alt": 3726.18,
           "on_ground": false,
-          "speed": 74.59,
+          "speed": 169.52,
           "category": "other"
         }
       ]
@@ -65,47 +87,35 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "868710",
-          "callsign": "ANA467",
+          "icao24": "8418cc",
+          "callsign": "JAL907",
           "country": "Japan",
-          "lon": 127.6241,
-          "lat": 26.3632,
+          "lon": 127.6253,
+          "lat": 26.3164,
           "alt": 358.14,
           "on_ground": false,
-          "speed": 84.91,
+          "speed": 67.49,
           "category": "civilian"
+        },
+        {
+          "icao24": "ae6a12",
+          "callsign": "HRCLS81",
+          "country": "United States",
+          "lon": 127.7737,
+          "lat": 26.3576,
+          "alt": null,
+          "on_ground": true,
+          "speed": 8.75,
+          "category": "other"
         }
       ]
     },
     "atsugi": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "85c19c",
-          "callsign": "JA505A",
-          "country": "Japan",
-          "lon": 139.4784,
-          "lat": 35.5715,
-          "alt": 1150.62,
-          "on_ground": false,
-          "speed": 55.9,
-          "category": "other"
-        },
-        {
-          "icao24": "850edc",
-          "callsign": "",
-          "country": "Japan",
-          "lon": 139.4925,
-          "lat": 35.5968,
-          "alt": 716.28,
-          "on_ground": false,
-          "speed": 90.1,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
