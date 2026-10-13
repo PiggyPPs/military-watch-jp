@@ -1,73 +1,61 @@
 {
-  "timestamp": "2026-10-13T05:49:51.827366+00:00",
+  "timestamp": "2026-10-13T06:24:44.285863+00:00",
   "bases": {
     "kadena": {
-      "count": 3,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "ac777c",
-          "callsign": "N902KA",
-          "country": "United States",
-          "lon": 127.913,
-          "lat": 26.4094,
-          "alt": 3802.38,
-          "on_ground": false,
-          "speed": 98.38,
-          "category": "other"
-        },
-        {
-          "icao24": "84093e",
-          "callsign": "JL3715",
+          "icao24": "86cf7c",
+          "callsign": "ANA1863",
           "country": "Japan",
-          "lon": 127.8562,
-          "lat": 26.2342,
-          "alt": 3124.2,
-          "on_ground": false,
-          "speed": 98.48,
-          "category": "other"
-        },
-        {
-          "icao24": "86cf09",
-          "callsign": "SNJ121",
-          "country": "Japan",
-          "lon": 127.6267,
-          "lat": 26.3174,
+          "lon": 127.627,
+          "lat": 26.3168,
           "alt": 373.38,
           "on_ground": false,
-          "speed": 82.47,
-          "category": "other"
+          "speed": 86.55,
+          "category": "civilian"
         }
       ]
     },
     "yokota": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "ae04d9",
-          "callsign": "CNV4900",
-          "country": "United States",
-          "lon": 139.3438,
-          "lat": 35.7504,
-          "alt": null,
-          "on_ground": true,
-          "speed": 0.9,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
-      "count": 1,
+      "count": 3,
       "aircraft": [
         {
-          "icao24": "ae08ef",
-          "callsign": "MOJO67",
-          "country": "United States",
-          "lon": 132.3101,
-          "lat": 34.0477,
-          "alt": 7612.38,
+          "icao24": "846a14",
+          "callsign": "JA14HA",
+          "country": "Japan",
+          "lon": 132.1631,
+          "lat": 34.0723,
+          "alt": 2446.02,
           "on_ground": false,
-          "speed": 153.01,
+          "speed": 75.3,
           "category": "other"
+        },
+        {
+          "icao24": "ae03d4",
+          "callsign": "",
+          "country": "United States",
+          "lon": 132.3302,
+          "lat": 34.157,
+          "alt": 815.34,
+          "on_ground": false,
+          "speed": 107.42,
+          "category": "other"
+        },
+        {
+          "icao24": "868038",
+          "callsign": "SKY145",
+          "country": "Japan",
+          "lon": 132.2968,
+          "lat": 34.2834,
+          "alt": 10363.2,
+          "on_ground": false,
+          "speed": 206.02,
+          "category": "civilian"
         }
       ]
     },
@@ -76,47 +64,24 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 2,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "84093e",
-          "callsign": "JL3715",
+          "icao24": "86cf7c",
+          "callsign": "ANA1863",
           "country": "Japan",
-          "lon": 127.8546,
-          "lat": 26.2318,
-          "alt": 3108.96,
-          "on_ground": false,
-          "speed": 98.48,
-          "category": "other"
-        },
-        {
-          "icao24": "86cf09",
-          "callsign": "SNJ121",
-          "country": "Japan",
-          "lon": 127.6267,
-          "lat": 26.3174,
+          "lon": 127.627,
+          "lat": 26.3168,
           "alt": 373.38,
           "on_ground": false,
-          "speed": 82.47,
-          "category": "other"
+          "speed": 86.55,
+          "category": "civilian"
         }
       ]
     },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "84715c",
-          "callsign": "JJP405",
-          "country": "Japan",
-          "lon": 139.4575,
-          "lat": 35.3496,
-          "alt": 8549.64,
-          "on_ground": false,
-          "speed": 215,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
