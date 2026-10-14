@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-14T14:05:20.995784+00:00",
+  "timestamp": "2026-10-14T15:02:57.309222+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -22,20 +22,8 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "896475",
-          "callsign": "UAE319",
-          "country": "United Arab Emirates",
-          "lon": 139.3388,
-          "lat": 35.4916,
-          "alt": 7787.64,
-          "on_ground": false,
-          "speed": 205.43,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
