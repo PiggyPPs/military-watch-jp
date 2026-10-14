@@ -1,21 +1,9 @@
 {
-  "timestamp": "2026-10-14T16:08:00.972493+00:00",
+  "timestamp": "2026-10-14T17:04:48.988129+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "76cc72",
-          "callsign": "SIA623",
-          "country": "Singapore",
-          "lon": 127.875,
-          "lat": 26.2671,
-          "alt": 10972.8,
-          "on_ground": false,
-          "speed": 242.06,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 0,
@@ -30,20 +18,8 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "76cc72",
-          "callsign": "SIA623",
-          "country": "Singapore",
-          "lon": 127.8579,
-          "lat": 26.2428,
-          "alt": 10972.8,
-          "on_ground": false,
-          "speed": 242.5,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "atsugi": {
       "count": 0,
