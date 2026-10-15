@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-15T23:25:51.270322+00:00",
+  "timestamp": "2026-10-15T23:53:22.430063+00:00",
   "bases": {
     "kadena": {
       "count": 1,
@@ -8,28 +8,39 @@
           "icao24": "ae0f92",
           "callsign": "MAGIC66",
           "country": "United States",
-          "lon": 127.632,
-          "lat": 26.4069,
+          "lon": 127.6524,
+          "lat": 26.3788,
           "alt": 876.3,
           "on_ground": false,
-          "speed": 92.02,
+          "speed": 91.89,
           "category": "other"
         }
       ]
     },
     "yokota": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "84b42f",
-          "callsign": "APJ351",
+          "icao24": "8527e8",
+          "callsign": "",
           "country": "Japan",
-          "lon": 139.3135,
-          "lat": 35.8202,
-          "alt": 9311.64,
+          "lon": 139.489,
+          "lat": 35.6552,
+          "alt": 579.12,
           "on_ground": false,
-          "speed": 200.74,
-          "category": "civilian"
+          "speed": 90.87,
+          "category": "other"
+        },
+        {
+          "icao24": "a09aac",
+          "callsign": "N138UA",
+          "country": "United States",
+          "lon": 139.2971,
+          "lat": 35.866,
+          "alt": 1013.46,
+          "on_ground": false,
+          "speed": 64.1,
+          "category": "other"
         }
       ]
     },
@@ -37,15 +48,15 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "86cec5",
-          "callsign": "SNJ31",
+          "icao24": "846021",
+          "callsign": "JTA13",
           "country": "Japan",
-          "lon": 132.3132,
-          "lat": 34.2682,
-          "alt": 7924.8,
+          "lon": 132.3411,
+          "lat": 34.1367,
+          "alt": 10462.26,
           "on_ground": false,
-          "speed": 217.56,
-          "category": "other"
+          "speed": 186.66,
+          "category": "civilian"
         }
       ]
     },
@@ -60,11 +71,11 @@
           "icao24": "ae0f92",
           "callsign": "MAGIC66",
           "country": "United States",
-          "lon": 127.6296,
-          "lat": 26.4046,
+          "lon": 127.6447,
+          "lat": 26.3741,
           "alt": 876.3,
           "on_ground": false,
-          "speed": 91.77,
+          "speed": 91.89,
           "category": "other"
         }
       ]
@@ -73,14 +84,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "8411a4",
-          "callsign": "JAL307",
+          "icao24": "840944",
+          "callsign": "JJP609",
           "country": "Japan",
-          "lon": 139.4732,
-          "lat": 35.572,
-          "alt": 4373.88,
+          "lon": 139.5589,
+          "lat": 35.3736,
+          "alt": 9144,
           "on_ground": false,
-          "speed": 183.34,
+          "speed": 192.21,
           "category": "civilian"
         }
       ]
