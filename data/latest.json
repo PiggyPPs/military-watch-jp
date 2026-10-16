@@ -1,78 +1,45 @@
 {
-  "timestamp": "2026-10-16T06:40:20.496113+00:00",
+  "timestamp": "2026-10-16T07:35:38.523824+00:00",
   "bases": {
     "kadena": {
-      "count": 3,
+      "count": 1,
       "aircraft": [
-        {
-          "icao24": "ae0f92",
-          "callsign": "MAGIC44",
-          "country": "United States",
-          "lon": 127.778,
-          "lat": 26.2475,
-          "alt": 426.72,
-          "on_ground": false,
-          "speed": 81.05,
-          "category": "other"
-        },
-        {
-          "icao24": "868688",
-          "callsign": "ANA766",
-          "country": "Japan",
-          "lon": 127.6265,
-          "lat": 26.4189,
-          "alt": 2141.22,
-          "on_ground": false,
-          "speed": 144.31,
-          "category": "civilian"
-        },
         {
           "icao24": "a709dc",
           "callsign": "N55246",
           "country": "United States",
-          "lon": 127.7872,
-          "lat": 26.3666,
-          "alt": 205.74,
+          "lon": 127.7678,
+          "lat": 26.3535,
+          "alt": 15.24,
           "on_ground": false,
-          "speed": 36.31,
+          "speed": 30.37,
           "category": "other"
         }
       ]
     },
     "yokota": {
-      "count": 3,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "a0d062",
-          "callsign": "GTI8722",
-          "country": "United States",
-          "lon": 139.3437,
-          "lat": 35.7544,
-          "alt": null,
-          "on_ground": true,
-          "speed": 0,
-          "category": "other"
-        },
-        {
-          "icao24": "84657c",
-          "callsign": "ANA1083",
+          "icao24": "86260b",
+          "callsign": "JA634P",
           "country": "Japan",
-          "lon": 139.3888,
-          "lat": 35.7074,
-          "alt": 5250.18,
+          "lon": 139.4355,
+          "lat": 35.8625,
+          "alt": 342.9,
           "on_ground": false,
-          "speed": 192.73,
-          "category": "civilian"
+          "speed": 60.71,
+          "category": "other"
         },
         {
           "icao24": "a444d6",
           "callsign": "N374YJ",
           "country": "United States",
-          "lon": 139.3264,
-          "lat": 35.7454,
-          "alt": 396.24,
-          "on_ground": false,
-          "speed": 53.28,
+          "lon": 139.36,
+          "lat": 35.7413,
+          "alt": null,
+          "on_ground": true,
+          "speed": 4.37,
           "category": "other"
         }
       ]
@@ -82,39 +49,52 @@
       "aircraft": []
     },
     "misawa": {
-      "count": 0,
-      "aircraft": []
-    },
-    "futenma": {
-      "count": 2,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "ae0f92",
-          "callsign": "MAGIC44",
-          "country": "United States",
-          "lon": 127.783,
-          "lat": 26.2848,
-          "alt": 320.04,
+          "icao24": "846250",
+          "callsign": "ADO28",
+          "country": "Japan",
+          "lon": 141.4273,
+          "lat": 40.7252,
+          "alt": 10363.2,
           "on_ground": false,
-          "speed": 79.09,
-          "category": "other"
-        },
+          "speed": 207.75,
+          "category": "civilian"
+        }
+      ]
+    },
+    "futenma": {
+      "count": 1,
+      "aircraft": [
         {
           "icao24": "a709dc",
           "callsign": "N55246",
           "country": "United States",
-          "lon": 127.7904,
-          "lat": 26.3653,
-          "alt": 236.22,
+          "lon": 127.7678,
+          "lat": 26.3535,
+          "alt": 15.24,
           "on_ground": false,
-          "speed": 39.73,
+          "speed": 30.37,
           "category": "other"
         }
       ]
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "78242a",
+          "callsign": "B65AP",
+          "country": "China",
+          "lon": 139.3545,
+          "lat": 35.4078,
+          "alt": 9944.1,
+          "on_ground": false,
+          "speed": 191.45,
+          "category": "other"
+        }
+      ]
     }
   }
 }
