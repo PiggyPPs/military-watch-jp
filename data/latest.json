@@ -1,21 +1,9 @@
 {
-  "timestamp": "2026-10-16T21:01:01.791746+00:00",
+  "timestamp": "2026-10-16T21:57:59.339268+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "888187",
-          "callsign": "HVN306",
-          "country": "Viet Nam",
-          "lon": 127.8848,
-          "lat": 26.3919,
-          "alt": 11887.2,
-          "on_ground": false,
-          "speed": 268.78,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 0,
@@ -30,24 +18,24 @@
       "aircraft": []
     },
     "futenma": {
+      "count": 0,
+      "aircraft": []
+    },
+    "atsugi": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "86ebfa",
-          "callsign": "ANA808",
+          "icao24": "841c60",
+          "callsign": "JAL303",
           "country": "Japan",
-          "lon": 127.7331,
-          "lat": 26.1247,
-          "alt": 11887.2,
+          "lon": 139.4701,
+          "lat": 35.5885,
+          "alt": 4770.12,
           "on_ground": false,
-          "speed": 270.33,
+          "speed": 185.96,
           "category": "civilian"
         }
       ]
-    },
-    "atsugi": {
-      "count": 0,
-      "aircraft": []
     }
   }
 }
