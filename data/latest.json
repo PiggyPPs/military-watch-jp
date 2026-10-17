@@ -1,87 +1,53 @@
 {
-  "timestamp": "2026-10-17T11:54:16.622071+00:00",
+  "timestamp": "2026-10-17T12:26:47.241259+00:00",
   "bases": {
     "kadena": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "86351c",
-          "callsign": "SNJ130",
-          "country": "Japan",
-          "lon": 127.6465,
-          "lat": 26.4076,
-          "alt": 2011.68,
-          "on_ground": false,
-          "speed": 133.09,
-          "category": "other"
-        },
-        {
-          "icao24": "8681aa",
-          "callsign": "SKY523",
-          "country": "Japan",
-          "lon": 127.8341,
-          "lat": 26.2275,
-          "alt": 1493.52,
-          "on_ground": false,
-          "speed": 149.23,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
+      "count": 0,
+      "aircraft": []
+    },
+    "iwakuni": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "846932",
-          "callsign": "ANA759",
+          "icao24": "868094",
+          "callsign": "ANA639",
           "country": "Japan",
-          "lon": 139.4156,
-          "lat": 35.8264,
-          "alt": 7132.32,
+          "lon": 132.3263,
+          "lat": 34.0824,
+          "alt": 624.84,
           "on_ground": false,
-          "speed": 204.63,
+          "speed": 88.75,
           "category": "civilian"
         }
       ]
-    },
-    "iwakuni": {
-      "count": 0,
-      "aircraft": []
     },
     "misawa": {
       "count": 0,
       "aircraft": []
     },
     "futenma": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "86351c",
-          "callsign": "SNJ130",
-          "country": "Japan",
-          "lon": 127.6467,
-          "lat": 26.4103,
-          "alt": 2042.16,
-          "on_ground": false,
-          "speed": 134.11,
-          "category": "other"
-        },
-        {
-          "icao24": "8681aa",
-          "callsign": "SKY523",
-          "country": "Japan",
-          "lon": 127.8341,
-          "lat": 26.2275,
-          "alt": 1493.52,
-          "on_ground": false,
-          "speed": 149.23,
-          "category": "civilian"
-        }
-      ]
-    },
-    "atsugi": {
       "count": 0,
       "aircraft": []
+    },
+    "atsugi": {
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "780781",
+          "callsign": "CCA146",
+          "country": "China",
+          "lon": 139.431,
+          "lat": 35.4249,
+          "alt": 8008.62,
+          "on_ground": false,
+          "speed": 194.62,
+          "category": "other"
+        }
+      ]
     }
   }
 }
