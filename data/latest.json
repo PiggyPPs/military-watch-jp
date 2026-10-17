@@ -1,21 +1,9 @@
 {
-  "timestamp": "2026-10-17T17:21:52.296469+00:00",
+  "timestamp": "2026-10-17T17:52:16.889229+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "76cd42",
-          "callsign": "SIA38",
-          "country": "Singapore",
-          "lon": 127.8898,
-          "lat": 26.2567,
-          "alt": 11277.6,
-          "on_ground": false,
-          "speed": 256.75,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 0,
