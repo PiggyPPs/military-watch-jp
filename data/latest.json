@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-10-17T10:24:59.091840+00:00",
+  "timestamp": "2026-10-17T10:54:34.474768+00:00",
   "bases": {
     "kadena": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "ae2fa1",
-          "callsign": "",
-          "country": "United States",
-          "lon": 127.7066,
-          "lat": 26.3141,
-          "alt": 259.08,
+          "icao24": "84b7a1",
+          "callsign": "APJ292",
+          "country": "Japan",
+          "lon": 127.6499,
+          "lat": 26.3356,
+          "alt": 1851.66,
           "on_ground": false,
-          "speed": 55.28,
-          "category": "other"
+          "speed": 138.15,
+          "category": "civilian"
         }
       ]
     },
@@ -30,58 +30,24 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 3,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "ae2fa1",
-          "callsign": "",
-          "country": "United States",
-          "lon": 127.7066,
-          "lat": 26.3141,
-          "alt": 259.08,
-          "on_ground": false,
-          "speed": 55.28,
-          "category": "other"
-        },
-        {
-          "icao24": "86351c",
-          "callsign": "SNJ129",
+          "icao24": "84b7a1",
+          "callsign": "APJ292",
           "country": "Japan",
-          "lon": 127.8828,
-          "lat": 26.1714,
-          "alt": 2148.84,
+          "lon": 127.6509,
+          "lat": 26.3498,
+          "alt": 2034.54,
           "on_ground": false,
-          "speed": 126.9,
-          "category": "other"
-        },
-        {
-          "icao24": "8681b2",
-          "callsign": "SKY521",
-          "country": "Japan",
-          "lon": 127.774,
-          "lat": 26.1307,
-          "alt": 1021.08,
-          "on_ground": false,
-          "speed": 144.46,
+          "speed": 140.72,
           "category": "civilian"
         }
       ]
     },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "842322",
-          "callsign": "JA09TC",
-          "country": "Japan",
-          "lon": 139.5327,
-          "lat": 35.3726,
-          "alt": 358.14,
-          "on_ground": false,
-          "speed": 50.97,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
