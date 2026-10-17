@@ -1,13 +1,48 @@
 {
-  "timestamp": "2026-10-17T23:18:48.528393+00:00",
+  "timestamp": "2026-10-17T23:49:53.125084+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
+      "count": 2,
+      "aircraft": [
+        {
+          "icao24": "84b495",
+          "callsign": "APJ209",
+          "country": "Japan",
+          "lon": 127.8343,
+          "lat": 26.2307,
+          "alt": 1333.5,
+          "on_ground": false,
+          "speed": 133.82,
+          "category": "civilian"
+        },
+        {
+          "icao24": "a709dc",
+          "callsign": "N55246",
+          "country": "United States",
+          "lon": 127.801,
+          "lat": 26.4403,
+          "alt": 358.14,
+          "on_ground": false,
+          "speed": 44.95,
+          "category": "other"
+        }
+      ]
     },
     "yokota": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "861e4e",
+          "callsign": "ANA661K",
+          "country": "Japan",
+          "lon": 139.4837,
+          "lat": 35.7238,
+          "alt": 5135.88,
+          "on_ground": false,
+          "speed": 193.96,
+          "category": "civilian"
+        }
+      ]
     },
     "iwakuni": {
       "count": 0,
@@ -18,24 +53,24 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 0,
-      "aircraft": []
-    },
-    "atsugi": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "7892a4",
-          "callsign": "HKE857",
-          "country": "China",
-          "lon": 139.5788,
-          "lat": 35.3171,
-          "alt": 9235.44,
+          "icao24": "86efd4",
+          "callsign": "ANA461",
+          "country": "Japan",
+          "lon": 127.827,
+          "lat": 26.1932,
+          "alt": 1866.9,
           "on_ground": false,
-          "speed": 223.35,
-          "category": "other"
+          "speed": 137.35,
+          "category": "civilian"
         }
       ]
+    },
+    "atsugi": {
+      "count": 0,
+      "aircraft": []
     }
   }
 }

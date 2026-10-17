@@ -1585,109 +1585,109 @@
     "date": "2026-10-17",
     "bases": {
       "kadena": {
-        "total": 28,
-        "samples": 41,
+        "total": 30,
+        "samples": 42,
         "max": 3,
-        "detected_runs": 19,
+        "detected_runs": 20,
         "civilian": {
-          "total": 18,
-          "samples": 41,
+          "total": 19,
+          "samples": 42,
           "max": 2,
-          "detected_runs": 14
+          "detected_runs": 15
         },
         "other": {
-          "total": 10,
-          "samples": 41,
+          "total": 11,
+          "samples": 42,
           "max": 1,
-          "detected_runs": 10
+          "detected_runs": 11
         }
       },
       "yokota": {
-        "total": 24,
-        "samples": 41,
+        "total": 25,
+        "samples": 42,
         "max": 3,
-        "detected_runs": 14,
+        "detected_runs": 15,
         "civilian": {
-          "total": 10,
-          "samples": 41,
+          "total": 11,
+          "samples": 42,
           "max": 2,
-          "detected_runs": 9
+          "detected_runs": 10
         },
         "other": {
           "total": 14,
-          "samples": 41,
+          "samples": 42,
           "max": 2,
           "detected_runs": 10
         }
       },
       "iwakuni": {
         "total": 5,
-        "samples": 41,
+        "samples": 42,
         "max": 1,
         "detected_runs": 5,
         "civilian": {
           "total": 2,
-          "samples": 41,
+          "samples": 42,
           "max": 1,
           "detected_runs": 2
         },
         "other": {
           "total": 3,
-          "samples": 41,
+          "samples": 42,
           "max": 1,
           "detected_runs": 3
         }
       },
       "misawa": {
         "total": 1,
-        "samples": 41,
+        "samples": 42,
         "max": 1,
         "detected_runs": 1,
         "civilian": {
           "total": 1,
-          "samples": 41,
+          "samples": 42,
           "max": 1,
           "detected_runs": 1
         },
         "other": {
           "total": 0,
-          "samples": 41,
+          "samples": 42,
           "max": 0,
           "detected_runs": 0
         }
       },
       "futenma": {
-        "total": 31,
-        "samples": 41,
+        "total": 32,
+        "samples": 42,
         "max": 4,
-        "detected_runs": 21,
+        "detected_runs": 22,
         "civilian": {
-          "total": 22,
-          "samples": 41,
+          "total": 23,
+          "samples": 42,
           "max": 3,
-          "detected_runs": 18
+          "detected_runs": 19
         },
         "other": {
           "total": 9,
-          "samples": 41,
+          "samples": 42,
           "max": 2,
           "detected_runs": 8
         }
       },
       "atsugi": {
         "total": 26,
-        "samples": 41,
+        "samples": 42,
         "max": 3,
         "detected_runs": 17,
         "civilian": {
           "total": 12,
-          "samples": 41,
+          "samples": 42,
           "max": 2,
           "detected_runs": 10
         },
         "other": {
           "total": 14,
-          "samples": 41,
+          "samples": 42,
           "max": 3,
           "detected_runs": 10
         }
