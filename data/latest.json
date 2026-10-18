@@ -1,30 +1,19 @@
 {
-  "timestamp": "2026-10-17T23:49:53.125084+00:00",
+  "timestamp": "2026-10-18T00:33:24.775449+00:00",
   "bases": {
     "kadena": {
-      "count": 2,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "84b495",
-          "callsign": "APJ209",
+          "icao24": "86e184",
+          "callsign": "ANA1203",
           "country": "Japan",
-          "lon": 127.8343,
-          "lat": 26.2307,
-          "alt": 1333.5,
+          "lon": 127.8111,
+          "lat": 26.2304,
+          "alt": 1546.86,
           "on_ground": false,
-          "speed": 133.82,
+          "speed": 136.82,
           "category": "civilian"
-        },
-        {
-          "icao24": "a709dc",
-          "callsign": "N55246",
-          "country": "United States",
-          "lon": 127.801,
-          "lat": 26.4403,
-          "alt": 358.14,
-          "on_ground": false,
-          "speed": 44.95,
-          "category": "other"
         }
       ]
     },
@@ -32,15 +21,15 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "861e4e",
-          "callsign": "ANA661K",
-          "country": "Japan",
-          "lon": 139.4837,
-          "lat": 35.7238,
-          "alt": 5135.88,
+          "icao24": "71bf95",
+          "callsign": "AAR1055",
+          "country": "Republic of Korea",
+          "lon": 139.4606,
+          "lat": 35.8288,
+          "alt": 5410.2,
           "on_ground": false,
-          "speed": 193.96,
-          "category": "civilian"
+          "speed": 162.83,
+          "category": "other"
         }
       ]
     },
@@ -56,14 +45,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "86efd4",
-          "callsign": "ANA461",
+          "icao24": "86e184",
+          "callsign": "ANA1203",
           "country": "Japan",
-          "lon": 127.827,
-          "lat": 26.1932,
-          "alt": 1866.9,
+          "lon": 127.8111,
+          "lat": 26.2304,
+          "alt": 1546.86,
           "on_ground": false,
-          "speed": 137.35,
+          "speed": 136.82,
           "category": "civilian"
         }
       ]
