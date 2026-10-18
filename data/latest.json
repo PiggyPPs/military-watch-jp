@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-18T18:58:04.420516+00:00",
+  "timestamp": "2026-10-18T19:24:50.040337+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -10,8 +10,20 @@
       "aircraft": []
     },
     "iwakuni": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "781d6d",
+          "callsign": "CKK232",
+          "country": "China",
+          "lon": 132.298,
+          "lat": 34.111,
+          "alt": 10972.8,
+          "on_ground": false,
+          "speed": 213.9,
+          "category": "other"
+        }
+      ]
     },
     "misawa": {
       "count": 0,
