@@ -1,36 +1,25 @@
 {
-  "timestamp": "2026-10-18T21:54:08.120946+00:00",
+  "timestamp": "2026-10-18T22:21:27.715359+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
-    },
-    "yokota": {
-      "count": 2,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "a0d062",
-          "callsign": "GTI8721",
-          "country": "United States",
-          "lon": 139.3437,
-          "lat": 35.7544,
-          "alt": null,
-          "on_ground": true,
-          "speed": 0,
-          "category": "other"
-        },
-        {
-          "icao24": "a8bc4f",
-          "callsign": "GTI8831",
-          "country": "United States",
-          "lon": 139.3481,
-          "lat": 35.7424,
-          "alt": null,
-          "on_ground": true,
-          "speed": 0,
+          "icao24": "76cc82",
+          "callsign": "SIA672",
+          "country": "Singapore",
+          "lon": 127.9129,
+          "lat": 26.2561,
+          "alt": 11277.6,
+          "on_ground": false,
+          "speed": 243.08,
           "category": "other"
         }
       ]
+    },
+    "yokota": {
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
       "count": 0,
