@@ -1,30 +1,41 @@
 {
-  "timestamp": "2026-10-20T05:02:31.182720+00:00",
+  "timestamp": "2026-10-20T06:01:34.457951+00:00",
   "bases": {
     "kadena": {
-      "count": 2,
+      "count": 3,
       "aircraft": [
         {
-          "icao24": "84224a",
-          "callsign": "JL3867",
-          "country": "Japan",
-          "lon": 127.623,
-          "lat": 26.3609,
-          "alt": 1676.4,
+          "icao24": "a28dc8",
+          "callsign": "UAL862",
+          "country": "United States",
+          "lon": 127.8969,
+          "lat": 26.2626,
+          "alt": 9448.8,
           "on_ground": false,
-          "speed": 81.3,
+          "speed": 260.37,
           "category": "other"
         },
         {
-          "icao24": "7823e6",
-          "callsign": "CQH6245",
-          "country": "China",
-          "lon": 127.8659,
-          "lat": 26.2364,
-          "alt": 2590.8,
+          "icao24": "76cd41",
+          "callsign": "SIA32",
+          "country": "Singapore",
+          "lon": 127.9159,
+          "lat": 26.2847,
+          "alt": 11277.6,
           "on_ground": false,
-          "speed": 124.52,
+          "speed": 254.78,
           "category": "other"
+        },
+        {
+          "icao24": "84bbdf",
+          "callsign": "APJ273",
+          "country": "Japan",
+          "lon": 127.8192,
+          "lat": 26.2918,
+          "alt": 2476.5,
+          "on_ground": false,
+          "speed": 139.7,
+          "category": "civilian"
         }
       ]
     },
@@ -37,71 +48,59 @@
       "aircraft": []
     },
     "misawa": {
+      "count": 0,
+      "aircraft": []
+    },
+    "futenma": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "846adc",
-          "callsign": "IBX48",
+          "icao24": "84bbdf",
+          "callsign": "APJ273",
           "country": "Japan",
-          "lon": 141.4544,
-          "lat": 40.6271,
-          "alt": 6705.6,
+          "lon": 127.8179,
+          "lat": 26.2807,
+          "alt": 2369.82,
           "on_ground": false,
-          "speed": 202.65,
-          "category": "civilian"
-        }
-      ]
-    },
-    "futenma": {
-      "count": 3,
-      "aircraft": [
-        {
-          "icao24": "84224a",
-          "callsign": "JL3867",
-          "country": "Japan",
-          "lon": 127.626,
-          "lat": 26.3677,
-          "alt": 1767.84,
-          "on_ground": false,
-          "speed": 80.15,
-          "category": "other"
-        },
-        {
-          "icao24": "7823e6",
-          "callsign": "CQH6245",
-          "country": "China",
-          "lon": 127.8624,
-          "lat": 26.2255,
-          "alt": 2522.22,
-          "on_ground": false,
-          "speed": 124.23,
-          "category": "other"
-        },
-        {
-          "icao24": "862a60",
-          "callsign": "ANA1207",
-          "country": "Japan",
-          "lon": 127.8172,
-          "lat": 26.1819,
-          "alt": 2049.78,
-          "on_ground": false,
-          "speed": 119.02,
+          "speed": 139.13,
           "category": "civilian"
         }
       ]
     },
     "atsugi": {
-      "count": 1,
+      "count": 3,
       "aircraft": [
         {
-          "icao24": "ae4fb6",
+          "icao24": "ae0d33",
+          "callsign": "NINJA15",
+          "country": "United States",
+          "lon": 139.3932,
+          "lat": 35.5115,
+          "alt": 91.44,
+          "on_ground": false,
+          "speed": 16.75,
+          "category": "other"
+        },
+        {
+          "icao24": "ae08f1",
+          "callsign": "MOJO37",
+          "country": "United States",
+          "lon": 139.4725,
+          "lat": 35.5358,
+          "alt": 1188.72,
+          "on_ground": false,
+          "speed": 91.78,
+          "category": "other"
+        },
+        {
+          "icao24": "ae4f6e",
           "callsign": "FFAB123",
           "country": "United States",
-          "lon": 139.5111,
-          "lat": 35.3569,
-          "alt": 609.6,
+          "lon": 139.4397,
+          "lat": 35.4666,
+          "alt": 205.74,
           "on_ground": false,
-          "speed": 45.47,
+          "speed": 52.99,
           "category": "other"
         }
       ]
