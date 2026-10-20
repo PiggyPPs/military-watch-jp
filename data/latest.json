@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-20T17:08:17.065476+00:00",
+  "timestamp": "2026-10-20T18:00:24.008186+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -10,20 +10,8 @@
       "aircraft": []
     },
     "iwakuni": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "a57ad0",
-          "callsign": "GTI517",
-          "country": "United States",
-          "lon": 132.3592,
-          "lat": 34.1056,
-          "alt": 12192,
-          "on_ground": false,
-          "speed": 202.55,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "misawa": {
       "count": 0,
