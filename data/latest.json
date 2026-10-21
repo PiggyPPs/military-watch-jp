@@ -1,119 +1,95 @@
 {
-  "timestamp": "2026-10-21T08:10:36.931000+00:00",
+  "timestamp": "2026-10-21T09:08:15.744463+00:00",
   "bases": {
     "kadena": {
       "count": 2,
       "aircraft": [
         {
-          "icao24": "71c705",
-          "callsign": "AAR172",
-          "country": "Republic of Korea",
-          "lon": 127.8091,
-          "lat": 26.2462,
-          "alt": 1196.34,
+          "icao24": "ae4e53",
+          "callsign": "DRAGON21",
+          "country": "United States",
+          "lon": 127.7783,
+          "lat": 26.2448,
+          "alt": 457.2,
           "on_ground": false,
-          "speed": 147.69,
+          "speed": 128.71,
           "category": "other"
         },
         {
-          "icao24": "867904",
-          "callsign": "ANA475",
+          "icao24": "8681b3",
+          "callsign": "SKY519",
           "country": "Japan",
-          "lon": 127.8971,
-          "lat": 26.4075,
-          "alt": 2903.22,
+          "lon": 127.9182,
+          "lat": 26.4694,
+          "alt": 3596.64,
           "on_ground": false,
-          "speed": 151.95,
+          "speed": 151.55,
           "category": "civilian"
         }
       ]
     },
     "yokota": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "87cd03",
-          "callsign": "PLUTO31",
-          "country": "Japan",
-          "lon": 139.4007,
-          "lat": 35.8346,
-          "alt": 1417.32,
-          "on_ground": false,
-          "speed": 110.65,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "7800a9",
-          "callsign": "CSN386",
-          "country": "China",
-          "lon": 132.1649,
-          "lat": 34.2413,
-          "alt": 9753.6,
-          "on_ground": false,
-          "speed": 214.05,
-          "category": "other"
-        },
-        {
-          "icao24": "86d8cc",
-          "callsign": "SJO463",
-          "country": "Japan",
-          "lon": 132.1613,
-          "lat": 34.1151,
-          "alt": 5554.98,
-          "on_ground": false,
-          "speed": 156.17,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "misawa": {
       "count": 0,
       "aircraft": []
     },
     "futenma": {
-      "count": 2,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "71c705",
-          "callsign": "AAR172",
-          "country": "Republic of Korea",
-          "lon": 127.8091,
-          "lat": 26.2462,
-          "alt": 1196.34,
+          "icao24": "ae4e53",
+          "callsign": "DRAGON21",
+          "country": "United States",
+          "lon": 127.7783,
+          "lat": 26.2448,
+          "alt": 457.2,
           "on_ground": false,
-          "speed": 147.69,
+          "speed": 128.71,
           "category": "other"
-        },
-        {
-          "icao24": "867904",
-          "callsign": "ANA475",
-          "country": "Japan",
-          "lon": 127.8917,
-          "lat": 26.3926,
-          "alt": 2811.78,
-          "on_ground": false,
-          "speed": 152.6,
-          "category": "civilian"
         }
       ]
     },
     "atsugi": {
-      "count": 1,
+      "count": 3,
       "aircraft": [
+        {
+          "icao24": "85d098",
+          "callsign": "ANA647",
+          "country": "Japan",
+          "lon": 139.4106,
+          "lat": 35.4804,
+          "alt": 5448.3,
+          "on_ground": false,
+          "speed": 157.37,
+          "category": "civilian"
+        },
         {
           "icao24": "ae4f71",
           "callsign": "FFAB123",
           "country": "United States",
-          "lon": 139.4881,
-          "lat": 35.5935,
-          "alt": 647.7,
+          "lon": 139.4604,
+          "lat": 35.5689,
+          "alt": 510.54,
           "on_ground": false,
-          "speed": 28.76,
+          "speed": 31.85,
+          "category": "other"
+        },
+        {
+          "icao24": "ae4f6e",
+          "callsign": "WL51",
+          "country": "United States",
+          "lon": 139.3715,
+          "lat": 35.3094,
+          "alt": 320.04,
+          "on_ground": false,
+          "speed": 40.01,
           "category": "other"
         }
       ]
