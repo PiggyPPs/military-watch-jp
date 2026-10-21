@@ -2037,109 +2037,109 @@
     "date": "2026-10-21",
     "bases": {
       "kadena": {
-        "total": 20,
-        "samples": 12,
+        "total": 22,
+        "samples": 13,
         "max": 4,
-        "detected_runs": 10,
+        "detected_runs": 11,
         "civilian": {
-          "total": 11,
-          "samples": 12,
+          "total": 13,
+          "samples": 13,
           "max": 3,
-          "detected_runs": 8
+          "detected_runs": 9
         },
         "other": {
           "total": 9,
-          "samples": 12,
+          "samples": 13,
           "max": 2,
           "detected_runs": 7
         }
       },
       "yokota": {
         "total": 15,
-        "samples": 12,
+        "samples": 13,
         "max": 5,
         "detected_runs": 8,
         "civilian": {
           "total": 3,
-          "samples": 12,
+          "samples": 13,
           "max": 1,
           "detected_runs": 3
         },
         "other": {
           "total": 12,
-          "samples": 12,
+          "samples": 13,
           "max": 4,
           "detected_runs": 8
         }
       },
       "iwakuni": {
         "total": 7,
-        "samples": 12,
+        "samples": 13,
         "max": 2,
         "detected_runs": 5,
         "civilian": {
           "total": 4,
-          "samples": 12,
+          "samples": 13,
           "max": 2,
           "detected_runs": 3
         },
         "other": {
           "total": 3,
-          "samples": 12,
+          "samples": 13,
           "max": 2,
           "detected_runs": 2
         }
       },
       "misawa": {
         "total": 2,
-        "samples": 12,
+        "samples": 13,
         "max": 1,
         "detected_runs": 2,
         "civilian": {
           "total": 2,
-          "samples": 12,
+          "samples": 13,
           "max": 1,
           "detected_runs": 2
         },
         "other": {
           "total": 0,
-          "samples": 12,
+          "samples": 13,
           "max": 0,
           "detected_runs": 0
         }
       },
       "futenma": {
-        "total": 21,
-        "samples": 12,
+        "total": 23,
+        "samples": 13,
         "max": 4,
-        "detected_runs": 12,
+        "detected_runs": 13,
         "civilian": {
-          "total": 12,
-          "samples": 12,
+          "total": 14,
+          "samples": 13,
           "max": 3,
-          "detected_runs": 9
+          "detected_runs": 10
         },
         "other": {
           "total": 9,
-          "samples": 12,
+          "samples": 13,
           "max": 2,
           "detected_runs": 7
         }
       },
       "atsugi": {
-        "total": 18,
-        "samples": 12,
+        "total": 19,
+        "samples": 13,
         "max": 3,
-        "detected_runs": 10,
+        "detected_runs": 11,
         "civilian": {
-          "total": 5,
-          "samples": 12,
+          "total": 6,
+          "samples": 13,
           "max": 1,
-          "detected_runs": 5
+          "detected_runs": 6
         },
         "other": {
           "total": 13,
-          "samples": 12,
+          "samples": 13,
           "max": 3,
           "detected_runs": 7
         }
