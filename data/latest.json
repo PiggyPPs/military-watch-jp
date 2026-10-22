@@ -1,56 +1,55 @@
 {
-  "timestamp": "2026-10-22T04:06:15.628808+00:00",
+  "timestamp": "2026-10-22T05:05:56.615288+00:00",
   "bases": {
     "kadena": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "8466a0",
-          "callsign": "JJP352",
-          "country": "Japan",
-          "lon": 127.6339,
-          "lat": 26.3446,
-          "alt": 1615.44,
-          "on_ground": false,
-          "speed": 143.2,
-          "category": "civilian"
-        },
-        {
-          "icao24": "86960c",
-          "callsign": "ANA1207",
-          "country": "Japan",
-          "lon": 127.7595,
-          "lat": 26.4543,
-          "alt": 3063.24,
-          "on_ground": false,
-          "speed": 138.96,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
-      "count": 2,
+      "count": 4,
       "aircraft": [
         {
-          "icao24": "a3e89a",
-          "callsign": "OAE272",
+          "icao24": "ae08f1",
+          "callsign": "MOJO05",
           "country": "United States",
-          "lon": 139.3675,
-          "lat": 35.6579,
-          "alt": 472.44,
-          "on_ground": false,
-          "speed": 66.73,
+          "lon": 139.3484,
+          "lat": 35.7425,
+          "alt": null,
+          "on_ground": true,
+          "speed": 1.03,
           "category": "other"
         },
         {
-          "icao24": "8520c0",
+          "icao24": "71c565",
+          "callsign": "TWB252",
+          "country": "Republic of Korea",
+          "lon": 139.2034,
+          "lat": 35.8919,
+          "alt": 9753.6,
+          "on_ground": false,
+          "speed": 182.73,
+          "category": "other"
+        },
+        {
+          "icao24": "846b07",
           "callsign": "",
           "country": "Japan",
-          "lon": 139.4893,
-          "lat": 35.6215,
-          "alt": 411.48,
+          "lon": 139.3932,
+          "lat": 35.742,
+          "alt": 716.28,
           "on_ground": false,
-          "speed": 59.66,
+          "speed": 45.79,
+          "category": "other"
+        },
+        {
+          "icao24": "a09aac",
+          "callsign": "N138UA",
+          "country": "United States",
+          "lon": 139.3523,
+          "lat": 35.7373,
+          "alt": null,
+          "on_ground": true,
+          "speed": 0,
           "category": "other"
         }
       ]
@@ -64,55 +63,21 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "846516",
-          "callsign": "ANA1861",
-          "country": "Japan",
-          "lon": 127.7615,
-          "lat": 26.2018,
-          "alt": 1630.68,
-          "on_ground": false,
-          "speed": 116.21,
-          "category": "civilian"
-        },
-        {
-          "icao24": "8466a0",
-          "callsign": "JJP352",
-          "country": "Japan",
-          "lon": 127.6331,
-          "lat": 26.359,
-          "alt": 1760.22,
-          "on_ground": false,
-          "speed": 147.28,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "atsugi": {
-      "count": 2,
+      "count": 1,
       "aircraft": [
-        {
-          "icao24": "84c068",
-          "callsign": "JJP631",
-          "country": "Japan",
-          "lon": 139.4766,
-          "lat": 35.3814,
-          "alt": 9296.4,
-          "on_ground": false,
-          "speed": 182.24,
-          "category": "civilian"
-        },
         {
           "icao24": "ae4f6e",
           "callsign": "FFAB123",
           "country": "United States",
-          "lon": 139.4481,
-          "lat": 35.4494,
-          "alt": 30.48,
+          "lon": 139.3853,
+          "lat": 35.5196,
+          "alt": 190.5,
           "on_ground": false,
-          "speed": 1.03,
+          "speed": 36.83,
           "category": "other"
         }
       ]
