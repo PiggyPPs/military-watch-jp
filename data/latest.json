@@ -1,48 +1,13 @@
 {
-  "timestamp": "2026-10-23T05:02:47.339596+00:00",
+  "timestamp": "2026-10-23T06:01:53.952069+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "8744d4",
-          "callsign": "ANA471",
-          "country": "Japan",
-          "lon": 127.6253,
-          "lat": 26.3167,
-          "alt": 419.1,
-          "on_ground": false,
-          "speed": 85.01,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "87cd03",
-          "callsign": "PLUTO31",
-          "country": "Japan",
-          "lon": 139.4408,
-          "lat": 35.8528,
-          "alt": 876.3,
-          "on_ground": false,
-          "speed": 76.49,
-          "category": "other"
-        },
-        {
-          "icao24": "846dc8",
-          "callsign": "JJP511",
-          "country": "Japan",
-          "lon": 139.3337,
-          "lat": 35.7878,
-          "alt": 8854.44,
-          "on_ground": false,
-          "speed": 188.8,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
       "count": 0,
@@ -53,47 +18,12 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "8744d4",
-          "callsign": "ANA471",
-          "country": "Japan",
-          "lon": 127.6253,
-          "lat": 26.3167,
-          "alt": 419.1,
-          "on_ground": false,
-          "speed": 85.01,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "atsugi": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "840981",
-          "callsign": "JA02LX",
-          "country": "Japan",
-          "lon": 139.5986,
-          "lat": 35.3469,
-          "alt": 548.64,
-          "on_ground": false,
-          "speed": 50.61,
-          "category": "other"
-        },
-        {
-          "icao24": "781437",
-          "callsign": "DKH1380",
-          "country": "China",
-          "lon": 139.4164,
-          "lat": 35.3428,
-          "alt": 9288.78,
-          "on_ground": false,
-          "speed": 206.01,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
