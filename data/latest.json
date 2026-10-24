@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-24T20:21:23.411165+00:00",
+  "timestamp": "2026-10-24T20:55:25.722136+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -18,20 +18,8 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "76cce6",
-          "callsign": "SIA22",
-          "country": "Singapore",
-          "lon": 127.8023,
-          "lat": 26.1629,
-          "alt": 11155.68,
-          "on_ground": false,
-          "speed": 263.91,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "atsugi": {
       "count": 0,
