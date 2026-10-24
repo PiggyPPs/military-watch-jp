@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-10-24T21:55:57.861366+00:00",
+  "timestamp": "2026-10-24T22:23:41.878577+00:00",
   "bases": {
     "kadena": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "8a05ad",
-          "callsign": "GIA878",
-          "country": "Indonesia",
-          "lon": 127.66,
-          "lat": 26.2021,
-          "alt": 11887.2,
+          "icao24": "424847",
+          "callsign": "VPCTC",
+          "country": "United Kingdom",
+          "lon": 127.7315,
+          "lat": 26.3126,
+          "alt": 13716,
           "on_ground": false,
-          "speed": 249.07,
+          "speed": 247.67,
           "category": "other"
         }
       ]
@@ -33,14 +33,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "8a05ad",
-          "callsign": "GIA878",
-          "country": "Indonesia",
-          "lon": 127.666,
-          "lat": 26.2147,
-          "alt": 11887.2,
+          "icao24": "424847",
+          "callsign": "VPCTC",
+          "country": "United Kingdom",
+          "lon": 127.7315,
+          "lat": 26.3126,
+          "alt": 13716,
           "on_ground": false,
-          "speed": 248.79,
+          "speed": 247.67,
           "category": "other"
         }
       ]
@@ -49,14 +49,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "8518ae",
-          "callsign": "JAL623",
+          "icao24": "862338",
+          "callsign": "ANA531",
           "country": "Japan",
-          "lon": 139.3196,
-          "lat": 35.477,
-          "alt": 5935.98,
+          "lon": 139.4607,
+          "lat": 35.4354,
+          "alt": 4770.12,
           "on_ground": false,
-          "speed": 188.85,
+          "speed": 177.75,
           "category": "civilian"
         }
       ]
