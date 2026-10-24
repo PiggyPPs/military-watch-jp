@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-24T22:54:22.239103+00:00",
+  "timestamp": "2026-10-24T23:20:16.622365+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -22,20 +22,8 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "ae036c",
-          "callsign": "NINJA91",
-          "country": "United States",
-          "lon": 139.4522,
-          "lat": 35.4057,
-          "alt": 777.24,
-          "on_ground": false,
-          "speed": 95.01,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
