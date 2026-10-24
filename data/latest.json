@@ -1,49 +1,61 @@
 {
-  "timestamp": "2026-10-24T08:32:57.047654+00:00",
+  "timestamp": "2026-10-24T09:24:51.429924+00:00",
   "bases": {
     "kadena": {
       "count": 2,
       "aircraft": [
         {
-          "icao24": "899020",
-          "callsign": "CAL120",
-          "country": "Taiwan",
-          "lon": 127.6258,
-          "lat": 26.3109,
-          "alt": 411.48,
+          "icao24": "851cca",
+          "callsign": "JTA564",
+          "country": "Japan",
+          "lon": 127.6256,
+          "lat": 26.3133,
+          "alt": 403.86,
           "on_ground": false,
-          "speed": 58.73,
-          "category": "other"
+          "speed": 71.31,
+          "category": "civilian"
         },
         {
-          "icao24": "86d5e5",
-          "callsign": "APJ489",
+          "icao24": "8681b0",
+          "callsign": "SKY519",
           "country": "Japan",
-          "lon": 127.6677,
-          "lat": 26.4338,
-          "alt": 411.48,
+          "lon": 127.6238,
+          "lat": 26.3312,
+          "alt": 419.1,
           "on_ground": false,
-          "speed": 85.99,
+          "speed": 68.42,
           "category": "civilian"
         }
       ]
     },
     "yokota": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "851bba",
+          "callsign": "JAL613",
+          "country": "Japan",
+          "lon": 139.4797,
+          "lat": 35.6882,
+          "alt": 6568.44,
+          "on_ground": false,
+          "speed": 170.98,
+          "category": "civilian"
+        }
+      ]
     },
     "iwakuni": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "89902a",
-          "callsign": "TTW215",
-          "country": "Taiwan",
-          "lon": 132.3708,
-          "lat": 34.1507,
-          "alt": 9166.86,
+          "icao24": "a75283",
+          "callsign": "DAL281",
+          "country": "United States",
+          "lon": 132.1906,
+          "lat": 34.0838,
+          "alt": 12496.8,
           "on_ground": false,
-          "speed": 170.16,
+          "speed": 218.86,
           "category": "other"
         }
       ]
@@ -53,24 +65,47 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "899020",
-          "callsign": "CAL120",
-          "country": "Taiwan",
-          "lon": 127.6258,
-          "lat": 26.3109,
+          "icao24": "851cca",
+          "callsign": "JTA564",
+          "country": "Japan",
+          "lon": 127.6256,
+          "lat": 26.3133,
+          "alt": 403.86,
+          "on_ground": false,
+          "speed": 71.31,
+          "category": "civilian"
+        },
+        {
+          "icao24": "8681b0",
+          "callsign": "SKY519",
+          "country": "Japan",
+          "lon": 127.6249,
+          "lat": 26.3253,
           "alt": 411.48,
           "on_ground": false,
-          "speed": 58.73,
-          "category": "other"
+          "speed": 68.42,
+          "category": "civilian"
         }
       ]
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "873006",
+          "callsign": "ANA891",
+          "country": "Japan",
+          "lon": 139.4813,
+          "lat": 35.3967,
+          "alt": 4693.92,
+          "on_ground": false,
+          "speed": 171.98,
+          "category": "civilian"
+        }
+      ]
     }
   }
 }
