@@ -1,63 +1,52 @@
 {
-  "timestamp": "2026-10-24T09:58:48.816252+00:00",
+  "timestamp": "2026-10-24T10:29:53.338277+00:00",
   "bases": {
     "kadena": {
-      "count": 3,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "89911a",
-          "callsign": "CAL132",
-          "country": "Taiwan",
-          "lon": 127.6253,
-          "lat": 26.3165,
+          "icao24": "84b86d",
+          "callsign": "APJ289",
+          "country": "Japan",
+          "lon": 127.6254,
+          "lat": 26.3163,
           "alt": 411.48,
           "on_ground": false,
-          "speed": 64.44,
-          "category": "other"
-        },
-        {
-          "icao24": "8678c0",
-          "callsign": "ANA474",
-          "country": "Japan",
-          "lon": 127.9168,
-          "lat": 26.2774,
-          "alt": 3596.64,
-          "on_ground": false,
-          "speed": 200.8,
-          "category": "civilian"
-        },
-        {
-          "icao24": "851f4e",
-          "callsign": "JTA572",
-          "country": "Japan",
-          "lon": 127.6258,
-          "lat": 26.3165,
-          "alt": 411.48,
-          "on_ground": false,
-          "speed": 73.61,
+          "speed": 66.49,
           "category": "civilian"
         }
       ]
     },
     "yokota": {
-      "count": 0,
-      "aircraft": []
-    },
-    "iwakuni": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "8966ee",
-          "callsign": "UAE9807",
-          "country": "United Arab Emirates",
-          "lon": 132.3521,
-          "lat": 34.0079,
-          "alt": 9144,
+          "icao24": "846516",
+          "callsign": "ANA387",
+          "country": "Japan",
+          "lon": 139.484,
+          "lat": 35.8259,
+          "alt": 5852.16,
           "on_ground": false,
-          "speed": 231.3,
-          "category": "other"
+          "speed": 184.01,
+          "category": "civilian"
+        },
+        {
+          "icao24": "851ca8",
+          "callsign": "JAL191",
+          "country": "Japan",
+          "lon": 139.2759,
+          "lat": 35.8369,
+          "alt": 7924.8,
+          "on_ground": false,
+          "speed": 181.34,
+          "category": "civilian"
         }
       ]
+    },
+    "iwakuni": {
+      "count": 0,
+      "aircraft": []
     },
     "misawa": {
       "count": 0,
@@ -67,55 +56,43 @@
       "count": 3,
       "aircraft": [
         {
-          "icao24": "89911a",
-          "callsign": "CAL132",
-          "country": "Taiwan",
-          "lon": 127.6253,
-          "lat": 26.3165,
-          "alt": 411.48,
+          "icao24": "789228",
+          "callsign": "HKE824",
+          "country": "China",
+          "lon": 127.6154,
+          "lat": 26.3618,
+          "alt": 403.86,
           "on_ground": false,
-          "speed": 63.35,
+          "speed": 65.63,
           "category": "other"
         },
         {
-          "icao24": "8409ed",
-          "callsign": "",
+          "icao24": "84b4b7",
+          "callsign": "APJ530",
           "country": "Japan",
-          "lon": 127.8132,
-          "lat": 26.1401,
-          "alt": 3848.1,
+          "lon": 127.7321,
+          "lat": 26.1836,
+          "alt": 8854.44,
           "on_ground": false,
-          "speed": 194.04,
-          "category": "other"
+          "speed": 256.08,
+          "category": "civilian"
         },
         {
-          "icao24": "851f4e",
-          "callsign": "JTA572",
+          "icao24": "84b86d",
+          "callsign": "APJ289",
           "country": "Japan",
-          "lon": 127.6258,
-          "lat": 26.3165,
+          "lon": 127.6254,
+          "lat": 26.3163,
           "alt": 411.48,
           "on_ground": false,
-          "speed": 73.61,
+          "speed": 66.49,
           "category": "civilian"
         }
       ]
     },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "85134a",
-          "callsign": "SFJ53",
-          "country": "Japan",
-          "lon": 139.3465,
-          "lat": 35.5967,
-          "alt": 6088.38,
-          "on_ground": false,
-          "speed": 171.95,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
