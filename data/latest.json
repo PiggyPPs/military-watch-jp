@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-24T13:59:35.962897+00:00",
+  "timestamp": "2026-10-24T14:29:50.260265+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -22,8 +22,20 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "ac297b",
+          "callsign": "FDX5255",
+          "country": "United States",
+          "lon": 139.4131,
+          "lat": 35.3428,
+          "alt": 9144,
+          "on_ground": false,
+          "speed": 213.85,
+          "category": "other"
+        }
+      ]
     }
   }
 }
