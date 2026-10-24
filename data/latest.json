@@ -1,48 +1,72 @@
 {
-  "timestamp": "2026-10-24T08:00:03.854350+00:00",
+  "timestamp": "2026-10-24T08:32:57.047654+00:00",
   "bases": {
     "kadena": {
-      "count": 0,
-      "aircraft": []
-    },
-    "yokota": {
       "count": 2,
       "aircraft": [
         {
-          "icao24": "86226a",
-          "callsign": "ANA865",
-          "country": "Japan",
-          "lon": 139.3387,
-          "lat": 35.829,
-          "alt": 6621.78,
+          "icao24": "899020",
+          "callsign": "CAL120",
+          "country": "Taiwan",
+          "lon": 127.6258,
+          "lat": 26.3109,
+          "alt": 411.48,
           "on_ground": false,
-          "speed": 190.2,
-          "category": "civilian"
+          "speed": 58.73,
+          "category": "other"
         },
         {
-          "icao24": "86d629",
-          "callsign": "APJ365",
+          "icao24": "86d5e5",
+          "callsign": "APJ489",
           "country": "Japan",
-          "lon": 139.2142,
-          "lat": 35.8193,
-          "alt": 8953.5,
+          "lon": 127.6677,
+          "lat": 26.4338,
+          "alt": 411.48,
           "on_ground": false,
-          "speed": 203.35,
+          "speed": 85.99,
           "category": "civilian"
         }
       ]
     },
-    "iwakuni": {
+    "yokota": {
       "count": 0,
       "aircraft": []
+    },
+    "iwakuni": {
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "89902a",
+          "callsign": "TTW215",
+          "country": "Taiwan",
+          "lon": 132.3708,
+          "lat": 34.1507,
+          "alt": 9166.86,
+          "on_ground": false,
+          "speed": 170.16,
+          "category": "other"
+        }
+      ]
     },
     "misawa": {
       "count": 0,
       "aircraft": []
     },
     "futenma": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "899020",
+          "callsign": "CAL120",
+          "country": "Taiwan",
+          "lon": 127.6258,
+          "lat": 26.3109,
+          "alt": 411.48,
+          "on_ground": false,
+          "speed": 58.73,
+          "category": "other"
+        }
+      ]
     },
     "atsugi": {
       "count": 0,
