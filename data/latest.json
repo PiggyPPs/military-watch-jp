@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-24T16:28:05.766722+00:00",
+  "timestamp": "2026-10-24T17:00:07.331072+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -18,20 +18,8 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "8990a0",
-          "callsign": "CAL5175",
-          "country": "Taiwan",
-          "lon": 127.6385,
-          "lat": 26.1948,
-          "alt": 12192,
-          "on_ground": false,
-          "speed": 234.05,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "atsugi": {
       "count": 0,
