@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-25T11:57:55.223916+00:00",
+  "timestamp": "2026-10-25T12:33:25.097885+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -10,8 +10,20 @@
       "aircraft": []
     },
     "iwakuni": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "851cec",
+          "callsign": "JAL671",
+          "country": "Japan",
+          "lon": 132.2615,
+          "lat": 34.0076,
+          "alt": 4053.84,
+          "on_ground": false,
+          "speed": 165.52,
+          "category": "civilian"
+        }
+      ]
     },
     "misawa": {
       "count": 0,
@@ -22,8 +34,20 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "86d974",
+          "callsign": "JAL749",
+          "country": "Japan",
+          "lon": 139.4714,
+          "lat": 35.3484,
+          "alt": 7848.6,
+          "on_ground": false,
+          "speed": 200.43,
+          "category": "civilian"
+        }
+      ]
     }
   }
 }
