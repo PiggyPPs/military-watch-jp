@@ -1,76 +1,41 @@
 {
-  "timestamp": "2026-10-26T08:41:31.676844+00:00",
+  "timestamp": "2026-10-26T09:38:10.741001+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "86cf2b",
-          "callsign": "",
-          "country": "Japan",
-          "lon": 127.6226,
-          "lat": 26.2901,
-          "alt": 1188.72,
-          "on_ground": false,
-          "speed": 111.73,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "yokota": {
       "count": 0,
       "aircraft": []
     },
     "iwakuni": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "846748",
+          "callsign": "IBX60",
+          "country": "Japan",
+          "lon": 132.1683,
+          "lat": 34.0858,
+          "alt": 4366.26,
+          "on_ground": false,
+          "speed": 152.55,
+          "category": "civilian"
+        }
+      ]
     },
     "misawa": {
       "count": 0,
       "aircraft": []
     },
     "futenma": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "86cf2b",
-          "callsign": "SNJ49",
-          "country": "Japan",
-          "lon": 127.6173,
-          "lat": 26.2988,
-          "alt": 1447.8,
-          "on_ground": false,
-          "speed": 107.33,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "atsugi": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "842250",
-          "callsign": "JJP615",
-          "country": "Japan",
-          "lon": 139.4005,
-          "lat": 35.3425,
-          "alt": 9166.86,
-          "on_ground": false,
-          "speed": 194.41,
-          "category": "civilian"
-        },
-        {
-          "icao24": "851c86",
-          "callsign": "JAL239",
-          "country": "Japan",
-          "lon": 139.4375,
-          "lat": 35.465,
-          "alt": 6019.8,
-          "on_ground": false,
-          "speed": 162.32,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
