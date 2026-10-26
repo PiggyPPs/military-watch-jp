@@ -1,45 +1,45 @@
 {
-  "timestamp": "2026-10-26T00:42:58.228898+00:00",
+  "timestamp": "2026-10-26T01:41:31.021655+00:00",
   "bases": {
     "kadena": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "846b6c",
-          "callsign": "JAL903",
-          "country": "Japan",
-          "lon": 127.8524,
-          "lat": 26.3245,
-          "alt": 2019.3,
+          "icao24": "ae4b77",
+          "callsign": "BYAKKO11",
+          "country": "United States",
+          "lon": 127.7455,
+          "lat": 26.316,
+          "alt": 160.02,
           "on_ground": false,
-          "speed": 142.2,
-          "category": "civilian"
+          "speed": 68.99,
+          "category": "other"
+        },
+        {
+          "icao24": "ae4b4e",
+          "callsign": "BYAKKO11",
+          "country": "United States",
+          "lon": 127.7444,
+          "lat": 26.3148,
+          "alt": 175.26,
+          "on_ground": false,
+          "speed": 65.89,
+          "category": "other"
         }
       ]
     },
     "yokota": {
-      "count": 2,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "a5c99e",
-          "callsign": "GTI8670",
-          "country": "United States",
-          "lon": 139.3437,
-          "lat": 35.7537,
-          "alt": null,
-          "on_ground": true,
-          "speed": 0,
-          "category": "other"
-        },
-        {
-          "icao24": "8694b6",
-          "callsign": "ANA961",
+          "icao24": "84cb66",
+          "callsign": "SFJ45",
           "country": "Japan",
-          "lon": 139.4781,
-          "lat": 35.826,
-          "alt": 6111.24,
+          "lon": 139.4673,
+          "lat": 35.6567,
+          "alt": 4876.8,
           "on_ground": false,
-          "speed": 153.97,
+          "speed": 166.95,
           "category": "civilian"
         }
       ]
@@ -53,18 +53,29 @@
       "aircraft": []
     },
     "futenma": {
-      "count": 1,
+      "count": 2,
       "aircraft": [
         {
-          "icao24": "846b6c",
-          "callsign": "JAL903",
-          "country": "Japan",
-          "lon": 127.8477,
-          "lat": 26.3124,
-          "alt": 1958.34,
+          "icao24": "ae4b77",
+          "callsign": "BYAKKO11",
+          "country": "United States",
+          "lon": 127.7455,
+          "lat": 26.316,
+          "alt": 160.02,
           "on_ground": false,
-          "speed": 142.2,
-          "category": "civilian"
+          "speed": 68.99,
+          "category": "other"
+        },
+        {
+          "icao24": "ae4b4e",
+          "callsign": "BYAKKO11",
+          "country": "United States",
+          "lon": 127.7444,
+          "lat": 26.3148,
+          "alt": 175.26,
+          "on_ground": false,
+          "speed": 65.89,
+          "category": "other"
         }
       ]
     },
@@ -72,14 +83,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "869278",
-          "callsign": "ANA633",
+          "icao24": "851cec",
+          "callsign": "JAL455B",
           "country": "Japan",
-          "lon": 139.4964,
-          "lat": 35.4616,
-          "alt": 4960.62,
+          "lon": 139.5358,
+          "lat": 35.3278,
+          "alt": 5402.58,
           "on_ground": false,
-          "speed": 145.81,
+          "speed": 165.96,
           "category": "civilian"
         }
       ]
