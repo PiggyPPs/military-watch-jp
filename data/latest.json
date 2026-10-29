@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-29T01:52:10.320927+00:00",
+  "timestamp": "2026-10-29T02:43:32.189697+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -9,14 +9,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "ae08ef",
-          "callsign": "MOJO27",
-          "country": "United States",
-          "lon": 139.3515,
-          "lat": 35.7342,
-          "alt": 7.62,
+          "icao24": "87cde4",
+          "callsign": "FENIXR2",
+          "country": "Japan",
+          "lon": 139.4315,
+          "lat": 35.8677,
+          "alt": 487.68,
           "on_ground": false,
-          "speed": 59.04,
+          "speed": 75.7,
           "category": "other"
         }
       ]
@@ -25,21 +25,33 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "86eaf2",
-          "callsign": "JAL81",
+          "icao24": "840cd2",
+          "callsign": "JL3550",
           "country": "Japan",
-          "lon": 132.3094,
-          "lat": 34.1313,
-          "alt": 12192,
+          "lon": 132.2458,
+          "lat": 34.232,
+          "alt": 3573.78,
           "on_ground": false,
-          "speed": 188.89,
-          "category": "civilian"
+          "speed": 121.98,
+          "category": "other"
         }
       ]
     },
     "misawa": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "84b3c9",
+          "callsign": "APJ574",
+          "country": "Japan",
+          "lon": 141.2671,
+          "lat": 40.5689,
+          "alt": 7924.8,
+          "on_ground": false,
+          "speed": 185.3,
+          "category": "civilian"
+        }
+      ]
     },
     "futenma": {
       "count": 0,
@@ -49,14 +61,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "850edc",
-          "callsign": "",
-          "country": "Japan",
-          "lon": 139.5302,
-          "lat": 35.5635,
-          "alt": 632.46,
+          "icao24": "ae4d38",
+          "callsign": "KR11",
+          "country": "United States",
+          "lon": 139.5431,
+          "lat": 35.4223,
+          "alt": 327.66,
           "on_ground": false,
-          "speed": 85.97,
+          "speed": 59.22,
           "category": "other"
         }
       ]
