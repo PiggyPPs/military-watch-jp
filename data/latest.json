@@ -1,47 +1,13 @@
 {
-  "timestamp": "2026-10-29T11:38:47.214833+00:00",
+  "timestamp": "2026-10-29T12:45:38.704649+00:00",
   "bases": {
     "kadena": {
       "count": 0,
       "aircraft": []
     },
     "yokota": {
-      "count": 3,
-      "aircraft": [
-        {
-          "icao24": "a5d4c3",
-          "callsign": "GTI8664",
-          "country": "United States",
-          "lon": 139.3437,
-          "lat": 35.7537,
-          "alt": null,
-          "on_ground": true,
-          "speed": 0,
-          "category": "other"
-        },
-        {
-          "icao24": "71c221",
-          "callsign": "KAL2132",
-          "country": "Republic of Korea",
-          "lon": 139.4828,
-          "lat": 35.8093,
-          "alt": 9304.02,
-          "on_ground": false,
-          "speed": 168.26,
-          "category": "other"
-        },
-        {
-          "icao24": "86d6c8",
-          "callsign": "ANA389",
-          "country": "Japan",
-          "lon": 139.3883,
-          "lat": 35.7664,
-          "alt": 6926.58,
-          "on_ground": false,
-          "speed": 191.37,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
       "count": 0,
@@ -56,28 +22,17 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 2,
+      "count": 1,
       "aircraft": [
         {
-          "icao24": "7809b8",
-          "callsign": "CES540",
-          "country": "China",
-          "lon": 139.5268,
-          "lat": 35.4796,
-          "alt": 5257.8,
-          "on_ground": false,
-          "speed": 172.2,
-          "category": "other"
-        },
-        {
-          "icao24": "ae4d38",
-          "callsign": "KR11",
+          "icao24": "a87876",
+          "callsign": "GTI8234",
           "country": "United States",
-          "lon": 139.448,
-          "lat": 35.4499,
-          "alt": -45.72,
+          "lon": 139.4591,
+          "lat": 35.3367,
+          "alt": 1120.14,
           "on_ground": false,
-          "speed": 5.14,
+          "speed": 142.46,
           "category": "other"
         }
       ]
