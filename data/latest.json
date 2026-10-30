@@ -1,13 +1,25 @@
 {
-  "timestamp": "2026-10-30T21:32:02.579847+00:00",
+  "timestamp": "2026-10-30T22:35:29.742398+00:00",
   "bases": {
     "kadena": {
       "count": 0,
       "aircraft": []
     },
     "yokota": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "a09aac",
+          "callsign": "N138UA",
+          "country": "United States",
+          "lon": 139.3596,
+          "lat": 35.7409,
+          "alt": null,
+          "on_ground": true,
+          "speed": 4.63,
+          "category": "other"
+        }
+      ]
     },
     "iwakuni": {
       "count": 0,
