@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-30T12:45:43.432908+00:00",
+  "timestamp": "2026-10-30T13:55:24.192284+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -13,15 +13,15 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "7818a8",
-          "callsign": "DKH1390",
-          "country": "China",
-          "lon": 132.3485,
-          "lat": 34.1961,
-          "alt": 8526.78,
+          "icao24": "84c7d2",
+          "callsign": "SFJ93",
+          "country": "Japan",
+          "lon": 132.331,
+          "lat": 34.1614,
+          "alt": 6675.12,
           "on_ground": false,
-          "speed": 198.9,
-          "category": "other"
+          "speed": 172.93,
+          "category": "civilian"
         }
       ]
     },
@@ -34,8 +34,20 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "86dc60",
+          "callsign": "SJO425",
+          "country": "Japan",
+          "lon": 139.4589,
+          "lat": 35.3478,
+          "alt": 10972.8,
+          "on_ground": false,
+          "speed": 171.82,
+          "category": "other"
+        }
+      ]
     }
   }
 }
