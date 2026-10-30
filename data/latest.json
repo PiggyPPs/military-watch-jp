@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-30T09:46:34.564977+00:00",
+  "timestamp": "2026-10-30T10:42:46.150615+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -9,14 +9,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "846538",
-          "callsign": "ANA387",
+          "icao24": "846bfa",
+          "callsign": "ANA299",
           "country": "Japan",
-          "lon": 139.3843,
-          "lat": 35.8295,
-          "alt": 6972.3,
+          "lon": 139.4904,
+          "lat": 35.7776,
+          "alt": 5783.58,
           "on_ground": false,
-          "speed": 169.79,
+          "speed": 185.76,
           "category": "civilian"
         }
       ]
@@ -25,15 +25,15 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "846020",
-          "callsign": "IBX65",
+          "icao24": "841066",
+          "callsign": "JL3554",
           "country": "Japan",
-          "lon": 132.2987,
-          "lat": 34.1279,
-          "alt": 5372.1,
+          "lon": 132.2852,
+          "lat": 34.2927,
+          "alt": 4876.8,
           "on_ground": false,
-          "speed": 172.93,
-          "category": "civilian"
+          "speed": 126.58,
+          "category": "other"
         }
       ]
     },
@@ -46,20 +46,8 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "86d2ee",
-          "callsign": "ANA595",
-          "country": "Japan",
-          "lon": 139.3918,
-          "lat": 35.489,
-          "alt": 4823.46,
-          "on_ground": false,
-          "speed": 189.08,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
