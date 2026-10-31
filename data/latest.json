@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-30T23:30:01.842531+00:00",
+  "timestamp": "2026-10-31T00:08:19.775109+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -9,25 +9,25 @@
       "count": 2,
       "aircraft": [
         {
-          "icao24": "a0b34f",
-          "callsign": "N144UA",
-          "country": "United States",
-          "lon": 139.3134,
-          "lat": 35.7509,
-          "alt": 472.44,
+          "icao24": "71c259",
+          "callsign": "AAR1055",
+          "country": "Republic of Korea",
+          "lon": 139.2476,
+          "lat": 35.87,
+          "alt": 6324.6,
           "on_ground": false,
-          "speed": 59.39,
+          "speed": 156.69,
           "category": "other"
         },
         {
           "icao24": "a09aac",
           "callsign": "N138UA",
           "country": "United States",
-          "lon": 139.3533,
-          "lat": 35.7253,
-          "alt": 289.56,
-          "on_ground": false,
-          "speed": 36.22,
+          "lon": 139.3476,
+          "lat": 35.7528,
+          "alt": null,
+          "on_ground": true,
+          "speed": 5.66,
           "category": "other"
         }
       ]
@@ -45,8 +45,20 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "8527e8",
+          "callsign": "",
+          "country": "Japan",
+          "lon": 139.4931,
+          "lat": 35.5872,
+          "alt": 1150.62,
+          "on_ground": false,
+          "speed": 91.62,
+          "category": "other"
+        }
+      ]
     }
   }
 }
