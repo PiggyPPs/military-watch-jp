@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-01T11:29:20.722120+00:00",
+  "timestamp": "2026-11-01T12:06:32.617153+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -9,33 +9,21 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "845dcc",
-          "callsign": "ANA299",
-          "country": "Japan",
-          "lon": 139.2623,
-          "lat": 35.8025,
-          "alt": 7376.16,
+          "icao24": "0101dc",
+          "callsign": "MSR965",
+          "country": "Egypt",
+          "lon": 139.2272,
+          "lat": 35.85,
+          "alt": 6309.36,
           "on_ground": false,
-          "speed": 193.29,
-          "category": "civilian"
+          "speed": 197.18,
+          "category": "other"
         }
       ]
     },
     "iwakuni": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "8465c0",
-          "callsign": "ANA699",
-          "country": "Japan",
-          "lon": 132.1431,
-          "lat": 34.1267,
-          "alt": 4648.2,
-          "on_ground": false,
-          "speed": 169.08,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "misawa": {
       "count": 0,
