@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-01T06:13:23.082850+00:00",
+  "timestamp": "2026-11-01T07:33:18.168701+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -10,31 +10,8 @@
       "aircraft": []
     },
     "iwakuni": {
-      "count": 2,
-      "aircraft": [
-        {
-          "icao24": "c023c8",
-          "callsign": "ACA025",
-          "country": "Canada",
-          "lon": 132.111,
-          "lat": 34.0715,
-          "alt": 12192,
-          "on_ground": false,
-          "speed": 197.94,
-          "category": "other"
-        },
-        {
-          "icao24": "a3866a",
-          "callsign": "UPS104",
-          "country": "United States",
-          "lon": 132.3298,
-          "lat": 34.0079,
-          "alt": 9151.62,
-          "on_ground": false,
-          "speed": 217.6,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "misawa": {
       "count": 0,
