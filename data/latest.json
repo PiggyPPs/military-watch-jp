@@ -1,29 +1,29 @@
 {
-  "timestamp": "2026-11-01T21:05:03.803732+00:00",
+  "timestamp": "2026-11-01T22:05:43.770868+00:00",
   "bases": {
     "kadena": {
       "count": 0,
       "aircraft": []
     },
     "yokota": {
-      "count": 0,
-      "aircraft": []
-    },
-    "iwakuni": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "86d8cc",
-          "callsign": "SJO445",
+          "icao24": "846910",
+          "callsign": "ANA381",
           "country": "Japan",
-          "lon": 132.1882,
-          "lat": 34.0927,
-          "alt": 5219.7,
+          "lon": 139.4889,
+          "lat": 35.7716,
+          "alt": 6332.22,
           "on_ground": false,
-          "speed": 158.3,
-          "category": "other"
+          "speed": 180.05,
+          "category": "civilian"
         }
       ]
+    },
+    "iwakuni": {
+      "count": 0,
+      "aircraft": []
     },
     "misawa": {
       "count": 0,
