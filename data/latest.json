@@ -1,39 +1,27 @@
 {
-  "timestamp": "2026-11-02T02:46:26.349831+00:00",
+  "timestamp": "2026-11-02T03:50:02.951165+00:00",
   "bases": {
     "kadena": {
       "count": 0,
       "aircraft": []
     },
     "yokota": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "a09aac",
-          "callsign": "N138UA",
-          "country": "United States",
-          "lon": 139.3603,
-          "lat": 35.7413,
-          "alt": null,
-          "on_ground": true,
-          "speed": 0.06,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
       "count": 1,
       "aircraft": [
         {
-          "icao24": "86d66d",
-          "callsign": "APJ455",
-          "country": "Japan",
-          "lon": 132.2132,
-          "lat": 34.1425,
-          "alt": 9265.92,
+          "icao24": "71c306",
+          "callsign": "TWB332",
+          "country": "Republic of Korea",
+          "lon": 132.1832,
+          "lat": 34.2671,
+          "alt": 9144,
           "on_ground": false,
-          "speed": 270.24,
-          "category": "civilian"
+          "speed": 182.51,
+          "category": "other"
         }
       ]
     },
