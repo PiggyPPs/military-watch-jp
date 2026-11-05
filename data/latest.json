@@ -1,120 +1,29 @@
 {
-  "timestamp": "2026-11-05T07:14:31.680978+00:00",
+  "timestamp": "2026-11-05T15:43:10.823630+00:00",
   "bases": {
     "kadena": {
       "count": 0,
       "aircraft": []
     },
     "yokota": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "8622ae",
-          "callsign": "ANA865",
-          "country": "Japan",
-          "lon": 139.2244,
-          "lat": 35.832,
-          "alt": 7101.84,
-          "on_ground": false,
-          "speed": 190.36,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
       "count": 0,
       "aircraft": []
     },
     "misawa": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "868710",
-          "callsign": "ANA68",
-          "country": "Japan",
-          "lon": 141.4633,
-          "lat": 40.7655,
-          "alt": 12176.76,
-          "on_ground": false,
-          "speed": 213.79,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "futenma": {
       "count": 0,
       "aircraft": []
     },
     "atsugi": {
-      "count": 6,
-      "aircraft": [
-        {
-          "icao24": "ae1db4",
-          "callsign": "HR614",
-          "country": "United States",
-          "lon": 139.5282,
-          "lat": 35.3935,
-          "alt": 480.06,
-          "on_ground": false,
-          "speed": 55.2,
-          "category": "other"
-        },
-        {
-          "icao24": "87cde4",
-          "callsign": "JFS72",
-          "country": "Japan",
-          "lon": 139.4516,
-          "lat": 35.4465,
-          "alt": null,
-          "on_ground": true,
-          "speed": 0.06,
-          "category": "other"
-        },
-        {
-          "icao24": "ae08ef",
-          "callsign": "MOJO66",
-          "country": "United States",
-          "lon": 139.3365,
-          "lat": 35.4497,
-          "alt": 1577.34,
-          "on_ground": false,
-          "speed": 103.67,
-          "category": "other"
-        },
-        {
-          "icao24": "ae4f72",
-          "callsign": "FFAB123",
-          "country": "United States",
-          "lon": 139.3103,
-          "lat": 35.3947,
-          "alt": 480.06,
-          "on_ground": false,
-          "speed": 48.97,
-          "category": "other"
-        },
-        {
-          "icao24": "ae06e0",
-          "callsign": "BLCAT62",
-          "country": "United States",
-          "lon": 139.4496,
-          "lat": 35.4706,
-          "alt": 312.42,
-          "on_ground": false,
-          "speed": 65.33,
-          "category": "other"
-        },
-        {
-          "icao24": "7892a4",
-          "callsign": "HKE849",
-          "country": "China",
-          "lon": 139.5743,
-          "lat": 35.3158,
-          "alt": 9753.6,
-          "on_ground": false,
-          "speed": 196.87,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
