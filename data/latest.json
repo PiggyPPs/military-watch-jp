@@ -1,13 +1,25 @@
 {
-  "timestamp": "2026-11-06T22:17:58.328651+00:00",
+  "timestamp": "2026-11-07T02:15:41.318177+00:00",
   "bases": {
     "kadena": {
       "count": 0,
       "aircraft": []
     },
     "yokota": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "a5c99e",
+          "callsign": "",
+          "country": "United States",
+          "lon": 139.3437,
+          "lat": 35.7537,
+          "alt": null,
+          "on_ground": true,
+          "speed": 0,
+          "category": "other"
+        }
+      ]
     },
     "iwakuni": {
       "count": 0,
@@ -22,8 +34,20 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "7cf9cc",
+          "callsign": "BFLO62",
+          "country": "Australia",
+          "lon": 139.4509,
+          "lat": 35.4468,
+          "alt": null,
+          "on_ground": true,
+          "speed": 6.69,
+          "category": "other"
+        }
+      ]
     }
   }
 }
