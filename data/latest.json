@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-12T12:25:44.646398+00:00",
+  "timestamp": "2026-11-12T20:19:26.532812+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -22,8 +22,20 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "86d538",
+          "callsign": "SJO411",
+          "country": "Japan",
+          "lon": 139.5643,
+          "lat": 35.5233,
+          "alt": 7505.7,
+          "on_ground": false,
+          "speed": 206.83,
+          "category": "other"
+        }
+      ]
     }
   }
 }
