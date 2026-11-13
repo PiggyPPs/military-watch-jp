@@ -1,17 +1,52 @@
 {
-  "timestamp": "2026-11-12T20:19:26.532812+00:00",
+  "timestamp": "2026-11-13T01:23:34.055692+00:00",
   "bases": {
     "kadena": {
       "count": 0,
       "aircraft": []
     },
     "yokota": {
-      "count": 0,
-      "aircraft": []
+      "count": 2,
+      "aircraft": [
+        {
+          "icao24": "87cd04",
+          "callsign": "PLUTO32",
+          "country": "Japan",
+          "lon": 139.4504,
+          "lat": 35.895,
+          "alt": 525.78,
+          "on_ground": false,
+          "speed": 78.87,
+          "category": "other"
+        },
+        {
+          "icao24": "a1f4c5",
+          "callsign": "OAE250",
+          "country": "United States",
+          "lon": 139.3339,
+          "lat": 35.817,
+          "alt": 845.82,
+          "on_ground": false,
+          "speed": 122.55,
+          "category": "other"
+        }
+      ]
     },
     "iwakuni": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "8880f4",
+          "callsign": "VJC921",
+          "country": "Viet Nam",
+          "lon": 132.3589,
+          "lat": 34.2396,
+          "alt": 10370.82,
+          "on_ground": false,
+          "speed": 185.64,
+          "category": "other"
+        }
+      ]
     },
     "misawa": {
       "count": 0,
@@ -25,14 +60,14 @@
       "count": 1,
       "aircraft": [
         {
-          "icao24": "86d538",
-          "callsign": "SJO411",
+          "icao24": "8520c0",
+          "callsign": "",
           "country": "Japan",
-          "lon": 139.5643,
-          "lat": 35.5233,
-          "alt": 7505.7,
+          "lon": 139.547,
+          "lat": 35.5217,
+          "alt": 1188.72,
           "on_ground": false,
-          "speed": 206.83,
+          "speed": 82.14,
           "category": "other"
         }
       ]
