@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-15T08:19:47.296808+00:00",
+  "timestamp": "2026-11-15T15:48:06.240053+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -14,20 +14,8 @@
       "aircraft": []
     },
     "misawa": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "84b73b",
-          "callsign": "APJ418",
-          "country": "Japan",
-          "lon": 141.5003,
-          "lat": 40.8226,
-          "alt": 8534.4,
-          "on_ground": false,
-          "speed": 201.22,
-          "category": "civilian"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "futenma": {
       "count": 0,
