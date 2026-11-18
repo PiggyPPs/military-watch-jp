@@ -1,47 +1,13 @@
 {
-  "timestamp": "2026-11-18T10:35:01.559590+00:00",
+  "timestamp": "2026-11-18T19:18:38.457962+00:00",
   "bases": {
     "kadena": {
       "count": 0,
       "aircraft": []
     },
     "yokota": {
-      "count": 3,
-      "aircraft": [
-        {
-          "icao24": "ae571e",
-          "callsign": "53453436",
-          "country": "United States",
-          "lon": 139.2729,
-          "lat": 35.7772,
-          "alt": 678.18,
-          "on_ground": false,
-          "speed": 93.63,
-          "category": "other"
-        },
-        {
-          "icao24": "71c595",
-          "callsign": "EOK323",
-          "country": "Republic of Korea",
-          "lon": 139.4028,
-          "lat": 35.8729,
-          "alt": 9517.38,
-          "on_ground": false,
-          "speed": 178.94,
-          "category": "other"
-        },
-        {
-          "icao24": "86cf6f",
-          "callsign": "SNJ37",
-          "country": "Japan",
-          "lon": 139.2864,
-          "lat": 35.6631,
-          "alt": 7764.78,
-          "on_ground": false,
-          "speed": 190.86,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     },
     "iwakuni": {
       "count": 0,
@@ -56,20 +22,8 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 1,
-      "aircraft": [
-        {
-          "icao24": "ae0d25",
-          "callsign": "NINJA00",
-          "country": "United States",
-          "lon": 139.393,
-          "lat": 35.5103,
-          "alt": 213.36,
-          "on_ground": false,
-          "speed": 36.54,
-          "category": "other"
-        }
-      ]
+      "count": 0,
+      "aircraft": []
     }
   }
 }
