@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-20T17:56:55.400388+00:00",
+  "timestamp": "2026-11-20T23:55:43.106710+00:00",
   "bases": {
     "kadena": {
       "count": 0,
@@ -22,8 +22,20 @@
       "aircraft": []
     },
     "atsugi": {
-      "count": 0,
-      "aircraft": []
+      "count": 1,
+      "aircraft": [
+        {
+          "icao24": "06a1cc",
+          "callsign": "QQE562",
+          "country": "Qatar",
+          "lon": 139.3942,
+          "lat": 35.3968,
+          "alt": 10439.4,
+          "on_ground": false,
+          "speed": 169.84,
+          "category": "other"
+        }
+      ]
     }
   }
 }
